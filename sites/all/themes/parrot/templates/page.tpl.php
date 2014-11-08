@@ -28,7 +28,7 @@
       <header role="banner" class="row">
         <div class="siteinfo">
           <?php if ($logo): ?>
-            <div class="class">
+            <div class="logo">
               <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home">
                 <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
               </a>
@@ -75,7 +75,7 @@
 
       <div role="main" id="main-content">
         <?php print render($title_prefix); ?>
-        <?php if ($title): ?>
+        <?php if ($title && !$front): ?>
           <h1 class="page-title"><?php print $title; ?></h1>
         <?php endif; ?>
         <?php print render($title_suffix); ?>

@@ -28,7 +28,7 @@
       <header role="banner" class="">
         <div class="siteinfo">
           <?php if ($logo): ?>
-            <div class="class">
+            <div class="logo">
               <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home">
                 <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
               </a>
