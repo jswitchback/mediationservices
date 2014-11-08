@@ -50,9 +50,6 @@ function parrot_preprocess_block(&$vars, $hook) {
 
   // print $block .' ';
    switch ($block) {
-     case 'header-menu_block-2':
-       $vars['classes_array'][] = '';
-       break;
      case 'sidebar-system-navigation':
        $vars['classes_array'][] = '';
        break;

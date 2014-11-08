@@ -2,6 +2,12 @@
 @import "breakpoint"; //@Media Query Mixins
 @import "compass/css3";
 
+// Breakpoint variables. Also found in _grids.scss
+$narrow: 480px;
+$tablet: 760px;
+$computer: 960px;
+$wide: 1024px;
+
 
 .logo {
 	max-width: 300px;
@@ -32,4 +38,19 @@
   //     background-image: url(../images/oam-logo@1x.png);
   //   }
   // }
+}
+
+
+.siteinfo {
+	float: left;
+}
+
+.header-region {
+	float: right;
+}
+
+#block-menu-block-1 {
+	ul {
+		@include horizontal-list($list-margin: 0, $list-item-margin: 16px);
+	}
 }
