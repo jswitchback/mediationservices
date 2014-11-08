@@ -53,6 +53,12 @@
           </div>
         <?php endif; ?>
 
+        <a href="#navigation" id="toggle-nav" class="nav-button">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+
       </header>
     </div><!--/.container-->
   </div><!--/#header-wrapper-->

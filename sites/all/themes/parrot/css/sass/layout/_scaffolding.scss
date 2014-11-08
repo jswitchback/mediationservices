@@ -43,6 +43,11 @@ a:hover {
   text-decoration: underline;
 }
 
+a:active {
+  color: $linkColorHover;
+  text-decoration: underline;
+}
+
 
 // Images
 // -------------------------

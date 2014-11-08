@@ -541,3 +541,15 @@
     }
 }
 
+@mixin theme-link ($inactive-color: $textColor, $active-color: $linkColor, $hover-decoration: none) {
+  color: $inactive-color;
+  &:visited {
+    color: $inactive-color;
+  }
+  &:hover, &:active, &:focus {
+    color: $active-color;
+    text-decoration: $hover-decoration;
+  }
+}
+
+

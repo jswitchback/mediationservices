@@ -3,11 +3,18 @@
 // --------------------------------------------------
 
 
+// Layout
+
+$horiz-gutter: 20px;
+$vert-gutter: 24px;
+
 // Global values
 // --------------------------------------------------
 
 
 $ui-grey-light: #f5f5f5;
+$ui-grey-dark: #f5f5f5;
+
 
 // Grays
 // -------------------------
@@ -35,12 +42,12 @@ $purple:                #7a43b6 !default;
 // Scaffolding
 // -------------------------
 $bodyBackground:        $white !default;
-$textColor:             $grayDark !default;
+$textColor:             $ui-grey-dark !default;
 
 
 // Links
 // -------------------------
-$linkColor:             #08c !default;
+$linkColor:             #28478f !default;
 $linkColorHover:        darken($linkColor, 15%) !default;
 
 
@@ -63,8 +70,8 @@ $baseFontFamily:        $sansFontFamily !default;
 $baseLineHeight:        24px !default;
 $altFontFamily:         $serifFontFamily !default;
 
-$headingsFontFamily:    $webfontBold;
-$headingsFontWeight:    bold !default;    // instead of browser default, bold
+$headingsFontFamily:    $webfontLight;
+$headingsFontWeight:    normal !default;    // instead of browser default, bold
 $headingsColor:         #595959;
 
 // Tables

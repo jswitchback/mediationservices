@@ -7,10 +7,10 @@ $(window).load(function() {
   // HOMEPAGE BANNER
   ///////////////////////
 
-  $('.rs-slideshow').royalSlider({
+  $('.rs-slideshow .field-items').royalSlider({
     autoScaleSlider: true,
     //autoHeight: true,
-    autoScaleSliderHeight: 289,
+    autoScaleSliderHeight: 420,
     // arrowsNavAutoHide: false,
     arrowsNav: false,
     sliderDrag: false,
