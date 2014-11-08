@@ -497,8 +497,8 @@ table {
  */
 @font-face {
   font-family: 'FontAwesome';
-  src: url("../fonts/fontawesome-webfont.eot?v=3.0.1");
-  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=3.0.1") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff?v=3.0.1") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=3.0.1") format("truetype"), url("../fonts/fontawesome-webfont.svg#FontAwesome") format("svg");
+  src: url("../fonts/fontawesome-webfont.eot?v=4.2.0");
+  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.2.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff?v=4.2.0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.2.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.2.0#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal; }
 /*  Font Awesome styles
@@ -610,17 +610,20 @@ table {
     .parrot-panels #minipanel-two-50-middle-wrapper .minipanel-two-50-second {
       width: 49.15254%;
       float: left;
-      margin-right: 1.69492%; } }
+      margin-right: 1.69492%;
+      margin-right: 0; } }
   @media (min-width: 60em) {
     .parrot-panels #minipanel-two-50-middle-wrapper .minipanel-two-50-second {
       width: 49.15254%;
       float: left;
-      margin-right: 1.69492%; } }
+      margin-right: 1.69492%;
+      margin-right: 0; } }
   @media (min-width: 64em) {
     .parrot-panels #minipanel-two-50-middle-wrapper .minipanel-two-50-second {
       width: 49.15254%;
       float: left;
-      margin-right: 1.69492%; } }
+      margin-right: 1.69492%;
+      margin-right: 0; } }
 .parrot-panels #minipanel-two-50-bottom-wrapper .minipanel-two-50-bottom {
   width: 100%;
   float: left;
@@ -698,17 +701,20 @@ table {
     .parrot-panels #minipanel-three-33-middle-wrapper .minipanel-three-33-third {
       width: 32.20339%;
       float: left;
-      margin-right: 1.69492%; } }
+      margin-right: 1.69492%;
+      margin-right: 0; } }
   @media (min-width: 60em) {
     .parrot-panels #minipanel-three-33-middle-wrapper .minipanel-three-33-third {
       width: 32.20339%;
       float: left;
-      margin-right: 1.69492%; } }
+      margin-right: 1.69492%;
+      margin-right: 0; } }
   @media (min-width: 64em) {
     .parrot-panels #minipanel-three-33-middle-wrapper .minipanel-three-33-third {
       width: 32.20339%;
       float: left;
-      margin-right: 1.69492%; } }
+      margin-right: 1.69492%;
+      margin-right: 0; } }
 .parrot-panels #minipanel-three-33-bottom-wrapper .minipanel-three-33-bottom {
   width: 100%;
   float: left;
@@ -812,17 +818,20 @@ table {
     .parrot-panels #minipanel-four-25-middle-wrapper .minipanel-four-25-fourth {
       width: 23.72881%;
       float: left;
-      margin-right: 1.69492%; } }
+      margin-right: 1.69492%;
+      margin-right: 0; } }
   @media (min-width: 60em) {
     .parrot-panels #minipanel-four-25-middle-wrapper .minipanel-four-25-fourth {
       width: 23.72881%;
       float: left;
-      margin-right: 1.69492%; } }
+      margin-right: 1.69492%;
+      margin-right: 0; } }
   @media (min-width: 64em) {
     .parrot-panels #minipanel-four-25-middle-wrapper .minipanel-four-25-fourth {
       width: 23.72881%;
       float: left;
-      margin-right: 1.69492%; } }
+      margin-right: 1.69492%;
+      margin-right: 0; } }
 .parrot-panels #minipanel-four-25-bottom-wrapper .minipanel-four-25-bottom {
   width: 100%;
   float: left;
@@ -854,8 +863,8 @@ table {
       width: 74.57627%;
       float: left;
       margin-right: 1.69492%; } }
-  .parrot-panels #three-inset-left-wrapper #three-inset-left-left-wrapper .three-inset-left-top of
-  .three-inset-left-bottom {
+  .parrot-panels #three-inset-left-wrapper #three-inset-left-left-wrapper .three-inset-left-top,
+  .parrot-panels #three-inset-left-wrapper #three-inset-left-left-wrapper .three-inset-left-bottom {
     width: 100%;
     float: left;
     margin-left: 0;
@@ -927,17 +936,20 @@ table {
     .parrot-panels #three-inset-left-wrapper #three-inset-left-right-wrapper {
       width: 23.72881%;
       float: left;
-      margin-right: 1.69492%; } }
+      margin-right: 1.69492%;
+      margin-right: 0; } }
   @media (min-width: 60em) {
     .parrot-panels #three-inset-left-wrapper #three-inset-left-right-wrapper {
       width: 23.72881%;
       float: left;
-      margin-right: 1.69492%; } }
+      margin-right: 1.69492%;
+      margin-right: 0; } }
   @media (min-width: 64em) {
     .parrot-panels #three-inset-left-wrapper #three-inset-left-right-wrapper {
       width: 23.72881%;
       float: left;
-      margin-right: 1.69492%; } }
+      margin-right: 1.69492%;
+      margin-right: 0; } }
 .parrot-panels #three-inset-right-wrapper #three-inset-right-right-wrapper {
   width: 100%;
   float: left;
@@ -953,19 +965,22 @@ table {
     .parrot-panels #three-inset-right-wrapper #three-inset-right-right-wrapper {
       width: 74.57627%;
       float: left;
-      margin-right: 1.69492%; } }
+      margin-right: 1.69492%;
+      margin-right: 0; } }
   @media (min-width: 60em) {
     .parrot-panels #three-inset-right-wrapper #three-inset-right-right-wrapper {
       width: 74.57627%;
       float: left;
-      margin-right: 1.69492%; } }
+      margin-right: 1.69492%;
+      margin-right: 0; } }
   @media (min-width: 64em) {
     .parrot-panels #three-inset-right-wrapper #three-inset-right-right-wrapper {
       width: 74.57627%;
       float: left;
-      margin-right: 1.69492%; } }
-  .parrot-panels #three-inset-right-wrapper #three-inset-right-right-wrapper .three-inset-right-top of
-  .three-inset-right-bottom {
+      margin-right: 1.69492%;
+      margin-right: 0; } }
+  .parrot-panels #three-inset-right-wrapper #three-inset-right-right-wrapper .three-inset-right-top,
+  .parrot-panels #three-inset-right-wrapper #three-inset-right-right-wrapper .three-inset-right-bottom {
     width: 100%;
     float: left;
     margin-left: 0;
@@ -985,17 +1000,20 @@ table {
       .parrot-panels #three-inset-right-wrapper #three-inset-right-right-wrapper .three-inset-right-middle {
         width: 49.15254%;
         float: left;
-        margin-right: 1.69492%; } }
+        margin-right: 1.69492%;
+        margin-right: 0; } }
     @media (min-width: 60em) {
       .parrot-panels #three-inset-right-wrapper #three-inset-right-right-wrapper .three-inset-right-middle {
         width: 49.15254%;
         float: left;
-        margin-right: 1.69492%; } }
+        margin-right: 1.69492%;
+        margin-right: 0; } }
     @media (min-width: 64em) {
       .parrot-panels #three-inset-right-wrapper #three-inset-right-right-wrapper .three-inset-right-middle {
         width: 49.15254%;
         float: left;
-        margin-right: 1.69492%; } }
+        margin-right: 1.69492%;
+        margin-right: 0; } }
   .parrot-panels #three-inset-right-wrapper #three-inset-right-right-wrapper .three-inset-right-inset {
     width: 100%;
     float: left;
@@ -1011,17 +1029,20 @@ table {
       .parrot-panels #three-inset-right-wrapper #three-inset-right-right-wrapper .three-inset-right-inset {
         width: 49.15254%;
         float: left;
-        margin-right: 1.69492%; } }
+        margin-right: 1.69492%;
+        margin-right: 0; } }
     @media (min-width: 60em) {
       .parrot-panels #three-inset-right-wrapper #three-inset-right-right-wrapper .three-inset-right-inset {
         width: 49.15254%;
         float: left;
-        margin-right: 1.69492%; } }
+        margin-right: 1.69492%;
+        margin-right: 0; } }
     @media (min-width: 64em) {
       .parrot-panels #three-inset-right-wrapper #three-inset-right-right-wrapper .three-inset-right-inset {
         width: 49.15254%;
         float: left;
-        margin-right: 1.69492%; } }
+        margin-right: 1.69492%;
+        margin-right: 0; } }
 .parrot-panels #three-inset-right-wrapper #three-inset-right-left-wrapper {
   width: 100%;
   float: left;
@@ -1120,17 +1141,20 @@ table {
     .parrot-panels #three-33-middle-wrapper .three-33-third {
       width: 32.20339%;
       float: left;
-      margin-right: 1.69492%; } }
+      margin-right: 1.69492%;
+      margin-right: 0; } }
   @media (min-width: 60em) {
     .parrot-panels #three-33-middle-wrapper .three-33-third {
       width: 32.20339%;
       float: left;
-      margin-right: 1.69492%; } }
+      margin-right: 1.69492%;
+      margin-right: 0; } }
   @media (min-width: 64em) {
     .parrot-panels #three-33-middle-wrapper .three-33-third {
       width: 32.20339%;
       float: left;
-      margin-right: 1.69492%; } }
+      margin-right: 1.69492%;
+      margin-right: 0; } }
 .parrot-panels #three-33-bottom-wrapper .three-33-bottom {
   width: 100%;
   float: left;
@@ -1208,17 +1232,20 @@ table {
     .parrot-panels #three-25-50-25-middle-wrapper .three-25-50-25-third {
       width: 23.72881%;
       float: left;
-      margin-right: 1.69492%; } }
+      margin-right: 1.69492%;
+      margin-right: 0; } }
   @media (min-width: 60em) {
     .parrot-panels #three-25-50-25-middle-wrapper .three-25-50-25-third {
       width: 23.72881%;
       float: left;
-      margin-right: 1.69492%; } }
+      margin-right: 1.69492%;
+      margin-right: 0; } }
   @media (min-width: 64em) {
     .parrot-panels #three-25-50-25-middle-wrapper .three-25-50-25-third {
       width: 23.72881%;
       float: left;
-      margin-right: 1.69492%; } }
+      margin-right: 1.69492%;
+      margin-right: 0; } }
 .parrot-panels #three-25-50-25-bottom-wrapper .three-25-50-25-bottom {
   width: 100%;
   float: left;
@@ -1270,17 +1297,20 @@ table {
     .parrot-panels #two-33-66-middle-wrapper .two-33-66-second {
       width: 66.10169%;
       float: left;
-      margin-right: 1.69492%; } }
+      margin-right: 1.69492%;
+      margin-right: 0; } }
   @media (min-width: 60em) {
     .parrot-panels #two-33-66-middle-wrapper .two-33-66-second {
       width: 66.10169%;
       float: left;
-      margin-right: 1.69492%; } }
+      margin-right: 1.69492%;
+      margin-right: 0; } }
   @media (min-width: 64em) {
     .parrot-panels #two-33-66-middle-wrapper .two-33-66-second {
       width: 66.10169%;
       float: left;
-      margin-right: 1.69492%; } }
+      margin-right: 1.69492%;
+      margin-right: 0; } }
 .parrot-panels #two-33-66-bottom-wrapper .two-33-66-bottom {
   width: 100%;
   float: left;
@@ -1333,19 +1363,22 @@ table {
       width: 49.15254%;
       float: left;
       margin-right: 1.69492%;
-      margin-left: -131.57895%; } }
+      margin-left: -131.57895%;
+      margin-right: 0; } }
   @media (min-width: 60em) {
     .parrot-panels #two-33-66-alt-middle-wrapper .two-33-66-alt-second {
       width: 74.57627%;
       float: left;
       margin-right: 1.69492%;
-      margin-left: -78.94737%; } }
+      margin-left: -78.94737%;
+      margin-right: 0; } }
   @media (min-width: 64em) {
     .parrot-panels #two-33-66-alt-middle-wrapper .two-33-66-alt-second {
       width: 74.57627%;
       float: left;
       margin-right: 1.69492%;
-      margin-left: -78.94737%; } }
+      margin-left: -78.94737%;
+      margin-right: 0; } }
 .parrot-panels #two-33-66-alt-bottom-wrapper .two-33-66-alt-bottom {
   width: 100%;
   float: left;
@@ -1397,17 +1430,20 @@ table {
     .parrot-panels #two-66-33-middle-wrapper .two-66-33-second {
       width: 32.20339%;
       float: left;
-      margin-right: 1.69492%; } }
+      margin-right: 1.69492%;
+      margin-right: 0; } }
   @media (min-width: 60em) {
     .parrot-panels #two-66-33-middle-wrapper .two-66-33-second {
       width: 32.20339%;
       float: left;
-      margin-right: 1.69492%; } }
+      margin-right: 1.69492%;
+      margin-right: 0; } }
   @media (min-width: 64em) {
     .parrot-panels #two-66-33-middle-wrapper .two-66-33-second {
       width: 32.20339%;
       float: left;
-      margin-right: 1.69492%; } }
+      margin-right: 1.69492%;
+      margin-right: 0; } }
 .parrot-panels #two-66-33-bottom-wrapper .two-66-33-bottom {
   width: 100%;
   float: left;
@@ -1511,17 +1547,20 @@ table {
     .parrot-panels #four-25-middle-wrapper .four-25-fourth {
       width: 23.72881%;
       float: left;
-      margin-right: 1.69492%; } }
+      margin-right: 1.69492%;
+      margin-right: 0; } }
   @media (min-width: 60em) {
     .parrot-panels #four-25-middle-wrapper .four-25-fourth {
       width: 23.72881%;
       float: left;
-      margin-right: 1.69492%; } }
+      margin-right: 1.69492%;
+      margin-right: 0; } }
   @media (min-width: 64em) {
     .parrot-panels #four-25-middle-wrapper .four-25-fourth {
       width: 23.72881%;
       float: left;
-      margin-right: 1.69492%; } }
+      margin-right: 1.69492%;
+      margin-right: 0; } }
 .parrot-panels #four-25-bottom-wrapper .four-25-bottom {
   width: 100%;
   float: left;
@@ -1573,17 +1612,20 @@ table {
     .parrot-panels #two-50-middle-wrapper .two-50-second {
       width: 49.15254%;
       float: left;
-      margin-right: 1.69492%; } }
+      margin-right: 1.69492%;
+      margin-right: 0; } }
   @media (min-width: 60em) {
     .parrot-panels #two-50-middle-wrapper .two-50-second {
       width: 49.15254%;
       float: left;
-      margin-right: 1.69492%; } }
+      margin-right: 1.69492%;
+      margin-right: 0; } }
   @media (min-width: 64em) {
     .parrot-panels #two-50-middle-wrapper .two-50-second {
       width: 49.15254%;
       float: left;
-      margin-right: 1.69492%; } }
+      margin-right: 1.69492%;
+      margin-right: 0; } }
 .parrot-panels #two-50-bottom-wrapper .two-50-bottom {
   width: 100%;
   float: left;

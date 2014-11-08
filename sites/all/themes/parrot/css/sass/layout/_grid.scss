@@ -144,12 +144,15 @@ $wide: 1024px;
       }
       @include breakpoint($tablet){
         @include span(6 of 12);
+        margin-right: 0;
       }
       @include breakpoint($computer){
         @include span(6 of 12);
+        margin-right: 0;
       }
       @include breakpoint($wide){
         @include span(6 of 12);
+        margin-right: 0;
       }
     }
   }
@@ -213,12 +216,15 @@ $wide: 1024px;
       }
       @include breakpoint($tablet){
         @include span(4 of 12);
+        margin-right: 0;
       }
       @include breakpoint($computer){
         @include span(4 of 12);
+        margin-right: 0;
       }
       @include breakpoint($wide){
         @include span(4 of 12);
+        margin-right: 0;
       }
     }
   }
@@ -304,12 +310,15 @@ $wide: 1024px;
       }
       @include breakpoint($tablet){
         @include span(3 of 12);
+        margin-right: 0;
       }
       @include breakpoint($computer){
         @include span(3 of 12);
+        margin-right: 0;
       }
       @include breakpoint($wide){
         @include span(3 of 12);
+        margin-right: 0;
       }
     }//.minipanel-four-25-fourth
   } //#minipanel-four-25-middle-wrapper
@@ -344,7 +353,7 @@ $wide: 1024px;
         @include span(9 of 12);
       }
 
-      .three-inset-left-top of
+      .three-inset-left-top,
       .three-inset-left-bottom{
         @include span(12 of 12);
       }
@@ -392,12 +401,15 @@ $wide: 1024px;
       }
       @include breakpoint($tablet){
         @include span(3 of 12);
+        margin-right: 0;
       }
       @include breakpoint($computer){
         @include span(3 of 12);
+        margin-right: 0;
       }
       @include breakpoint($wide){
         @include span(3 of 12);
+        margin-right: 0;
       }
     }
   }
@@ -414,14 +426,17 @@ $wide: 1024px;
       }
       @include breakpoint($tablet){
         @include span(9 of 12);
+        margin-right: 0;
       }
       @include breakpoint($computer){
         @include span(9 of 12);
+        margin-right: 0;
       }
       @include breakpoint($wide){
         @include span(9 of 12);
+        margin-right: 0;
       }
-      .three-inset-right-top of
+      .three-inset-right-top,
       .three-inset-right-bottom{
         @include span(12 of 12);
       }
@@ -434,14 +449,17 @@ $wide: 1024px;
         @include breakpoint($tablet){
           // @include remove-omega;
           @include span(6 of 12);
+          margin-right: 0;
         }
         @include breakpoint($computer){
           // @include remove-omega;
           @include span(6 of 12);
+          margin-right: 0;
         }
         @include breakpoint($wide){
           // @include remove-omega;
           @include span(6 of 12);
+          margin-right: 0;
         }
       }
       .three-inset-right-inset{
@@ -452,12 +470,15 @@ $wide: 1024px;
         }
         @include breakpoint($tablet){
           @include span(6 of 12);
+          margin-right: 0;
         }
         @include breakpoint($computer){
           @include span(6 of 12);
+          margin-right: 0;
         }
         @include breakpoint($wide){
           @include span(6 of 12);
+          margin-right: 0;
         }
       }
     }
@@ -539,12 +560,15 @@ $wide: 1024px;
       }
       @include breakpoint($tablet){
         @include span(4 of 12);
+        margin-right: 0;
       }
       @include breakpoint($computer){
         @include span(4 of 12);
+        margin-right: 0;
       }
       @include breakpoint($wide){
         @include span(4 of 12);
+        margin-right: 0;
       }
     }
   }
@@ -606,12 +630,15 @@ $wide: 1024px;
       }
       @include breakpoint($tablet){
         @include span(3 of 12);
+        margin-right: 0;
       }
       @include breakpoint($computer){
         @include span(3 of 12);
+        margin-right: 0;
       }
       @include breakpoint($wide){
         @include span(3 of 12);
+        margin-right: 0;
       }
     }
   }
@@ -660,12 +687,15 @@ $wide: 1024px;
       }
       @include breakpoint($tablet){
         @include span(8 of 12);
+        margin-right: 0;
       }
       @include breakpoint($computer){
         @include span(8 of 12);
+        margin-right: 0;
       }
       @include breakpoint($wide){
         @include span(8 of 12);
+        margin-right: 0;
       }
     }
   }
@@ -714,14 +744,17 @@ $wide: 1024px;
       @include breakpoint($tablet){
         @include span(6 of 12);
         @include pull(5);
+        margin-right: 0;
       }
       @include breakpoint($computer){
         @include span(9 of 12);
         @include pull(3);
+        margin-right: 0;
       }
       @include breakpoint($wide){
         @include span(9 of 12);
         @include pull(3);
+        margin-right: 0;
       }
     }
   }
@@ -769,12 +802,15 @@ $wide: 1024px;
         }
         @include breakpoint($tablet){
           @include span(4 of 12);
+          margin-right: 0;
         }
         @include breakpoint($computer){
           @include span(4 of 12);
+          margin-right: 0;
         }
         @include breakpoint($wide){
           @include span(4 of 12);
+          margin-right: 0;
         }
       }
     }
@@ -860,12 +896,15 @@ $wide: 1024px;
         }
         @include breakpoint($tablet){
           @include span(3 of 12);
+          margin-right: 0;
         }
         @include breakpoint($computer){
           @include span(3 of 12);
+          margin-right: 0;
         }
         @include breakpoint($wide){
           @include span(3 of 12);
+          margin-right: 0;
         }
       }//.four-25-fourth
     } //#four-25-middle-wrapper
@@ -910,12 +949,15 @@ $wide: 1024px;
         }
         @include breakpoint($tablet){
           @include span(6 of 12);
+          margin-right: 0;
         }
         @include breakpoint($computer){
           @include span(6 of 12);
+          margin-right: 0;
         }
         @include breakpoint($wide){
           @include span(6 of 12);
+          margin-right: 0;
         }
       }
     }
