@@ -46,7 +46,7 @@ stylesheets[all][] = mothership-layout.css
 ;-------------- JS -------------
 ; http://formalize.me/ for default Drupal jQuery use the
 ; non-legacy one when using jQuery Update module
- scripts[] = js/jquery.formalize.legacy.min.js
+; scripts[] = js/jquery.formalize.legacy.min.js
 
 ; http://formalize.me/ for jQuery 1.7+
 ; scripts[] = js/jquery.formalize.min.js
