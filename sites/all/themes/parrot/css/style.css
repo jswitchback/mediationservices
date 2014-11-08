@@ -4329,5 +4329,34 @@ a.label:hover, a.badge:hover {
 .carousel-caption p {
   margin-bottom: 0; }
 
+input.panels-ipe-save,
+input.panels-aipe-cancel,
+input#panels-ipe-save,
+input#panels-ipe-cancel {
+  width: auto;
+  margin: 5px;
+  height: 33px;
+  padding: 0 0.8em 0 33px;
+  display: -moz-inline-box;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  color: #ddd;
+  text-shadow: none;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  border: none; }
+
+input.panels-ipe-save:hover,
+input.panels-ipe-cancel:hover,
+input.panels-ipe-save:active,
+input.panels-ipe-cancel:active,
+input#panels-ipe-save:hover,
+input#panels-ipe-cancel:hover,
+input#panels-ipe-save:active,
+input#panels-ipe-cancel:active {
+  color: #fff; }
+
 .logo {
   max-width: 300px; }
