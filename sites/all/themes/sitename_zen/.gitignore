@@ -1,0 +1,13 @@
+# Ignore sass cache
+.sass-cache
+
+# Front-end task related
+package.json
+gruntfile.js
+README-DEV-ENV.txt
+node_modules
+src
+build
+vendor
+.bundle
+.jshintrc
