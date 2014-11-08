@@ -4412,6 +4412,13 @@ div.panels-ipe-control input {
 .header-region {
   float: right; }
 
+#header-wrapper {
+  border-bottom: 1px solid #ffffff;
+  -webkit-box-shadow: 0 2px 2px #d1d1d1;
+  -moz-box-shadow: 0 2px 2px #d1d1d1;
+  box-shadow: 0 2px 2px #d1d1d1;
+  background-color: #f5f5f5; }
+
 #block-menu-block-1 ul {
   list-style-type: none;
   padding: 0;
