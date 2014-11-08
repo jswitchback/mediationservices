@@ -82,10 +82,10 @@ $breakpoint-to-ems: true;
 $breakpoint-default-media: all;
 $breakpoint-default-pair: width;
 
-$narrow: 32em;
-$tablet: 48em;
-$computer: 63em;
-$wide: 80em;
+$narrow: 480px;
+$tablet: 760px;
+$computer: 960px;
+$wide: 1024px;
 
 
 // ---------------------------------------------------------------------------

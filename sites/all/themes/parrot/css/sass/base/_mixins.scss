@@ -524,3 +524,20 @@
 .input-block-level {
   @include input-block-level;
 }
+
+
+@mixin horizontal-list($list-margin: 1em, $list-item-margin: .25em) {
+    list-style-type:none;
+    padding:0;
+    margin: $list-margin;
+    overflow:hidden;
+    > li{
+        display:block;
+        float:left;
+        margin-right: $list-item-margin;
+        &:last-child{
+            margin-right:0px;
+        }
+    }
+}
+

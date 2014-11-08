@@ -161,3 +161,14 @@ core = "7.x"
 project = "parrot"
 datestamp = "1412797731"
 
+
+breakpoints[desktop] = (min-width: 980px)
+breakpoints[tablet_portrait] = (min-width: 768px)
+breakpoints[phone_landscape] = (min-width: 600px)
+breakpoints[phone_portrait] = (min-width: 0px)
+multipliers[desktop][] = 2x
+multipliers[tablet_portrait][] = 2x
+multipliers[phone_landscape][] = 2x
+multipliers[phone_portrait][] = 2x
+
+
