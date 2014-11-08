@@ -2,6 +2,12 @@
 @import "breakpoint"; //@Media Query Mixins
 @import "compass/css3";
 
+
+// Layout helper variables
+$horiz-gutter: 20px;
+$vert-gutter: 20px;
+
+
 // Breakpoint variables. Also found in _grids.scss
 $narrow: 480px;
 $tablet: 760px;
@@ -47,16 +53,19 @@ $wide: 1024px;
 
 .header-region {
 	float: right;
+	.front & {
+		margin-bottom: 0;
+	}
 }
 
 #header-wrapper {
+	margin-bottom: $horiz-gutter * 2;
 	border-bottom: 1px solid #ffffff;
 	@include box-shadow(0 2px 2px #d1d1d1);
 	background-color: $ui-grey-light;
-}
-
-#block-menu-block-1 {
-	ul {
-		@include horizontal-list($list-margin: 0, $list-item-margin: 16px);
+	> .container {
+		padding-top: $vert-gutter;
+    padding-bottom: $vert-gutter;
 	}
 }
+

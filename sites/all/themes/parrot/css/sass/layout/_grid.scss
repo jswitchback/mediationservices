@@ -12,6 +12,7 @@
 // @import "zen"; // Zen Grids
 @import "breakpoint"; //@Media Query Mixins
 
+
 // ---------------------------------------------------------------------------
 // Susy Grid.
 
@@ -63,6 +64,9 @@ $susy: (
 // );
 
 
+$horiz-gutter: 20px;
+$vert-gutter: 24px;
+
 // $container-style: <style>; <style>: magic | static | fluid.
 $container-style: magic;
 
@@ -93,15 +97,17 @@ $wide: 1024px;
 /* container */
 .container{
   @include container(960px);
+  padding-left: $horiz-gutter;
+  padding-right: $horiz-gutter;
   // @include breakpoint($narrow){
   //   @include container;
   // }
   // @include breakpoint($tablet){
   //   @include container;
   // }
-  // @include breakpoint($computer){
-  //   @include container;
-  // }
+  @include breakpoint($computer){
+    padding: 0;
+  }
   // @include breakpoint($wide){
   //   @include container;
   // }

@@ -25,7 +25,7 @@
 <?php if($site_name OR $site_slogan OR $logo OR $page['header'] ): ?>
   <div id="header-wrapper" class="fullwidth">
     <div class="container">
-      <header role="banner" class="">
+      <header role="banner">
         <div class="siteinfo">
           <?php if ($logo): ?>
             <div class="logo">
@@ -52,6 +52,12 @@
             <?php print render($page['header']); ?>
           </div>
         <?php endif; ?>
+        
+        <a href="#navigation" id="toggle-nav" class="nav-button">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
 
       </header>
     </div><!--/.container-->
