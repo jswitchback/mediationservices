@@ -1,23 +1,23 @@
 /*
-Error: Undefined variable: "$fa-font-path".
-        on line 28 of /Users/Cargo/sitesJITNIE/mediationservices/sites/all/themes/parrot/css/sass/base/_font-awesome.scss
+Error: Undefined variable: "$fontAwesomePath".
+        on line 34 of /Users/Cargo/sitesJITNIE/mediationservices/sites/all/themes/parrot/css/sass/base/_font-awesome.scss
         from line 4 of /Users/Cargo/sitesJITNIE/mediationservices/sites/all/themes/parrot/css/sass/base/_mixins.scss
         from line 23 of /Users/Cargo/sitesJITNIE/mediationservices/sites/all/themes/parrot/css/sass/style.scss
 
-23: @import "base/mixins";
-24: 
-25: // Grid system and page structure.
-26: @import "layout/grid";
-27: @import "layout/scaffolding";
-28: 
 29: // Base CSS.
 30: @import "base/type";
 31: @import "base/code";
 32: @import "base/forms";
 33: @import "base/tables";
+34: 
+35: // Components: Common.
+36: @import "components/media";
+37: 
+38: // Components: Buttons & Alerts.
+39: @import "components/buttons";
 
 Backtrace:
-/Users/Cargo/sitesJITNIE/mediationservices/sites/all/themes/parrot/css/sass/base/_font-awesome.scss:28
+/Users/Cargo/sitesJITNIE/mediationservices/sites/all/themes/parrot/css/sass/base/_font-awesome.scss:34
 /Users/Cargo/sitesJITNIE/mediationservices/sites/all/themes/parrot/css/sass/base/_mixins.scss:4
 /Users/Cargo/sitesJITNIE/mediationservices/sites/all/themes/parrot/css/sass/style.scss:23
 /Users/Cargo/sitesJITNIE/mediationservices/sites/all/themes/parrot/.bundle/ruby/2.0.0/gems/sass-3.4.7/lib/sass/script/tree/variable.rb:49:in `_perform'
@@ -110,4 +110,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$fa-font-path\".\A         on line 28 of /Users/Cargo/sitesJITNIE/mediationservices/sites/all/themes/parrot/css/sass/base/_font-awesome.scss\A         from line 4 of /Users/Cargo/sitesJITNIE/mediationservices/sites/all/themes/parrot/css/sass/base/_mixins.scss\A         from line 23 of /Users/Cargo/sitesJITNIE/mediationservices/sites/all/themes/parrot/css/sass/style.scss\A \A 23: @import \"base/mixins\";\A 24: \A 25: // Grid system and page structure.\A 26: @import \"layout/grid\";\A 27: @import \"layout/scaffolding\";\A 28: \A 29: // Base CSS.\A 30: @import \"base/type\";\A 31: @import \"base/code\";\A 32: @import \"base/forms\";\A 33: @import \"base/tables\";"; }
+  content: "Error: Undefined variable: \"$fontAwesomePath\".\A         on line 34 of /Users/Cargo/sitesJITNIE/mediationservices/sites/all/themes/parrot/css/sass/base/_font-awesome.scss\A         from line 4 of /Users/Cargo/sitesJITNIE/mediationservices/sites/all/themes/parrot/css/sass/base/_mixins.scss\A         from line 23 of /Users/Cargo/sitesJITNIE/mediationservices/sites/all/themes/parrot/css/sass/style.scss\A \A 29: // Base CSS.\A 30: @import \"base/type\";\A 31: @import \"base/code\";\A 32: @import \"base/forms\";\A 33: @import \"base/tables\";\A 34: \A 35: // Components: Common.\A 36: @import \"components/media\";\A 37: \A 38: // Components: Buttons & Alerts.\A 39: @import \"components/buttons\";"; }
