@@ -1,0 +1,3 @@
+name = File formatter to add custom classes to a file field display.
+description = "Add a formatter to File fields"
+core = 7.x
