@@ -1,0 +1,4 @@
+name = Mediation Services FPP
+description = Custom FPP for Mediation Services.
+core = 7.x
+package = Administration
