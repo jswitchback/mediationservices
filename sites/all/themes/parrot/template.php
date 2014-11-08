@@ -89,20 +89,20 @@ function parrot_preprocess_comment(&$vars,$hook) {
 function parrot_preprocess_field(&$vars,$hook) {
   //  kpr($vars['content']);
   //add class to a specific field
-  switch ($vars['element']['#field_name']) {
-    case 'field_ROCK':
-      $vars['classes_array'][] = 'classname1';
-    case 'field_ROLL':
-      $vars['classes_array'][] = 'classname1';
-      $vars['classes_array'][] = 'classname2';
-      $vars['classes_array'][] = 'classname1';
-    case 'field_FOO':
-      $vars['classes_array'][] = 'classname1';
-    case 'field_BAR':
-      $vars['classes_array'][] = 'classname1';
-    default:
-      break;
-  }
+  // switch ($vars['element']['#field_name']) {
+  //   case 'field_ROCK':
+  //     $vars['classes_array'][] = 'classname1';
+  //   case 'field_ROLL':
+  //     $vars['classes_array'][] = 'classname1';
+  //     $vars['classes_array'][] = 'classname2';
+  //     $vars['classes_array'][] = 'classname1';
+  //   case 'field_FOO':
+  //     $vars['classes_array'][] = 'classname1';
+  //   case 'field_BAR':
+  //     $vars['classes_array'][] = 'classname1';
+  //   default:
+  //     break;
+  // }
 
 }
 

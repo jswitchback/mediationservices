@@ -48,14 +48,22 @@ $sansFontFamily:        "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 $serifFontFamily:       Georgia, "Times New Roman", Times, serif !default;
 $monoFontFamily:        Monaco, Menlo, Consolas, "Courier New", monospace !default;
 
+$webfontNormal: "merriweatherregular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$webfontNormalItalic: "merriweatheritalic", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$webfontLight: "merriweatherlight", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$webfontLightItalic: "merriweatherlight_italic", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$webfontBold: "merriweatherheavy", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$webfontBoldItalic: "merriweatherheavy_italic", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+
 $baseFontSize:          14px !default;
 $baseFontFamily:        $sansFontFamily !default;
 $baseLineHeight:        24px !default;
 $altFontFamily:         $serifFontFamily !default;
 
-$headingsFontFamily:    inherit !default; // empty to use BS default, $baseFontFamily
+$headingsFontFamily:    $webfontBold;
 $headingsFontWeight:    bold !default;    // instead of browser default, bold
-$headingsColor:         inherit !default; // empty to use BS default, $textColor
+$headingsColor:         #595959;
 
 // Tables
 // -------------------------

@@ -30,7 +30,6 @@ $susy: (
   columns: 4,  // The number of columns in your grid
   column-width: 6em,
   global-box-sizing: border-box,
-
   gutters: $gutter-width, // The size of a gutter in relation to a single column
 );
 
@@ -74,8 +73,6 @@ $border-box-sizing: true;
 // $legacy-support-for-ie6 : $legacy-support-for-ie;
 // $legacy-support-for-ie7 : $legacy-support-for-ie;
 
-$show-grid-backgrounds  : false;
-
 
 // ---------------------------------------------------------------------------
 // Media Query Settings for use with Breakpoint.
@@ -93,21 +90,21 @@ $wide: 80em;
 
 // ---------------------------------------------------------------------------
 // "Mobile First" of grid styles.
-
+/* container */
 .container{
   @include container(60em);
-  @include breakpoint($narrow){
-    @include container;
-  }
-  @include breakpoint($tablet){
-    @include container;
-  }
-  @include breakpoint($computer){
-    @include container;
-  }
-  @include breakpoint($wide){
-    @include container;
-  }
+  // @include breakpoint($narrow){
+  //   @include container;
+  // }
+  // @include breakpoint($tablet){
+  //   @include container;
+  // }
+  // @include breakpoint($computer){
+  //   @include container;
+  // }
+  // @include breakpoint($wide){
+  //   @include container;
+  // }
 } //.container
 
 
