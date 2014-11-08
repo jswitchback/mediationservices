@@ -1,0 +1,374 @@
+@import "rgbapng"; 
+$rgbapng_path: 'generated';
+$rgbapng_px_size: 8;
+
+@import "variables";
+
+
+/* Node edit tabs
+   ========================================================================== */
+
+
+$tab-radius: 4px;
+$tab-color: $linkColor;
+$tab-font-size: 12px;
+
+ul.tabs-primary,
+ul.tabs-secondary {
+ @include clearfix;
+ list-style: none;
+ margin: 1em 0 2.5em;
+ padding: 0 2px;
+ white-space: nowrap;
+ li {
+   float: left; /* LTR */
+   margin: 0.5em 3px 0;
+ }
+ a, a:link {
+   display: block;
+   text-decoration: none;
+ }
+}
+
+ul.tabs-primary {
+  li {
+    margin: 0.5em 0 0 3px;
+    &.is-active {
+      a {
+        background-color: $tab-color;
+        color: #494949;
+        border: 1px solid #d1d1d1;
+      }
+    }
+    a {
+      font-size: $tab-font-size;
+      text-transform: uppercase;
+      background-color: $tab-color;
+      border: 1px solid $tab-color;
+      color: #ffffff;
+      line-height: 26px;
+      padding: 0 20px;
+      &:hover {
+        text-decoration: none;
+        background-color: darken($tab-color, 15%);
+        border: 1px solid darken($tab-color, 10%);
+      }
+      &.active {
+        background-color: #ffffff;
+        color: #494949;
+        &:hover {
+        }
+      }
+    }  
+  }
+}
+
+
+
+/* Main Menu
+   ========================================================================= */
+
+$nav-color: $linkColor;
+
+
+/* Behavior */
+
+.js #block-menu-block-1 {
+  -webkit-animation-duration: .15s;
+  animation-duration: .15s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+
+  @include breakpoint(max-width 760px) {
+    overflow: hidden;
+    visibility: hidden;
+    @include transparent;
+  }
+} 
+
+.show-nav #block-menu-block-1 {
+  @include opaque;
+  visibility: visible;
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+
+#toggle-nav {
+  float: right;
+  @include breakpoint($tablet) {
+    display: none;
+  }
+}
+
+@include breakpoint($tablet) {
+  #block-menu-block-1 {
+    .expanded {
+      position: relative;
+      .menu {
+        @include transparent;
+        visibility: hidden;
+        position: absolute;
+        left: 0;
+        z-index: 50;
+      }
+      &:hover {
+        > .menu {
+          @include opaque;
+          visibility: visible;
+        }
+      }
+    }
+  }
+}
+
+// Nested UL dropdown animation
+@include breakpoint($tablet) {
+	#block-menu-block-1 {
+	  .expanded {
+	    .menu {
+		  -webkit-animation-duration: .15s;
+		  animation-duration: .15s;
+		  -webkit-animation-fill-mode: both;
+		  animation-fill-mode: both;
+	    }
+	    &:hover {
+	      > .menu {
+			  -webkit-animation-name: fadeInDown;
+			  animation-name: fadeInDown;
+			  -webkit-animation-name: fadeInDown;
+			  animation-name: fadeInDown;
+	      }
+	    }
+	  }
+	}
+}
+
+
+
+/* Mobile Main Menu */
+@-webkit-keyframes fadeInDown {
+  0% {
+    @include transparent;
+    @include transform(translateY(-20px));
+  }
+
+  100% {
+    @include opaque;
+    @include transform(translateY(0));
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    @include transparent;
+    @include transform(translateY(-20px));
+  }
+
+  100% {
+    @include opaque;
+    @include transform(translateY(0));
+  }
+}
+
+/* Theme */
+
+
+.nav-button {
+  display: block;
+  width: 36px;
+  height: 32px;
+  margin-top: 12px;
+  cursor: pointer;
+}
+
+.nav-button {
+  background-color: transparent;
+  color: $nav-color;
+  display: block;
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 7px 5px;
+  @include border-radius(2px);
+  line-height: 18px;
+  margin-bottom: 0;
+  text-align: center;
+
+  &:hover, &:active {
+    span {
+      background-color: darken($nav-color,5%);
+    }
+  }
+}
+
+/* Animation & fallback */
+
+.nav-button span {
+  @include transition-property(color, transform);
+  @include transition-duration(.25s);
+  @include transition-timing-function(ease-in-out);
+  @include transition-delay(0);
+}
+
+.show-nav .nav-button span {
+  @include transform(rotate(45deg) translateX(4px) translateY(4px));
+}
+
+.show-nav .nav-button span + span {
+  @include transform(rotate(-45deg) translateX(-4px) translateX(4px));
+}
+
+.show-nav .nav-button span + span + span {
+  background-color: transparent;
+}
+
+.no-csstransforms3d.show-nav .nav-button {
+  background-color: $nav-color;
+  color: #ffffff;
+  span {
+    background-color: #ffffff;
+  }
+  span + span + span {
+    background-color: white;
+  }
+}
+
+
+.nav-button span {
+  background-color: $nav-color;
+  @include border-radius(1px);
+  display: block;
+  margin-top: 0;
+  height: 3px;
+  width: 24px;
+  line-height: 14px;
+  vertical-align: text-top;
+}
+
+.nav-button span + span {
+  margin-top: 3px;
+}
+
+
+/* Mobile Styles */
+
+
+#block-menu-block-1 {
+	clear: both;
+  background: $nav-color;
+  @include rgba-background(rgba(255,255,255, .9));
+  @include box-shadow(rgba(0, 0, 0, 0.2) 0 1px 6px);
+  position: absolute;
+  right: 0;
+  top: 90px;
+  z-index: 50;
+  width: 260px;
+  margin-top: $vert-gutter/2;
+  margin-bottom: $vert-gutter/2;
+  .menu {
+  	ul  {
+	    li {
+	      float: none;
+	      text-align: left;
+	      margin-bottom: 0;
+	      a {
+	        display: block;
+	        padding: $vert-gutter/2 $horiz-gutter/2;
+	        font-weight: bold;
+	        text-transform: uppercase;
+	        @include rem('font-size', 13px);
+	        @include theme-link($inactive-color: $textColor, $active-color: #fff, $hover-decoration: none);
+	        @include transition-property(color, background-color); 
+	        @include transition-duration(.15s);
+	        @include transition-timing-function(ease-in);
+	        &:hover, &:active {
+	          background-color: $linkColor;
+	        }
+	        &.active,
+	        &.acitve-trail {
+	          color: $nav-color;
+	          &:hover, &:active {
+	            background-color: transparent;
+	          }
+	        }	      
+	      &.expanded {
+	  			list-style-image: none;
+					list-style-type: none;
+	  		}
+	      }
+	    }
+	  }
+  }
+}
+
+/*
+ * Desktop Styles
+ */
+
+@include breakpoint($tablet) {
+  #block-menu-block-1 { /* Main Menu dropdown styling */
+    margin-top: $vert-gutter;
+    margin-bottom: 0;
+    clear: both;
+    background: none;
+    position: static;
+    width: auto;
+    @include box-shadow(none);
+
+    .menu { /* Menu block links */
+      margin: 0;
+      padding: 0;
+      li { 
+        float: left; 
+        padding: 0 10px 0 0;
+        list-style-type: none;
+        list-style-image: none;
+        border-bottom: none;
+        a {
+          color: $textColor;
+       	  background: none;
+       	  font-weight: bold;
+       	  text-transform: uppercase;
+          @include rem('font-size', 13px);
+          &:hover {
+            background: none;
+            color: $nav-color;
+            text-decoration: none;
+          }
+          &:active {
+            @include box-shadow(none);
+            background: none;
+            color: $nav-color;
+          }
+          &.active,
+          &.active-trail {
+            color: $nav-color;
+            &:hover, &:active {
+              background-color: transparent;
+            }
+          }
+        }
+      }
+    }
+
+    .expanded {
+      .menu {
+        display: block;
+        @include rgba-background(rgba(255,255,255, .9));
+        @include box-shadow(rgba(0, 0, 0, 0.2) 0 1px 6px);
+        li {
+          float: none;
+          padding-right: 0;
+          text-align: left;
+          width: 220px;
+          a {
+            &:hover, &:active {
+              background-color: $linkColor;
+            }
+          }
+        }
+      }
+    }
+  }
+}

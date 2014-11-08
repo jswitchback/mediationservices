@@ -19,3 +19,29 @@
 	top: 50%;
 	margin-top: -16px;
 }
+
+/* Homepage slideshow */
+#panels-ipe-display-panelizer-node-13-default .field-collection-view-links {
+	position: absolute;
+	top: 24px;
+	right: 24px;
+}
+
+#panels-ipe-display-panelizer-node-13-default .action-links {
+	position: absolute;
+	top: 48px;
+	right: 160px;
+}
+
+#panels-ipe-display-panelizer-node-13-default  .field-collection-container {
+  border-bottom: 0;
+  margin-bottom: 0;
+}
+
+#panels-ipe-display-panelizer-node-13-default .rsABlock {
+left: 48px;
+bottom: 48px;
+padding: 24px;
+position: absolute;
+z-index: 15;
+}

@@ -13,6 +13,12 @@ $(window).load(function() {
     autoScaleSliderHeight: 420,
     // arrowsNavAutoHide: false,
     arrowsNav: false,
+    autoHeight: true,
+    numImagesToPreload: 2,
+    autoPlay: {
+      enabled: true,
+      pauseOnHover: true
+    },
     sliderDrag: false,
     transitionType: 'fade',
     addActiveClass: true,

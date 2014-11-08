@@ -4432,6 +4432,9 @@ div.panels-ipe-control input:hover {
     padding-top: 20px;
     padding-bottom: 20px; }
 
+.field-collection-container {
+  border-bottom: 0; }
+
 /* Node edit tabs
    ========================================================================== */
 ul.tabs-primary,
