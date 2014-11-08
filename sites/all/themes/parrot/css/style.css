@@ -4400,6 +4400,9 @@ input#panels-ipe-save:active,
 input#panels-ipe-cancel:active {
   color: #fff; }
 
+div.panels-ipe-control input {
+  background-size: inherit; }
+
 .logo {
   max-width: 300px; }
 
