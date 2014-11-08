@@ -1,0 +1,35 @@
+@import "susy"; // Susy Grids
+@import "breakpoint"; //@Media Query Mixins
+@import "compass/css3";
+
+
+.logo {
+	max-width: 300px;
+  // float: left;
+  // margin: 8px 0 0 0;
+  // padding: 0;
+  // // @include breakpoint($tablet-portrait-min) {
+
+  // // }
+  // a {
+  //   display: block;
+  //   width: 160px;
+  //   height: 52px;
+  //   @include hide-text;
+  //   background-image: url(../images/mediationservices-logo@desktop.svg);
+  //   background-position: 0 0;
+  //   background-repeat: no-repeat;
+  //   background-size: 160px 52px;
+  //   // @include breakpoint($tablet-portrait-min) {
+  //   //   width: 220px;
+  //   //   height: 72px;
+  //   //   background-size: 220px 72px;
+  //   // }
+  // }
+  // .no-svg & {
+  //   background-image: url(../images/mediationservices-logo@1x-mobile.svg);
+  //   @include breakpoint($tablet-portrait-min) {
+  //     background-image: url(../images/oam-logo@1x.png);
+  //   }
+  // }
+}

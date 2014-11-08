@@ -467,7 +467,7 @@ table {
   border-spacing: 0; }
 
 .sprite-sprite, .sprite-logo {
-  background-image: url('../img/generated/sprite-sc56163011c.png');
+  background-image: url('../img/generated/sprite-s0ed53db937.png');
   background-repeat: no-repeat; }
 
 .sprite-logo {
@@ -556,7 +556,7 @@ table {
 
 /* container */
 .container {
-  max-width: 60em;
+  max-width: 960px;
   margin-left: auto;
   margin-right: auto; }
   .container:after {
@@ -4328,3 +4328,6 @@ a.label:hover, a.badge:hover {
 
 .carousel-caption p {
   margin-bottom: 0; }
+
+.logo {
+  max-width: 300px; }

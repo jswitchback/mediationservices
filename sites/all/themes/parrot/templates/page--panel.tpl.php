@@ -25,12 +25,12 @@
 <?php if($site_name OR $site_slogan OR $logo OR $page['header'] ): ?>
   <div id="header-wrapper" class="fullwidth">
     <div class="container">
-      <header role="banner" class="row">
+      <header role="banner" class="">
         <div class="siteinfo">
           <?php if ($logo): ?>
-            <div class="logo">
+            <div class="class">
               <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home">
-                <img src="<?php print $logo; ?>" class="logo-img" alt="<?php print t('Home'); ?>" />
+                <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
               </a>
             </div>
           <?php endif; ?>

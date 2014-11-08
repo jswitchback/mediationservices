@@ -92,7 +92,7 @@ $wide: 80em;
 // "Mobile First" of grid styles.
 /* container */
 .container{
-  @include container(60em);
+  @include container(960px);
   // @include breakpoint($narrow){
   //   @include container;
   // }
