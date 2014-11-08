@@ -49,6 +49,12 @@ $wide: 1024px;
 	float: right;
 }
 
+#header-wrapper {
+	border-bottom: 1px solid #ffffff;
+	@include box-shadow(0 2px 2px #d1d1d1);
+	background-color: $ui-grey-light;
+}
+
 #block-menu-block-1 {
 	ul {
 		@include horizontal-list($list-margin: 0, $list-item-margin: 16px);
