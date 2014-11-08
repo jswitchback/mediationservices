@@ -215,7 +215,7 @@ $databases = array (
   array (
     'default' => 
     array (
-      'database' => 'mediationservices_db',
+      'database' => 'mediationservices_stage',
       'username' => 'root',
       'password' => 'root',
       'host' => 'localhost',
