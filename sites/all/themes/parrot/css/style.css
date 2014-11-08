@@ -4403,7 +4403,8 @@ input#panels-ipe-save:active,
 input#panels-ipe-cancel:active {
   color: #fff; }
 
-div.panels-ipe-control input {
+div.panels-ipe-control input,
+div.panels-ipe-control input:hover {
   background-size: inherit; }
 
 .ui-widget.ui-widget-content.media-wrapper {
