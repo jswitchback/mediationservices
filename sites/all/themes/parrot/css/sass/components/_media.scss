@@ -31,3 +31,7 @@ video {
 audio:not([controls]) {
   display: none;
 }
+
+iframe.media-youtube-player {
+  max-width:100%;
+}

@@ -2900,6 +2900,9 @@ video {
 audio:not([controls]) {
   display: none; }
 
+iframe.media-youtube-player {
+  max-width: 100%; }
+
 input.panels-ipe-save,
 input.panels-ipe-cancel,
 input#panels-ipe-save,
@@ -4360,6 +4363,9 @@ input#panels-ipe-cancel:active {
 
 div.panels-ipe-control input {
   background-size: inherit; }
+
+.ui-widget.ui-widget-content.media-wrapper {
+  z-index: 10000; }
 
 .logo {
   max-width: 300px; }

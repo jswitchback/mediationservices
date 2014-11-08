@@ -29,3 +29,8 @@ input#panels-ipe-cancel:active  {
 div.panels-ipe-control input{
   background-size: inherit;
 }
+
+.ui-widget.ui-widget-content.media-wrapper{
+  z-index: 10000;
+  
+}
