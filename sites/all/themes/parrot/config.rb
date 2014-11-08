@@ -1,9 +1,11 @@
 # Require any additional compass plugins here.
 
-require 'susy'
+# require 'susy'
 # http://susy.oddbird.net/
 
-# require 'singularitygs'
+require 'compass/import-once/activate'
+require 'rgbapng'
+require 'singularitygs'
 # https://github.com/Team-Sass/Singularity/
 
 # require 'zen-grids'
@@ -12,7 +14,7 @@ require 'susy'
 #require 'toolkit'
 # https://github.com/Team-Sass/toolkit/
 
-# require 'breakpoint'
+require 'breakpoint'
 # https://github.com/canarymason/breakpoint
 
 # Set this to the root of your project when deployed:
@@ -20,6 +22,7 @@ http_path = "/"
 css_dir = "css"
 sass_dir = "css/sass"
 images_dir = "img"
+generated_images_dir = images_dir + "/generated"
 javascripts_dir = "js"
 fonts_dir = "fonts"
 
