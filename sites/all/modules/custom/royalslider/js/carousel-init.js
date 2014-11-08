@@ -22,7 +22,7 @@ $(window).load(function() {
     block: {
       // animated blocks options go here
       fadeEffect: true,
-      moveEffect: 'top',
+      moveEffect: 'bottom',
       moveOffset: 40,
       speed: 400
     }

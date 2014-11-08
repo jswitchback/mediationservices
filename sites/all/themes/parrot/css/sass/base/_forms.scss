@@ -2,6 +2,7 @@
 // Sass = http://sass-lang.com
 // Compass = http://compass-style.org
 
+@import "variables";
 @import "compass/css3";
 
 // `Widths
@@ -85,12 +86,11 @@ input[type="button"] {
   -webkit-appearance: none;
   @include border-radius(2px);
   @include background-clip(padding-box);
-  background: #dddddd url("../img/button.png") repeat-x;
-  @include background-image(linear-gradient(white, #dddddd));
+  background-color: $linkColor;
   border: 1px solid;
-  border-color: #dddddd #bbbbbb #999999;
+  border-color: lighten($linkColorHover, 5%) darken($linkColor, 5%) darken($linkColor, 5%);
   cursor: pointer;
-  color: #333333;
+  color: #fff;
   @include inline-block;
   // Helvetica Neue present, because it works better
   // for line-height on buttons than Arial, on OS X.
@@ -105,13 +105,13 @@ input[type="button"] {
   vertical-align: top;
   width: auto;
   &:hover {
-    @include background-image(linear-gradient(white, #eeeeee 1px, #cccccc));
+    background-color: $linkColorHover;
     text-decoration: none;
   }
   &:active {
-    @include background-image(linear-gradient(#dddddd, #eeeeee));
+    background-color: $linkColorHover;
     @include box-shadow(inset rgba(black, 0.25) 0 1px 2px 0);
-    border-color: #999999 #bbbbbb #dddddd;
+    border-color: darken($linkColorHover, 5%) darken($linkColorHover, 5%);
   }
   // IE7
   *padding-top: 2px;
