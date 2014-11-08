@@ -174,13 +174,16 @@ $wide: 80em;
         @include span(12 of 12);
       }
       @include breakpoint($tablet){
-        // @include remove-omega;        @include span(4 of 12);
+        // @include remove-omega;
+        @include span(4 of 12);
       }
       @include breakpoint($computer){
-        // @include remove-omega;        @include span(4 of 12);
+        // @include remove-omega; 
+        @include span(4 of 12);
       }
       @include breakpoint($wide){
-        // @include remove-omega;        @include span(4 of 12);
+        // @include remove-omega;
+        @include span(4 of 12);
       }
     }
     .minipanel-three-33-second{
@@ -190,13 +193,16 @@ $wide: 80em;
         @include span(12 of 12);
       }
       @include breakpoint($tablet){
-        // @include remove-omega;        @include span(4 of 12);
+        // @include remove-omega;
+        @include span(4 of 12);
       }
       @include breakpoint($computer){
-        // @include remove-omega;        @include span(4 of 12);
+        // @include remove-omega;
+        @include span(4 of 12);
       }
       @include breakpoint($wide){
-        // @include remove-omega;        @include span(4 of 12);
+        // @include remove-omega;
+        @include span(4 of 12);
       }
     }
     .minipanel-three-33-third{
@@ -237,13 +243,16 @@ $wide: 80em;
         @include span(12 of 12);
       }
       @include breakpoint($tablet){
-        // @include remove-omega;        @include span(3 of 12);
+        // @include remove-omega;
+        @include span(3 of 12);
       }
       @include breakpoint($computer){
-        // @include remove-omega;        @include span(3 of 12);
+        // @include remove-omega;
+        @include span(3 of 12);
       }
       @include breakpoint($wide){
-        // @include remove-omega;        @include span(3 of 12);
+        // @include remove-omega;
+        @include span(3 of 12);
       }
     } //.minipanel-four-25-first
 
@@ -254,13 +263,16 @@ $wide: 80em;
         @include span(12 of 12);
       }
       @include breakpoint($tablet){
-        // @include remove-omega;        @include span(3 of 12);
+        // @include remove-omega;
+        @include span(3 of 12);
       }
       @include breakpoint($computer){
-        // @include remove-omega;        @include span(3 of 12);
+        // @include remove-omega;
+        @include span(3 of 12);
       }
       @include breakpoint($wide){
-        // @include remove-omega;        @include span(3 of 12);
+        // @include remove-omega;
+        @include span(3 of 12);
       }
     }//.minipanel-four-25-second
 
@@ -271,13 +283,16 @@ $wide: 80em;
         @include span(12 of 12);
       }
       @include breakpoint($tablet){
-        // @include remove-omega;        @include span(3 of 12);
+        // @include remove-omega;
+        @include span(3 of 12);
       }
       @include breakpoint($computer){
-        // @include remove-omega;        @include span(3 of 12);
+        // @include remove-omega;
+        @include span(3 of 12);
       }
       @include breakpoint($wide){
-        // @include remove-omega;        @include span(3 of 12);
+        // @include remove-omega;
+        @include span(3 of 12);
       }
     }//.minipanel-four-25-third
 
@@ -317,13 +332,16 @@ $wide: 80em;
         @include span(12 of 12);
       }
       @include breakpoint($tablet){
-        // @include remove-omega;        @include span(9 of 12);
+        // @include remove-omega;
+        @include span(9 of 12);
       }
       @include breakpoint($computer){
-        // @include remove-omega;        @include span(9 of 12);
+        // @include remove-omega;
+        @include span(9 of 12);
       }
       @include breakpoint($wide){
-        // @include remove-omega;        @include span(9 of 12);
+        // @include remove-omega;
+        @include span(9 of 12);
       }
 
       .three-inset-left-top of
@@ -338,13 +356,15 @@ $wide: 80em;
           @include span(12 of 12);
         }
         @include breakpoint($tablet){
-          // @include remove-omega;          @include span(6 of 12);
+          // @include remove-omega;
+          @include span(6 of 12);
         }
         @include breakpoint($computer){
-          // @include remove-omega;          @include span(6 of 12);
+          // @include remove-omega;
+          @include span(6 of 12);
         }
         @include breakpoint($wide){
-          // @include remove-omega;          @include span(6 of 12);
+          @include span(6 of 12);
         }
       }
       .three-inset-left-inset{
@@ -412,13 +432,16 @@ $wide: 80em;
           @include span(12 of 12);
         }
         @include breakpoint($tablet){
-          // @include remove-omega;          @include span(6 of 12);
+          // @include remove-omega;
+          @include span(6 of 12);
         }
         @include breakpoint($computer){
-          // @include remove-omega;          @include span(6 of 12);
+          // @include remove-omega;
+          @include span(6 of 12);
         }
         @include breakpoint($wide){
-          // @include remove-omega;          @include span(6 of 12);
+          // @include remove-omega;
+          @include span(6 of 12);
         }
       }
       .three-inset-right-inset{
@@ -445,13 +468,16 @@ $wide: 80em;
         @include span(12 of 12);
       }
       @include breakpoint($tablet){
-        // @include remove-omega;        @include span(3 of 12);
+        // @include remove-omega;
+        @include span(3 of 12);
       }
       @include breakpoint($computer){
-        // @include remove-omega;        @include span(3 of 12);
+        // @include remove-omega;
+        @include span(3 of 12);
       }
       @include breakpoint($wide){
-        // @include remove-omega;        @include span(3 of 12);
+        // @include remove-omega;
+        @include span(3 of 12);
       }
     }
   }
@@ -474,13 +500,16 @@ $wide: 80em;
         @include span(12 of 12);
       }
       @include breakpoint($tablet){
-        // @include remove-omega;        @include span(4 of 12);
+        // @include remove-omega;
+        @include span(4 of 12);
       }
       @include breakpoint($computer){
-        // @include remove-omega;        @include span(4 of 12);
+        // @include remove-omega;
+        @include span(4 of 12);
       }
       @include breakpoint($wide){
-        // @include remove-omega;        @include span(4 of 12);
+        // @include remove-omega;
+        @include span(4 of 12);
       }
     }
     .three-33-second{
@@ -490,13 +519,16 @@ $wide: 80em;
         @include span(12 of 12);
       }
       @include breakpoint($tablet){
-        // @include remove-omega;        @include span(4 of 12);
+        // @include remove-omega;
+        @include span(4 of 12);
       }
       @include breakpoint($computer){
-        // @include remove-omega;        @include span(4 of 12);
+        // @include remove-omega;
+        @include span(4 of 12);
       }
       @include breakpoint($wide){
-        // @include remove-omega;        @include span(4 of 12);
+        // @include remove-omega;
+        @include span(4 of 12);
       }
     }
     .three-33-third{
@@ -538,13 +570,16 @@ $wide: 80em;
         @include span(12 of 12);
       }
       @include breakpoint($tablet){
-        // @include remove-omega;        @include span(3 of 12);
+        // @include remove-omega;
+        @include span(3 of 12);
       }
       @include breakpoint($computer){
-        // @include remove-omega;        @include span(3 of 12);
+        // @include remove-omega;
+        @include span(3 of 12);
       }
       @include breakpoint($wide){
-        // @include remove-omega;        @include span(3 of 12);
+        // @include remove-omega;
+        @include span(3 of 12);
       }
     }
     .three-25-50-25-second{
@@ -605,13 +640,16 @@ $wide: 80em;
         @include span(12 of 12);
       }
       @include breakpoint($tablet){
-        // @include remove-omega;        @include span(4 of 12);
+        // @include remove-omega;
+        @include span(4 of 12);
       }
       @include breakpoint($computer){
-        // @include remove-omega;        @include span(4 of 12);
+        // @include remove-omega;
+        @include span(4 of 12);
       }
       @include breakpoint($wide){
-        // @include remove-omega;        @include span(4 of 12);
+        // @include remove-omega;
+        @include span(4 of 12);
       }
     }
     .two-33-66-second{
@@ -655,13 +693,16 @@ $wide: 80em;
         @include span(12 of 12);
       }
       @include breakpoint($tablet){
-        // @include remove-omega;        @include span(5 of 12);
+        // @include remove-omega;
+        @include span(5 of 12);
       }
       @include breakpoint($computer){
-        // @include remove-omega;        @include span(3 of 12);
+        // @include remove-omega;
+        @include span(3 of 12);
       }
       @include breakpoint($wide){
-        // @include remove-omega;        @include span(3 of 12);
+        // @include remove-omega;
+        @include span(3 of 12);
       }
     }
     .two-33-66-alt-second{
@@ -708,13 +749,16 @@ $wide: 80em;
           @include span(12 of 12);
         }
         @include breakpoint($tablet){
-          // @include remove-omega;          @include span(8 of 12);
+          // @include remove-omega;
+          @include span(8 of 12);
         }
         @include breakpoint($computer){
-          // @include remove-omega;          @include span(8 of 12);
+          // @include remove-omega;
+          @include span(8 of 12);
         }
         @include breakpoint($wide){
-          // @include remove-omega;          @include span(8 of 12);
+          // @include remove-omega;
+          @include span(8 of 12);
         }
       }
       .two-66-33-second{
@@ -755,13 +799,16 @@ $wide: 80em;
           @include span(12 of 12);
         }
         @include breakpoint($tablet){
-          // @include remove-omega;          @include span(3 of 12);
+          // @include remove-omega;
+          @include span(3 of 12);
         }
         @include breakpoint($computer){
-          // @include remove-omega;          @include span(3 of 12);
+          // @include remove-omega;
+          @include span(3 of 12);
         }
         @include breakpoint($wide){
-          // @include remove-omega;          @include span(3 of 12);
+          // @include remove-omega;
+          @include span(3 of 12);
         }
       } //.four-25-first
 
@@ -772,13 +819,16 @@ $wide: 80em;
           @include span(12 of 12);
         }
         @include breakpoint($tablet){
-          // @include remove-omega;          @include span(3 of 12);
+          // @include remove-omega;
+          @include span(3 of 12);
         }
         @include breakpoint($computer){
-          // @include remove-omega;          @include span(3 of 12);
+          // @include remove-omega;
+          @include span(3 of 12);
         }
         @include breakpoint($wide){
-          // @include remove-omega;          @include span(3 of 12);
+          // @include remove-omega;
+          @include span(3 of 12);
         }
       }//.four-25-second
 
@@ -789,13 +839,16 @@ $wide: 80em;
           @include span(12 of 12);
         }
         @include breakpoint($tablet){
-          // @include remove-omega;          @include span(3 of 12);
+          // @include remove-omega;
+          @include span(3 of 12);
         }
         @include breakpoint($computer){
-          // @include remove-omega;          @include span(3 of 12);
+          // @include remove-omega;
+          @include span(3 of 12);
         }
         @include breakpoint($wide){
-          // @include remove-omega;          @include span(3 of 12);
+          // @include remove-omega;
+          @include span(3 of 12);
         }
       }//.four-25-third
 
@@ -837,13 +890,16 @@ $wide: 80em;
           @include span(12 of 12);
         }
         @include breakpoint($tablet){
-          // @include remove-omega;          @include span(6 of 12);
+          // @include remove-omega;
+          @include span(6 of 12);
         }
         @include breakpoint($computer){
-          // @include remove-omega;          @include span(6 of 12);
+          // @include remove-omega;
+          @include span(6 of 12);
         }
         @include breakpoint($wide){
-          // @include remove-omega;          @include span(6 of 12);
+          // @include remove-omega;
+          @include span(6 of 12);
         }
       }
       .two-50-second{
@@ -879,13 +935,16 @@ $wide: 80em;
     @include span(12 of 12);
   }
   @include breakpoint($tablet){
-    // @include remove-omega;    @include span(3 of 12);
+    // @include remove-omega;
+    @include span(3 of 12);
   }
   @include breakpoint($computer){
-    // @include remove-omega;    @include span(3 of 12);
+    // @include remove-omega;
+    @include span(3 of 12);
   }
   @include breakpoint($wide){
-    // @include remove-omega;    @include span(3 of 12);
+    // @include remove-omega;
+  @include span(3 of 12);
   }
 }
 
@@ -914,13 +973,16 @@ $wide: 80em;
     @include span(12 of 12);
   }
   @include breakpoint($tablet){
-    // @include remove-omega;    @include span(4 of 12);
+    // @include remove-omega;
+    @include span(4 of 12);
   }
   @include breakpoint($computer){
-    // @include remove-omega;    @include span(4 of 12);
+    // @include remove-omega;
+    @include span(4 of 12);
   }
   @include breakpoint($wide){
-    // @include remove-omega;    @include span(4 of 12);
+    // @include remove-omega;
+    @include span(4 of 12);
   }
 }
 
@@ -949,13 +1011,16 @@ $wide: 80em;
     @include span(12 of 12);
   }
   @include breakpoint($tablet){
-    // @include remove-omega;    @include span(6 of 12);
+    // @include remove-omega;
+    @include span(6 of 12);
   }
   @include breakpoint($computer){
-    // @include remove-omega;    @include span(6 of 12);
+    // @include remove-omega;
+    @include span(6 of 12);
   }
   @include breakpoint($wide){
-    // @include remove-omega;    @include span(6 of 12);
+    // @include remove-omega;
+    @include span(6 of 12);
   }
 }
 
@@ -984,13 +1049,16 @@ $wide: 80em;
     @include span(12 of 12);
   }
   @include breakpoint($tablet){
-    // @include remove-omega;    @include span(8 of 12);
+    // @include remove-omega;
+    @include span(8 of 12);
   }
   @include breakpoint($computer){
-    // @include remove-omega;    @include span(8 of 12);
+    // @include remove-omega;
+    @include span(8 of 12);
   }
   @include breakpoint($wide){
-    // @include remove-omega;    @include span(8 of 12);
+    // @include remove-omega;
+    @include span(8 of 12);
   }
 }
 
@@ -1019,13 +1087,16 @@ $wide: 80em;
     @include span(12 of 12);
   }
   @include breakpoint($tablet){
-    // @include remove-omega;    @include span(9 of 12);
+    // @include remove-omega;
+    @include span(9 of 12);
   }
   @include breakpoint($computer){
-    // @include remove-omega;    @include span(9 of 12);
+    // @include remove-omega;
+    @include span(9 of 12);
   }
   @include breakpoint($wide){
-    // @include remove-omega;    @include span(9 of 12);
+    // @include remove-omega;
+    @include span(9 of 12);
   }
 }
 
