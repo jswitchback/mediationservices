@@ -2951,6 +2951,9 @@ video {
 audio:not([controls]) {
   display: none; }
 
+iframe.media-youtube-player {
+  max-width: 100%; }
+
 input.panels-ipe-save,
 input.panels-ipe-cancel,
 input#panels-ipe-save,
@@ -4418,8 +4421,12 @@ input#panels-ipe-save:active,
 input#panels-ipe-cancel:active {
   color: #fff; }
 
-div.panels-ipe-control input {
+div.panels-ipe-control input,
+div.panels-ipe-control input:hover {
   background-size: inherit; }
+
+.ui-widget.ui-widget-content.media-wrapper {
+  z-index: 10000; }
 
 .logo {
   max-width: 300px; }

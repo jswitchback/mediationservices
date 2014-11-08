@@ -1,0 +1,16 @@
+<?php
+
+function mediation_fpp_entity_info_alter(&$entity_info) {
+  $entity_info['fieldable_panels_pane']['bundles']['mediation_banner'] = array(
+    'label' => t('Banner'),
+    'pane category' => t('Fielded panes'),
+    'admin' => array(
+      'path' => 'admin/structure/fieldable-panels-panes/manage/%fieldable_panels_pane_type',
+      'bundle argument' => 4,
+      // Note that this has all _ replaced with - from the bundle name.
+      'real path' => 'admin/structure/fieldable-panels-panes/manage/mediation_banner',
+      'access arguments' => array('administer fieldable panels panes'),
+    ),
+  );
+}
+
