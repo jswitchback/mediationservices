@@ -5,7 +5,8 @@
 
 require 'compass/import-once/activate'
 require 'rgbapng'
-require 'singularitygs'
+
+# require 'singularitygs'
 # https://github.com/Team-Sass/Singularity/
 
 # require 'zen-grids'
