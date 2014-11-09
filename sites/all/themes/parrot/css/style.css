@@ -4424,6 +4424,9 @@ div.panels-ipe-control input:hover {
 .ui-widget.ui-widget-content.media-wrapper {
   z-index: 10000; }
 
+#panelizer-save-default {
+  display: none; }
+
 .field-name-field-stats .field-items,
 .field-name-field-hover-items .field-items {
   clear: both;
