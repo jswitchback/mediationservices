@@ -567,13 +567,13 @@ $conf['404_fast_html'] = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
 # $conf['allow_authorize_operations'] = FALSE;
 
 # Varnish
-$conf['cache_backends'][] = array('sites/all/modules/contrib/varnish/varnish.cache.inc');
+$conf['cache_backends'] = array('sites/all/modules/contrib/varnish/varnish.cache.inc');
 $conf['cache_class_cache_page'] = 'VarnishCache';
+$conf['cache_class_external_varnish_page'] = 'VarnishCache';
 $conf['page_cache_invoke_hooks'] = false;
 $conf['reverse_proxy'] = true;
 $conf['cache'] = 1;
 $conf['cache_lifetime'] = 0;
-$conf['cache_lifetime'] = 3600;
 $conf['page_cache_maximum_age'] = 21600;
 $conf['reverse_proxy_header'] = 'HTTP_X_FORWARDED_FOR';
 $conf['reverse_proxy_addresses'] = array('127.0.0.1');
