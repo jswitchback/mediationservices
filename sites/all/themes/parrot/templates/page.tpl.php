@@ -24,7 +24,7 @@
 
 <?php if($site_name OR $site_slogan OR $logo OR $page['header'] ): ?>
   <div id="header-wrapper" class="fullwidth">
-    <div class="container-header">
+    <div class="container">
       <header role="banner" class="row">
         <div class="siteinfo">
           <?php if ($logo): ?>
@@ -60,7 +60,7 @@
         </a>
 
       </header>
-    </div><!--/.container-header-->
+    </div><!--/.container-->
   </div><!--/#header-wrapper-->
 <?php endif; ?>
 
@@ -76,7 +76,7 @@
 <?php endif; ?>
 
 <div id="content-wrapper" class="fullwidth">
-  <div class="container">
+  <div class="container-content">
     <div class="page row">
 
       <div role="main" id="main-content">
@@ -117,7 +117,7 @@
       <?php endif; ?>
 
     </div><!--/page-->
-  </div><!--/.container-->
+  </div><!--/.container-content-->
 </div><!--/#content-wrapper-->
 
 <?php if ($page['footer']): ?>
