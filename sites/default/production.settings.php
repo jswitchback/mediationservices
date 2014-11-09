@@ -565,12 +565,15 @@ $conf['404_fast_html'] = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
  * Remove the leading hash signs to disable.
  */
 # $conf['allow_authorize_operations'] = FALSE;
-$conf['omit_vary_cookie'] = TRUE;
-$conf['preprocess_css'] = 1;
-$conf['preprocess_js'] = 1;
-$conf['block_cache'] = 1;
+
+# Varnish
+$conf['cache_backends'][] = array('sites/all/modules/contrib/varnish/varnish.cache.inc');
+$conf['cache_class_cache_page'] = 'VarnishCache';
+$conf['page_cache_invoke_hooks'] = false;
+$conf['reverse_proxy'] = true;
 $conf['cache'] = 1;
 $conf['cache_lifetime'] = 0;
 $conf['page_cache_maximum_age'] = 21600;
-$conf['page_cache_maximum_age_browser'] = 0;
-$conf['page_cache_invoke_hooks'] = FALSE;
+$conf['reverse_proxy_header'] = 'HTTP_X_FORWARDED_FOR';
+$conf['reverse_proxy_addresses'] = array('127.0.0.1');
+$conf['omit_vary_cookie'] = true;
