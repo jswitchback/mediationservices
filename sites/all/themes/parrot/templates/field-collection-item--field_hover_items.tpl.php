@@ -30,8 +30,9 @@
 ?>
 <div class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
   <div class="content"<?php print $content_attributes; ?>>
-    <?php
-      print render($content);
-    ?>
+    <a href="<?php render($content['field_hover_link']) ?>">
+    <?php print render($content['field_hover_title']); ?>
+    <?php print render($content); ?>
+    </a>
   </div>
 </div>

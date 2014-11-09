@@ -4540,6 +4540,8 @@ div.panels-ipe-control input:hover {
 
 .field-name-field-hover-items .field-items .field-item {
   width: 230px; }
+  .field-name-field-hover-items .field-items .field-item a {
+    text-decoration: none; }
   .field-name-field-hover-items .field-items .field-item .field-name-field-hover-title {
     font-size: 2em; }
 .field-name-field-hover-items .field-name-field-hover-text {
