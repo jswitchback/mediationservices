@@ -4389,6 +4389,9 @@ a.label:hover, a.badge:hover {
 .carousel-caption p {
   margin-bottom: 0; }
 
+.contextual-links-region:hover a.contextual-links-trigger {
+  display: block; }
+
 input.panels-ipe-save,
 input.panels-aipe-cancel,
 input#panels-ipe-save,
@@ -4761,7 +4764,7 @@ ul.tabs-primary li {
 #block-menu-block-1 {
   clear: both;
   background: #28478f;
-  background: url('../img/generated/ffffffe5-8.png?1415482007');
+  background: url('../img/generated/ffffffe5-8.png?1415491273');
   background: rgba(255, 255, 255, 0.9);
   -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 6px;
   -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 6px;
@@ -4858,7 +4861,7 @@ ul.tabs-primary li {
               background-color: transparent; }
     #block-menu-block-1 .expanded .menu {
       display: block;
-      background: url('../img/generated/ffffffe5-8.png?1415482007');
+      background: url('../img/generated/ffffffe5-8.png?1415491273');
       background: rgba(255, 255, 255, 0.9);
       -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 6px;
       -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 6px;
