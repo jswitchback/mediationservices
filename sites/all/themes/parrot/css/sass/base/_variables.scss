@@ -78,45 +78,45 @@ $headingsColor:         #595959;
   font-family: $headingsFontFamily;
   font-weight: $headingsFontWeight;
   line-height: 1;
-  font-size: 36px; 
-  line-height: 40px; 
+  font-size: 36px;
+  line-height: 40px;
 }
 @mixin h2 {
   font-family: $headingsFontFamily;
   font-weight: $headingsFontWeight;
   line-height: 1;
-  font-size: 30px; 
-  line-height: 40px; 
+  font-size: 30px;
+  line-height: 40px;
 }
 @mixin h3 {
   font-family: $headingsFontFamily;
   font-weight: $headingsFontWeight;
   line-height: 1;
-  font-size: 24px; 
-  line-height: 40px; 
+  font-size: 24px;
+  line-height: 40px;
 }
 @mixin h4 {
   font-family: $headingsFontFamily;
   font-weight: $headingsFontWeight;
   line-height: 1;
-  font-size: 18px; 
-  line-height: 20px; 
+  font-size: 18px;
+  line-height: 20px;
 }
 
 @mixin h5 {
   font-family: $headingsFontFamily;
   font-weight: $headingsFontWeight;
   line-height: 1;
-  font-size: 14px; 
-  line-height: 20px; 
+  font-size: 14px;
+  line-height: 20px;
 }
 
 @mixin h6 {
   font-family: $headingsFontFamily;
   font-weight: $headingsFontWeight;
   line-height: 1;
-  font-size: 12px; 
-  line-height: 20px; 
+  font-size: 12px;
+  line-height: 20px;
 }
 
 // Tables

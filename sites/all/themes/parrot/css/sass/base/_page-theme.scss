@@ -105,7 +105,8 @@ $wide: 1024px;
     bottom: 0;
     padding: 36px;
     background-color: #fff;
-    @include rgba-background(rgba(255,255,255, .95));
+    @include rgba-background(rgba(255,255,255, .9));
+    @include border-radius(36px);
     color: $textColor;
     @include breakpoint($computer){
       width: 320px;
@@ -116,6 +117,17 @@ $wide: 1024px;
     }
   }
 
+  .even .rsABlock {
+    @include breakpoint($computer){
+      right: 48px;
+      left: auto;
+    }
+  }
+
+  .field-items {
+    height: 420px;
+  }
+
   .field-name-field-banner-text {
     @include h2;
     margin-bottom: $vert-gutter;
@@ -123,10 +135,27 @@ $wide: 1024px;
 
   .field-name-field-banner-link a {
     @include button;
+    margin: 0;
   }
 
   .field-collection-container .field-items .field-item {
     margin-bottom: 10px;
+  }
+
+  .field-collection-container ul.action-links-field-collection-add {
+    float: none;
+    padding:0;
+    margin: 0;
+    top: 60px;
+    right: 128px;
+    ul {
+      margin: 0;
+      padding: 0;
+      li {
+        list-style-type: none;
+        list-style-image: none;
+      }
+    }
   }
 }
 
