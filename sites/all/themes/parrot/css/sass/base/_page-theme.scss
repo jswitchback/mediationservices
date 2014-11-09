@@ -115,7 +115,7 @@ $wide: 1024px;
     @include border-radius(36px);
     color: $textColor;
     @include breakpoint($computer){
-      width: 320px;
+      width: 420px;
       left: 48px;
       right: auto;
       bottom: 36px;

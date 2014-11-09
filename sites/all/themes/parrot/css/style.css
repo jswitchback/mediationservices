@@ -4392,6 +4392,9 @@ a.label:hover, a.badge:hover {
 .contextual-links-region:hover a.contextual-links-trigger {
   display: block; }
 
+#admin-menu {
+  box-shadow: 0 -10px 20px 2px #fff; }
+
 input.panels-ipe-save,
 input.panels-aipe-cancel,
 input#panels-ipe-save,
@@ -4524,7 +4527,7 @@ div.panels-ipe-control input:hover {
   color: #595959; }
   @media (min-width: 60em) {
     .field-name-field-banner-collection .rsABlock {
-      width: 320px;
+      width: 420px;
       left: 48px;
       right: auto;
       bottom: 36px;

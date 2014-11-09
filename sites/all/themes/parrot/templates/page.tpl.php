@@ -80,20 +80,24 @@
     <div class="page row">
 
       <div role="main" id="main-content">
-        <?php print render($title_prefix); ?>
-        <?php if ($title && !$is_front ): ?>
-          <h1 class="page-title"><?php print $title; ?></h1>
-        <?php endif; ?>
-        <?php print render($title_suffix); ?>
 
-        <?php print $breadcrumb; ?>
+        <?php if($title_prefix OR $title OR $title_suffix OR $breadcrumb OR $action_links OR isset($tabs['#primary'][0]) OR isset($tabs['#secondary'][0])): ?>
+          <div class="container"> 
+            <?php print render($title_prefix); ?>
+            <?php if ($title && !$is_front ): ?>
+              <h1 class="page-title"><?php print $title; ?></h1>
+            <?php endif; ?>
+            <?php print render($title_suffix); ?>
 
-        <?php if ($action_links): ?>
-          <ul class="action-links"><?php print render($action_links); ?></ul>
-        <?php endif; ?>
+            <?php print $breadcrumb; ?>
 
-        <?php if (isset($tabs['#primary'][0]) || isset($tabs['#secondary'][0])): ?>
-          <nav class="tabs"><?php print render($tabs); ?></nav>
+            <?php if ($action_links): ?>
+              <ul class="action-links"><?php print render($action_links); ?></ul>
+            <?php endif; ?>
+            <?php if (isset($tabs['#primary'][0]) || isset($tabs['#secondary'][0])): ?>
+              <nav class="tabs"><?php print render($tabs); ?></nav>
+            <?php endif; ?>
+          </div>
         <?php endif; ?>
 
         <?php print render($page['content_pre']); ?>
