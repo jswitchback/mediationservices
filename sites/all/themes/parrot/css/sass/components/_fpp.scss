@@ -4,10 +4,13 @@
   }
   .field-items{
     clear:both;
+    text-align: center;
     .field-item{
-      float:left;
-      width: 25%;
+      display: inline-block;
+      vertical-align: top;
+      width: 315px;
       .field-name-field-stat-title {
+        @include h3();
         text-align:center;
       }
       .field-name-field-actual-stat {
@@ -19,6 +22,12 @@
         display: block;
         padding: 88px 15px;
         color: #d1d1d1;
+        width: 85%;
+        margin: 0 auto;
+      }
+      .field-name-field-stat-desctiption{
+        font-size: 16px;
+        margin-top: $vert-gutter;
       }
     }
   }
