@@ -39,9 +39,10 @@
 }
 
 #panels-ipe-display-panelizer-node-13-default .rsABlock {
-left: 48px;
-bottom: 48px;
-padding: 24px;
-position: absolute;
-z-index: 15;
+	left: 48px;
+	bottom: 48px;
+	padding: 24px;
+	background-color: rgba(255,255,255, .95);
+	position: absolute;
+	z-index: 15;
 }

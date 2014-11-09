@@ -1,11 +1,15 @@
-// @import "base/variables";
-// @import "base/mixins";
+// Compass CSS Reset.
+@import "compass";
 
+// Core variables and mixins.
+@import "base/variables"; // Modify this for custom colors, font-sizes, etc
+@import "components/sprites";
+@import "base/mixins";
 
-// @import "base/type";
-// @import "base/forms";
-// @import "base/tables";
-// @import "components/buttons";
-// @import "components/media";
-// @import "components/elements";
+@import "base/type";
+@import "base/forms";
+@import "base/tables";
+@import "components/buttons";
+@import "components/media";
+@import "components/elements";
 
