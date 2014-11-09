@@ -1369,3 +1369,6 @@ audio:not([controls]) {
 
 iframe.media-youtube-player {
   max-width: 100%; }
+
+.contextual-links-region:hover a.contextual-links-trigger {
+  display: block; }
