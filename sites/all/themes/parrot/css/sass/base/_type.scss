@@ -1,3 +1,5 @@
+@import "variables";
+
 //
 // Typography
 // --------------------------------------------------
@@ -135,9 +137,6 @@ cite {
 
 h1, h2, h3, h4, h5, h6 {
   margin: ($baseLineHeight / 2) 0;
-  font-family: $headingsFontFamily;
-  font-weight: $headingsFontWeight;
-  line-height: 1;
   color: $headingsColor;
   text-rendering: optimizelegibility; // Fix the character spacing for headings.
   small {
@@ -146,12 +145,30 @@ h1, h2, h3, h4, h5, h6 {
     color: $grayLight;
   }
 }
-h1 { font-size: 36px; line-height: 40px; }
-h2 { font-size: 30px; line-height: 40px; }
-h3 { font-size: 24px; line-height: 40px; }
-h4 { font-size: 18px; line-height: 20px; }
-h5 { font-size: 14px; line-height: 20px; }
-h6 { font-size: 12px; line-height: 20px; }
+
+h1 { 
+  @include h1;
+}
+h2 { 
+  @include h2;
+
+}
+h3 { 
+  @include h3;
+
+}
+h4 { 
+  @include h4;
+
+}
+h5 { 
+  @include h5;
+
+}
+h6 { 
+  @include h6;
+
+}
 
 h1 small { font-size: 24px; }
 h2 small { font-size: 18px; }

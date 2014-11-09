@@ -10,7 +10,7 @@ $(window).load(function() {
   $('.rs-slideshow .field-items').royalSlider({
     autoScaleSlider: true,
     //autoHeight: true,
-    autoScaleSliderHeight: 420,
+    // autoScaleSliderHeight: 420,
     // arrowsNavAutoHide: false,
     arrowsNav: false,
     autoHeight: true,

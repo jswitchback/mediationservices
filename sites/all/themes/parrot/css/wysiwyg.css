@@ -155,9 +155,6 @@ cite {
 
 h1, h2, h3, h4, h5, h6 {
   margin: 12px 0;
-  font-family: "merriweatherlight", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: normal;
-  line-height: 1;
   color: #595959;
   text-rendering: optimizelegibility; }
   h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
@@ -166,26 +163,44 @@ h1, h2, h3, h4, h5, h6 {
     color: #999; }
 
 h1 {
+  font-family: "merriweatherlight", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  line-height: 1;
   font-size: 36px;
   line-height: 40px; }
 
 h2 {
+  font-family: "merriweatherlight", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  line-height: 1;
   font-size: 30px;
   line-height: 40px; }
 
 h3 {
+  font-family: "merriweatherlight", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  line-height: 1;
   font-size: 24px;
   line-height: 40px; }
 
 h4 {
+  font-family: "merriweatherlight", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  line-height: 1;
   font-size: 18px;
   line-height: 20px; }
 
 h5 {
+  font-family: "merriweatherlight", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  line-height: 1;
   font-size: 14px;
   line-height: 20px; }
 
 h6 {
+  font-family: "merriweatherlight", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  line-height: 1;
   font-size: 12px;
   line-height: 20px; }
 
