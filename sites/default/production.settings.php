@@ -573,6 +573,7 @@ $conf['page_cache_invoke_hooks'] = false;
 $conf['reverse_proxy'] = true;
 $conf['cache'] = 1;
 $conf['cache_lifetime'] = 0;
+$conf['cache_lifetime'] = 3600;
 $conf['page_cache_maximum_age'] = 21600;
 $conf['reverse_proxy_header'] = 'HTTP_X_FORWARDED_FOR';
 $conf['reverse_proxy_addresses'] = array('127.0.0.1');
