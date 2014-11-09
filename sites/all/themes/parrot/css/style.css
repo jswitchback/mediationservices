@@ -4656,7 +4656,8 @@ div.panels-ipe-control input:hover {
   vertical-align: top;
   *padding-top: 2px;
   *padding-bottom: 1px;
-  *height: auto; }
+  *height: auto;
+  margin: 0 5px 5px 0; }
   #block-block-1 .fsFieldRow input[type=email][disabled],
   #block-block-1 .fsFieldRow input[type=number][disabled],
   #block-block-1 .fsFieldRow input[type=tel][disabled],
@@ -4715,7 +4716,13 @@ div.panels-ipe-control input:hover {
 .js .mfp-hide {
   display: none; }
 
-/* Homepage slideshow */
+.mfp-content .title {
+  margin-top: 0; }
+
+/* Homepage */
+.front .mfp-wrap {
+  max-width: 420px; }
+
 #panels-ipe-display-panelizer-node-13-default .container {
   padding: 0; }
 

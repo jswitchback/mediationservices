@@ -65,16 +65,16 @@ function parrot_preprocess_block(&$vars, $hook) {
 
    }
 
-  switch ($vars['block_html_id']) {
-      // Newsletter block
-     case 'block-block-1':
-       $vars['theme_hook_suggestions'][] = 'block__newsletter';
-       break;
-    default:
+  // switch ($vars['block_html_id']) {
+  //     // Newsletter block
+  //    case 'block-block-1':
+  //      $vars['theme_hook_suggestions'][] = 'block__newsletter';
+  //      break;
+  //   default:
 
-    break;
+  //   break;
 
-   }
+  //  }
 
   switch ($vars['elements']['#block']->region) {
     case 'header':
