@@ -10,10 +10,10 @@ Drupal.behaviors.custom_behavior = {
   attach: function(context, settings) {
 
   $(document).ready(function($) {
-
     var mainNavToggle = $('#toggle-nav'),
         $body = $('body');
     
+    // MOBILE MENU
     $(mainNavToggle).on('click', function(event){
       event.preventDefault();
       event.stopPropagation();

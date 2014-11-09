@@ -112,6 +112,7 @@ $nav-color: $linkColor;
         position: absolute;
         left: 0;
         z-index: 50;
+        top: 22px;
       }
       &:hover {
         > .menu {
@@ -333,12 +334,14 @@ $nav-color: $linkColor;
           color: $textColor;
        	  background: none;
        	  font-weight: bold;
+					padding: 4px 0;
        	  text-transform: uppercase;
           @include rem('font-size', 13px);
           &:hover {
             background: none;
             color: $nav-color;
             text-decoration: none;
+            border-bottom: 4px solid $nav-color;
           }
           &:active {
             @include box-shadow(none);
@@ -347,6 +350,7 @@ $nav-color: $linkColor;
           }
           &.active,
           &.active-trail {
+          	border-bottom: 4px solid $nav-color;
             color: $nav-color;
             &:hover, &:active {
               background-color: transparent;
@@ -365,11 +369,18 @@ $nav-color: $linkColor;
           float: none;
           padding-right: 0;
           text-align: left;
+          padding-left: 0;
           width: 220px;
+          margin-left: 0;
           a {
             &:hover, &:active {
+            	border-bottom: none;
               background-color: $linkColor;
             }
+						&.active,
+						&.active-trail {
+							border-bottom: 4px solid $nav-color;
+						}
           }
         }
       }

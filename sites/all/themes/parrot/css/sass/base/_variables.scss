@@ -15,6 +15,9 @@ $vert-gutter: 24px;
 $ui-grey-light: #f5f5f5;
 $ui-grey-dark: #595959;
 
+$ui-blue: #053854;
+$ui-teal: #007873;
+
 
 // Grays
 // -------------------------
@@ -47,7 +50,7 @@ $textColor:             $ui-grey-dark !default;
 
 // Links
 // -------------------------
-$linkColor:             #28478f !default;
+$linkColor:             $ui-blue !default;
 $linkColorHover:        darken($linkColor, 15%) !default;
 
 
@@ -67,7 +70,7 @@ $webfontBoldItalic: "merriweatherheavy_italic", "Helvetica Neue", Helvetica, Ari
 
 $baseFontSize:          14px !default;
 $baseFontFamily:        $sansFontFamily !default;
-$baseLineHeight:        21px !default;
+$baseLineHeight:        1.4 !default;
 $altFontFamily:         $serifFontFamily !default;
 
 $headingsFontFamily:    $webfontLight;

@@ -526,6 +526,99 @@
 }
 
 
+
+////////////////////////////
+// SHADOW BORDER
+////////////////////////////
+
+// !!! DEPENDANT UPON MODERNIZR no-boxshadow class for fallback
+@mixin shadow-border($position:"top", $offset-margin: 44px, $offset-padding: 44px, $shadowColor:#000000, $fallbackBorderColor: grey) {
+  position: relative;
+  overflow: hidden;
+
+  // Shadow width/height
+  @if $position == "top" or $position == "bottom" {
+    &:before, 
+    &:after {
+      position: absolute;
+      left: 5%;
+      right: 5%;
+      height: 1px;
+    }
+  } @else if $position == "left" or $position == "right" {
+    &:before, 
+    &:after {
+      position: absolute;
+      top: 1%;
+      bottom: 1%;
+      width: 1px;
+    }
+  } @else {
+    @warn "Shadow-border mixin has incorrect $position ('#{$position}') argumment. Must be top, bottom, left or right";
+  }
+
+  // Position shadow
+  @if $position == "top" {
+
+    margin-top: $offset-margin;
+    padding-top: $offset-padding;
+    &:before {
+      content: '';
+      @include box-shadow($shadowColor 0 0 16px);
+      @include border-radius(60px);
+      top: -3px;
+    }
+    .no-boxshadow & {
+      border-top: 1px solid $fallbackBorderColor;
+    }
+
+  } @else if $position == "bottom" {
+
+    margin-bottom: $offset-margin;
+    padding-bottom: $offset-padding;
+    &:after {
+      content: '';
+      @include box-shadow($shadowColor 0 0 16px);
+      bottom: -3px;
+    }
+    .no-boxshadow & {
+      border-bottom: 1px solid $fallbackBorderColor;
+    }
+
+  } @else if $position == "left" {
+
+    margin-left:  $offset-margin;
+    padding-left:  $offset-padding;
+    &:before {
+      content: '';
+      @include box-shadow($shadowColor 0 0 16px);
+      @include border-radius(60px);
+      left: -3px;
+    }
+    .no-boxshadow & {
+      border-left: 1px solid $fallbackBorderColor;
+    }
+
+
+  } @else if $position == "right" {
+
+    margin-right:  $offset-margin;
+    padding-right:  $offset-padding;
+    &:after {
+      content: '';
+      @include box-shadow($shadowColor 0 0 16px);
+      @include border-radius(60px);
+      right: -3px;
+    }
+    .no-boxshadow & {
+      border-right: 1px solid $fallbackBorderColor;
+    }
+  }
+}
+// @include shadow-border($position:"top", $offset-margin: 44px, $offset-padding: 44px, $shadowColor:#000000, $fallbackBorderColor: grey);
+
+
+
 @mixin horizontal-list($list-margin: 1em, $list-item-margin: .25em) {
     list-style-type:none;
     padding:0;
@@ -586,5 +679,33 @@
   &::-moz-focus-inner {
     border: 0;
     padding: 0;
+  }
+}
+
+@mixin input {
+  @include box-sizing(border-box);
+  @include background-clip(padding-box);
+  @include border-radius(2px);
+  -webkit-appearance: none;
+  background-color: white;
+  border: 1px solid;
+  border-color: #ddd;
+  color: black;
+  outline: 0;
+  margin: 0 5px 5px 5px;
+  padding: 2px 3px;
+  text-align: left;
+  font-size: 13px;
+  // Leaving out Helvetica Neue, to not throw off size="..."
+  // on inputs. Arial is more reliable, on Windows and OS X.
+  font-family: Arial, "Liberation Sans", FreeSans, sans-serif;
+  height: 1.8em;
+  vertical-align: top;
+  // IE7
+  *padding-top: 2px;
+  *padding-bottom: 1px;
+  *height: auto;
+  &[disabled] {
+    background-color: #eeeeee;
   }
 }

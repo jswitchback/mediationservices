@@ -118,13 +118,13 @@
   font-weight: normal;
   font-style: normal; }
 p {
-  margin: 0 0 10.5px; }
+  margin: 0 0 0.7; }
 
 .lead {
-  margin-bottom: 21px;
+  margin-bottom: 1.4;
   font-size: 21px;
   font-weight: 200;
-  line-height: 31.5px; }
+  line-height: 2.1; }
 
 small {
   font-size: 85%; }
@@ -154,7 +154,7 @@ cite {
   color: #468847; }
 
 h1, h2, h3, h4, h5, h6 {
-  margin: 10.5px 0;
+  margin: 0.7 0;
   color: #595959;
   text-rendering: optimizelegibility; }
   h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
@@ -217,13 +217,13 @@ h4 small {
   font-size: 14px; }
 
 .page-header {
-  padding-bottom: 9.5px;
-  margin: 21px 0 31.5px;
+  padding-bottom: -0.3;
+  margin: 1.4 0 2.1;
   border-bottom: 1px solid #eee; }
 
 ul, ol {
   padding: 0;
-  margin: 0 0 10.5px 25px; }
+  margin: 0 0 0.7 25px; }
 
 ul ul,
 ul ol,
@@ -232,7 +232,7 @@ ol ul {
   margin-bottom: 0; }
 
 li {
-  line-height: 21px; }
+  line-height: 1.4; }
 
 ul.unstyled,
 ol.unstyled {
@@ -240,17 +240,17 @@ ol.unstyled {
   list-style: none; }
 
 dl {
-  margin-bottom: 21px; }
+  margin-bottom: 1.4; }
 
 dt,
 dd {
-  line-height: 21px; }
+  line-height: 1.4; }
 
 dt {
   font-weight: bold; }
 
 dd {
-  margin-left: 10.5px; }
+  margin-left: 0.7; }
 
 .dl-horizontal {
   *zoom: 1; }
@@ -272,7 +272,7 @@ dd {
     margin-left: 180px; }
 
 hr {
-  margin: 21px 0;
+  margin: 1.4 0;
   border: 0;
   border-top: 1px solid #eee;
   border-bottom: 1px solid #fff; }
@@ -287,16 +287,16 @@ abbr.initialism {
 
 blockquote {
   padding: 0 0 0 15px;
-  margin: 0 0 21px;
+  margin: 0 0 1.4;
   border-left: 5px solid #eee; }
   blockquote p {
     margin-bottom: 0;
     font-size: 16px;
     font-weight: 300;
-    line-height: 26.25px; }
+    line-height: 1.75; }
   blockquote small {
     display: block;
-    line-height: 21px;
+    line-height: 1.4;
     color: #999; }
     blockquote small:before {
       content: '\2014 \00A0'; }
@@ -322,9 +322,9 @@ blockquote:after {
 
 address {
   display: block;
-  margin-bottom: 21px;
+  margin-bottom: 1.4;
   font-style: normal;
-  line-height: 21px; }
+  line-height: 1.4; }
 
 .input_tiny {
   width: 50px; }
@@ -393,9 +393,9 @@ input[type="button"] {
   -webkit-background-clip: padding-box;
   -moz-background-clip: padding-box;
   background-clip: padding-box;
-  background-color: #28478f;
+  background-color: #053854;
   border: 1px solid;
-  border-color: #1d3367 #223d7b #223d7b;
+  border-color: #021824 #04283c #04283c;
   cursor: pointer;
   color: #fff;
   display: -moz-inline-box;
@@ -408,7 +408,7 @@ input[type="button"] {
   margin: 0;
   padding: 4px 16px;
   margin: 5px 10px 5px 0;
-  text-shadow: #1d3367 0 1px 0;
+  text-shadow: #021824 0 1px 0;
   text-decoration: none;
   vertical-align: top;
   width: auto;
@@ -419,18 +419,18 @@ input[type="button"] {
   input[type="reset"]:hover,
   input[type="submit"]:hover,
   input[type="button"]:hover {
-    background-color: #172953;
+    background-color: #01080c;
     text-decoration: none; }
   button:active,
   a.button:active,
   input[type="reset"]:active,
   input[type="submit"]:active,
   input[type="button"]:active {
-    background-color: #172953;
+    background-color: #01080c;
     -webkit-box-shadow: inset rgba(0, 0, 0, 0.25) 0 1px 2px 0;
     -moz-box-shadow: inset rgba(0, 0, 0, 0.25) 0 1px 2px 0;
     box-shadow: inset rgba(0, 0, 0, 0.25) 0 1px 2px 0;
-    border-color: #121f3f #121f3f; }
+    border-color: black black; }
   button::-moz-focus-inner,
   a.button::-moz-focus-inner,
   input[type="reset"]::-moz-focus-inner,
@@ -657,12 +657,12 @@ table {
 
 .table, table {
   width: 100%;
-  margin-bottom: 21px; }
+  margin-bottom: 1.4; }
   .table th, table th,
   .table td,
   table td {
     padding: 8px;
-    line-height: 21px;
+    line-height: 1.4;
     text-align: left;
     vertical-align: top;
     border-top: 1px solid #ddd; }
@@ -854,8 +854,8 @@ input#panels-ipe-cancel:active {
 
 .btn-toolbar {
   font-size: 0;
-  margin-top: 10.5px;
-  margin-bottom: 10.5px; }
+  margin-top: 0.7;
+  margin-bottom: 0.7; }
   .btn-toolbar .btn-group {
     display: -moz-inline-box;
     display: inline-block;
@@ -967,7 +967,7 @@ input#panels-ipe-cancel:active {
 .btn-group.open .btn.dropdown-toggle {
   background-color: #e6e6e6; }
 .btn-group.open .btn-primary.dropdown-toggle {
-  background-color: #2b288f; }
+  background-color: #051e54; }
 .btn-group.open .btn-warning.dropdown-toggle {
   background-color: #f89406; }
 .btn-group.open .btn-danger.dropdown-toggle {
@@ -1049,11 +1049,11 @@ input#panels-ipe-cancel:active {
   display: inline-block;
   *display: inline;
   *zoom: 1;
-  padding: 4px 14px;
+  padding: 4px 16px;
   margin-bottom: 0;
   font-size: 14px;
-  line-height: 21px;
-  *line-height: 21px;
+  line-height: 1.4;
+  *line-height: 1.4;
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
@@ -1072,16 +1072,12 @@ input#panels-ipe-cancel:active {
   *background-color: #e6e6e6;
   /* Darken IE7 buttons by default so they stand out more given they won't have borders */
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
-  border: 1px solid #bbb;
   *border: 0;
   border-bottom-color: #a2a2a2;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  *margin-left: .3em;
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
-  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05); }
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  *margin-left: .3em; }
   .btn:hover, .btn:active, .btn.active, .btn.disabled, .btn[disabled] {
     color: #333;
     background-color: #e6e6e6;
@@ -1108,10 +1104,7 @@ input#panels-ipe-cancel:active {
     background-color: #e6e6e6;
     background-color: #d9d9d9 \9;
     background-image: none;
-    outline: 0;
-    -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
-    -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
-    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05); }
+    outline: 0; }
   .btn.disabled, .btn[disabled] {
     cursor: default;
     background-color: #e6e6e6;
@@ -1136,7 +1129,7 @@ input#panels-ipe-cancel:active {
 .btn-small {
   padding: 3px 9px;
   font-size: 12px;
-  line-height: 19px; }
+  line-height: -0.6px; }
 
 .btn-small [class^="icon-"] {
   margin-top: 0; }
@@ -1144,7 +1137,7 @@ input#panels-ipe-cancel:active {
 .btn-mini {
   padding: 2px 6px;
   font-size: 11px;
-  line-height: 18px; }
+  line-height: -1.6px; }
 
 .btn-block {
   display: block;
@@ -1178,25 +1171,25 @@ input[type="button"].btn-block {
 .btn-primary {
   color: #fff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  background-color: #293a8f;
-  background-image: -moz-linear-gradient(top, #28478f, #2b288f);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#28478f), to(#2b288f));
-  background-image: -webkit-linear-gradient(top, #28478f, #2b288f);
-  background-image: -o-linear-gradient(top, #28478f, #2b288f);
-  background-image: linear-gradient(to bottom, #28478f, #2b288f);
+  background-color: #052d54;
+  background-image: -moz-linear-gradient(top, #053854, #051e54);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#053854), to(#051e54));
+  background-image: -webkit-linear-gradient(top, #053854, #051e54);
+  background-image: -o-linear-gradient(top, #053854, #051e54);
+  background-image: linear-gradient(to bottom, #053854, #051e54);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF28478F', endColorstr='#FF2B288F', GradientType=0);
-  border-color: #2b288f #2b288f #191753;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF053854', endColorstr='#FF051E54', GradientType=0);
+  border-color: #051e54 #051e54 #01040c;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) fadein(rgba(0, 0, 0, 0.1), 15%);
-  *background-color: #2b288f;
+  *background-color: #051e54;
   /* Darken IE7 buttons by default so they stand out more given they won't have borders */
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false); }
   .btn-primary:hover, .btn-primary:active, .btn-primary.active, .btn-primary.disabled, .btn-primary[disabled] {
     color: #fff;
-    background-color: #2b288f;
-    *background-color: #25227b; }
+    background-color: #051e54;
+    *background-color: #04153c; }
   .btn-primary:active, .btn-primary.active {
-    background-color: #1f1d67 \9; }
+    background-color: #020d24 \9; }
 
 .btn-warning {
   color: #fff;
@@ -1346,13 +1339,13 @@ input[type="submit"].btn {
 .btn-link {
   border-color: transparent;
   cursor: pointer;
-  color: #28478f;
+  color: #053854;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0; }
 
 .btn-link:hover {
-  color: #172953;
+  color: #01080c;
   text-decoration: underline;
   background-color: transparent; }
 

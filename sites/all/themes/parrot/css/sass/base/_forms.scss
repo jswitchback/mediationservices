@@ -112,31 +112,7 @@ input[type="text"],
 input[type="time"],
 input[type="url"],
 input[type="week"] {
-  @include box-sizing(border-box);
-  @include background-clip(padding-box);
-  @include border-radius(2px);
-  -webkit-appearance: none;
-  background-color: white;
-  border: 1px solid;
-  border-color: #ddd;
-  color: black;
-  outline: 0;
-  margin: 0 5px 5px 5px;
-  padding: 2px 3px;
-  text-align: left;
-  font-size: 13px;
-  // Leaving out Helvetica Neue, to not throw off size="..."
-  // on inputs. Arial is more reliable, on Windows and OS X.
-  font-family: Arial, "Liberation Sans", FreeSans, sans-serif;
-  height: 1.8em;
-  vertical-align: top;
-  // IE7
-  *padding-top: 2px;
-  *padding-bottom: 1px;
-  *height: auto;
-  &[disabled] {
-    background-color: #eeeeee;
-  }
+  @include input;
 }
 
 button[disabled],

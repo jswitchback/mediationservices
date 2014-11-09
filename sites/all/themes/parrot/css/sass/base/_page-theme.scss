@@ -30,7 +30,7 @@ $wide: 1024px;
 }
 
 .logo {
-	max-width: 255px;
+	max-width: 280px;
 }
 
 
@@ -48,12 +48,21 @@ $wide: 1024px;
 	@include box-shadow(0 2px 2px #d1d1d1);
 	background-color: $ui-grey-light;
 	> .container {
-		padding-top: $vert-gutter;
-    padding-bottom: $vert-gutter;
+    padding-top: 16px;
+    padding-bottom: 14px;
 	}
   .front & {
     margin-bottom: 0;
+    position: relative;
+    z-index: 20;
   }
+}
+
+#main-content {
+  .fullwidth {
+    margin-bottom: $vert-gutter * 2;
+  }
+
 }
 
 .field-collection-container {
@@ -64,6 +73,102 @@ $wide: 1024px;
   border-bottom: 0;
 }
 
+#footer-wrapper {
+  background: url(../img/ovals.png) $ui-grey-light;
+  padding: $vert-gutter 0;
+  margin-top: $vert-gutter * 2;
+  border-top: 5px solid $ui-grey-light;
+}
+
+/* Newsletter signup block */
+// Need higher specificity
+#block-block-1,
+#newsletter-modal {
+  .fsBody {
+    color: inherit;
+    font: inherit;
+  }
+
+  .fsBody .fsForm {
+    background-color: #fff;
+    margin: 0 auto;
+    border: none;
+    display: block;
+  }
+
+  .fsForm .fsSubmit {
+    padding: 0 $horiz-gutter $vert-gutter 0;
+    margin-top: 10px;
+    background-color: transparent;
+    clear: both;
+  }
+  .fsPagination {
+    text-align: right;
+    margin: 25px 0;
+  }
+
+  .fsSubmit input.fsSubmitButton {
+    padding: 4px 16px;
+    margin: 0 auto;
+    clear: both;
+  }
+
+  .fsPagination button, .fsPagination input {
+    font-size: inherit;
+  }
+
+  // Webform builder link
+  // [title="Web Form Builder"]
+  .fsBody ~ div {
+    display: none;
+  }
+
+  .fsFieldRow input[type=email], 
+  .fsFieldRow input[type=number], 
+  .fsFieldRow input[type=tel], 
+  .fsFieldRow input[type=text], 
+  .fsForm textarea {
+    background-image: inherit;
+    background-repeat: inherit;
+    background-position: inherit;
+    font-weight: inherit;
+    max-width: 95%;
+    @include input;
+  }
+}
+
+.front #two-brick-bottom-wrapper {
+  @include shadow-border($position:"top", $offset-margin: 24px, $offset-padding: 24px, $shadowColor:#000000, $fallbackBorderColor: grey);
+  margin-bottom: 0;
+}
+
+#panels-ipe-paneid-33 {
+  margin-bottom: $vert-gutter * 2;
+ .views-field-body {
+    font-family: $webfontBoldItalic;
+    font-size: 24px;
+    margin: 0 auto; 
+    max-width: 480px;
+    &::first-letter {
+      font-size: 40px;
+    }
+  }
+}
+
+.intro {
+  font-size: 16px;
+}
+
+.mfp-close:hover {
+  background-color: white;
+  color: $textColor;
+  @include border-radius(50%);
+}
+
+.js .mfp-hide {
+  display: none;
+}
+ 
 /* Homepage slideshow */
 
 
@@ -94,12 +199,23 @@ $wide: 1024px;
 
 }
 
+
 .field-name-field-banner-collection {
 
   .rsBullet {
     width: 10px;
     height: 10px;
     padding: 6px 5px 6px 4px;
+  }
+
+  .rsMinW .rsBullet span {
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #CCC;
+    background: rgba(255,255,255,0.5);
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.1);
   }
 
   .rsABlock {
@@ -111,6 +227,7 @@ $wide: 1024px;
     bottom: 0;
     padding: 36px;
     background-color: #fff;
+    background: url(../img/ovals.png) rgba(255,255,255,.9);
     @include rgba-background(rgba(255,255,255, .9));
     @include border-radius(36px);
     color: $textColor;
@@ -131,7 +248,7 @@ $wide: 1024px;
   }
 
   .field-name-field-banner-text {
-    @include h2;
+    @include h3;
     margin-bottom: $vert-gutter;
   }
 
@@ -166,10 +283,8 @@ $wide: 1024px;
   }
 }
 
-#footer-wrapper {
-  background-color: $ui-grey-light;
-  padding: $vert-gutter 0;
-  border-top: #d1d1d1;
+.front {
+  #two-brick-top-wrapper {
+    background: url(../img/ovals.png) $ui-teal;
+  }
 }
-
-
