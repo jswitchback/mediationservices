@@ -6,19 +6,22 @@
 
 
 // To understand behaviors, see https://drupal.org/node/756722#behaviors
-Drupal.behaviors.custom_behavior = {
+Drupal.behaviors.scroll_behavior = {
   attach: function(context, settings) {
 
   $(document).ready(function($) {
-    var mainNavToggle = $('#toggle-nav'),
-        $body = $('body');
-    
-    // MOBILE MENU
-    $(mainNavToggle).on('click', function(event){
-      event.preventDefault();
-      event.stopPropagation();
+    var $body = $('body'),
+        $scrollTarget = $('#panels-ipe-paneid-29'),
+        toTop = parsInt($scrollTarget.offset().top, 10);
 
-      $body.toggleClass('show-nav');
+    // SCROLL CLASSES
+    $(window).scroll(function() {
+        var scroll = parseInt($(window).scrollTop(),10);
+
+         //>=, not <=
+        if (scroll >= toTop) {
+            $body.addClass('panel-in-view');
+        }
     });
 
 	}); // END READY

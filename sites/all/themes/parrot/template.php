@@ -19,6 +19,11 @@ function parrot_preprocess_page(&$vars,$hook) {
   //googlefont
   //  drupal_add_css('http://fonts.googleapis.com/css?family=Bree+Serif','external');
 
+  // kpr($vars);
+  // if ($vars['is_front']) {
+  //   drupal_add_js(drupal_get_path('theme', 'parrot') . '/js/scroll.js', array('type' => 'file'));
+  // }
+
   // If this is a panel page, add template suggestions.
   // Must have Ctools Page Manager enabled. Uncomment to use.
   if (module_exists('page_manager')) {
@@ -41,6 +46,7 @@ function parrot_preprocess_region(&$vars,$hook) {
 
 function parrot_preprocess_block(&$vars, $hook) {
   //  kpr($vars['content']);
+  // kpr($vars);
 
   //lets look for unique block in a region $region-$blockcreator-$delta
    $block =
@@ -59,6 +65,16 @@ function parrot_preprocess_block(&$vars, $hook) {
 
    }
 
+  switch ($vars['block_html_id']) {
+      // Newsletter block
+     case 'block-block-1':
+       $vars['theme_hook_suggestions'][] = 'block__newsletter';
+       break;
+    default:
+
+    break;
+
+   }
 
   switch ($vars['elements']['#block']->region) {
     case 'header':
