@@ -30,7 +30,7 @@ function mediation_fpp_entity_info_alter(&$entity_info) {
       'path' => 'admin/structure/fieldable-panels-panes/manage/%fieldable_panels_pane_type',
       'bundle argument' => 4,
       // Note that this has all _ replaced with - from the bundle name.
-      'real path' => 'admin/structure/fieldable-panels-panes/manage/hover_circle',
+      'real path' => 'admin/structure/fieldable-panels-panes/manage/mediation_hover_circle',
       'access arguments' => array('administer fieldable panels panes'),
     ),
   );
