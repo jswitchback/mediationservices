@@ -17,7 +17,8 @@ $(window).load(function() {
     numImagesToPreload: 2,
     autoPlay: {
       enabled: true,
-      pauseOnHover: true
+      pauseOnHover: true,
+      delay: 5000
     },
     sliderDrag: false,
     transitionType: 'fade',

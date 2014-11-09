@@ -16,6 +16,19 @@ $computer: 960px;
 $wide: 1024px;
 
 
+@include breakpoint($narrow){
+
+}
+@include breakpoint($tablet){
+
+}
+@include breakpoint($computer){
+
+}
+@include breakpoint($wide){
+
+}
+
 .logo {
 	max-width: 255px;
 }
@@ -47,12 +60,20 @@ $wide: 1024px;
   border-bottom: 0;
 }
 
+.field-collection-view {
+  border-bottom: 0;
+}
 
 /* Homepage slideshow */
 
 
 #panels-ipe-display-panelizer-node-13-default {
+  .container {
+    padding: 0;
+  }
+}
 
+#panels-ipe-paneid-16 {
   .action-links {
     position: absolute;
     top: 48px;
@@ -64,33 +85,49 @@ $wide: 1024px;
     margin-bottom: 0;
   }
 
-  .rsABlock {
-    left: 48px;
-    bottom: 96px;
-    top: auto;
-    padding: 36px;
-    background-color: #fff;
-    @include rgba-background(rgba(255,255,255, .95));
-    position: absolute;
-    z-index: 15;
-    color: $textColor;
-  }
-
-  .field-type-text-long {
-    @include h2;
-    margin-bottom: $vert-gutter;
-  }
-
-  .field-collection-container .field-items .field-item {
-    margin-bottom: 10px;
-  }
-
   .field-collection-view-links {
     position: absolute;
     top: 36px;
     right: 36px;
   }
 
+
+}
+
+.field-collection-item-field-banner-collection {
+
+  .rsABlock {
+    position: absolute;
+    z-index: 15;
+    top: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 36px;
+    background-color: #fff;
+    @include rgba-background(rgba(255,255,255, .95));
+    color: $textColor;
+    @include breakpoint($computer){
+      width: 320px;
+      left: 48px;
+      right: auto;
+      bottom: 96px;
+      top: auto;
+    }
+  }
+
+  .field-name-field-banner-text {
+    @include h2;
+    margin-bottom: $vert-gutter;
+  }
+
+  .field-name-field-banner-link a {
+    @include button;
+  }
+
+  .field-collection-container .field-items .field-item {
+    margin-bottom: 10px;
+  }
 }
 
 

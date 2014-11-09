@@ -559,8 +559,8 @@ table {
   max-width: 960px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px; }
+  padding-left: 10px;
+  padding-right: 10px; }
   .container:after {
     content: " ";
     display: block;
@@ -2523,7 +2523,7 @@ input[type="button"] {
   outline: 0;
   overflow: visible;
   margin: 0;
-  padding: 3px 10px;
+  padding: 12px 16px;
   margin: 5px 10px 5px 0;
   text-shadow: white 0 1px 1px;
   text-decoration: none;
@@ -4450,38 +4450,94 @@ div.panels-ipe-control input:hover {
 .field-collection-container {
   border-bottom: 0; }
 
+.field-collection-view {
+  border-bottom: 0; }
+
 /* Homepage slideshow */
-#panels-ipe-display-panelizer-node-13-default .action-links {
+#panels-ipe-display-panelizer-node-13-default .container {
+  padding: 0; }
+
+#panels-ipe-paneid-16 .action-links {
   position: absolute;
   top: 48px;
   right: 160px; }
-#panels-ipe-display-panelizer-node-13-default .field-collection-container {
+#panels-ipe-paneid-16 .field-collection-container {
   border-bottom: 0;
   margin-bottom: 0; }
-#panels-ipe-display-panelizer-node-13-default .rsABlock {
-  left: 48px;
-  bottom: 96px;
+#panels-ipe-paneid-16 .field-collection-view-links {
+  position: absolute;
+  top: 36px;
+  right: 36px; }
+
+.field-collection-item-field-banner-collection .rsABlock {
+  position: absolute;
+  z-index: 15;
   top: auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
   padding: 36px;
   background-color: #fff;
   background: url('../img/generated/fffffff2-8.png?1415491801');
   background: rgba(255, 255, 255, 0.95);
-  position: absolute;
-  z-index: 15;
   color: #595959; }
-#panels-ipe-display-panelizer-node-13-default .field-type-text-long {
+  @media (min-width: 60em) {
+    .field-collection-item-field-banner-collection .rsABlock {
+      width: 320px;
+      left: 48px;
+      right: auto;
+      bottom: 96px;
+      top: auto; } }
+.field-collection-item-field-banner-collection .field-name-field-banner-text {
   font-family: "merriweatherlight", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
   line-height: 1;
   font-size: 30px;
   line-height: 40px;
   margin-bottom: 20px; }
-#panels-ipe-display-panelizer-node-13-default .field-collection-container .field-items .field-item {
+.field-collection-item-field-banner-collection .field-name-field-banner-link a {
+  -webkit-appearance: none;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+  background-color: #28478f;
+  border: 1px solid;
+  border-color: #1d3367 #223d7b #223d7b;
+  cursor: pointer;
+  color: #fff;
+  display: -moz-inline-box;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  font: bold 13px / 1.3 "Helvetica Neue", Arial, "Liberation Sans", FreeSans, sans-serif;
+  outline: 0;
+  overflow: visible;
+  margin: 0;
+  padding: 12px 16px;
+  margin: 5px 10px 5px 0;
+  text-shadow: white 0 1px 1px;
+  text-decoration: none;
+  vertical-align: top;
+  width: auto;
+  *padding-top: 2px;
+  *padding-bottom: 0; }
+  .field-collection-item-field-banner-collection .field-name-field-banner-link a:hover {
+    background-color: #172953;
+    text-decoration: none; }
+  .field-collection-item-field-banner-collection .field-name-field-banner-link a:active {
+    background-color: #172953;
+    -webkit-box-shadow: inset rgba(0, 0, 0, 0.25) 0 1px 2px 0;
+    -moz-box-shadow: inset rgba(0, 0, 0, 0.25) 0 1px 2px 0;
+    box-shadow: inset rgba(0, 0, 0, 0.25) 0 1px 2px 0;
+    border-color: #121f3f #121f3f; }
+  .field-collection-item-field-banner-collection .field-name-field-banner-link a::-moz-focus-inner {
+    border: 0;
+    padding: 0; }
+.field-collection-item-field-banner-collection .field-collection-container .field-items .field-item {
   margin-bottom: 10px; }
-#panels-ipe-display-panelizer-node-13-default .field-collection-view-links {
-  position: absolute;
-  top: 36px;
-  right: 36px; }
 
 /* Node edit tabs
    ========================================================================== */

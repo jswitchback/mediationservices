@@ -97,8 +97,8 @@ $wide: 1024px;
 /* container */
 .container{
   @include container(960px);
-  padding-left: $horiz-gutter;
-  padding-right: $horiz-gutter;
+  padding-left: $horiz-gutter/2;
+  padding-right: $horiz-gutter/2;
   // @include breakpoint($narrow){
   //   @include container;
   // }
