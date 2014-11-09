@@ -4543,12 +4543,23 @@ div.panels-ipe-control input:hover {
 
 .field-name-field-hover-items .field-items .field-item {
   width: 230px; }
+  .field-name-field-hover-items .field-items .field-item .field-name-field-hover-text {
+    display: none; }
   .field-name-field-hover-items .field-items .field-item a {
     text-decoration: none; }
   .field-name-field-hover-items .field-items .field-item .field-name-field-hover-title {
-    font-size: 2em; }
-.field-name-field-hover-items .field-name-field-hover-text {
-  display: none; }
+    font-size: 2em;
+    text-decoration: none; }
+  .field-name-field-hover-items .field-items .field-item:hover .field-name-field-hover-text {
+    display: block;
+    text-decoration: none;
+    color: #767676;
+    background-color: #f1f1f1;
+    border: 1px solid #f9f9f9;
+    border-radius: 10px;
+    padding: 10px; }
+  .field-name-field-hover-items .field-items .field-item:hover .field-name-field-hover-title {
+    display: none; }
 
 .logo {
   max-width: 280px; }
@@ -4778,7 +4789,7 @@ div.panels-ipe-control input:hover {
     padding: 36px;
     background-color: #fff;
     background: url(../img/ovals.png) rgba(255, 255, 255, 0.9);
-    background: url('../img/generated/ffffffe5-8.png?1415482007');
+    background: url('../img/generated/ffffffe5-8.png?1415491273');
     background: rgba(255, 255, 255, 0.9);
     -webkit-border-radius: 36px;
     -moz-border-radius: 36px;
@@ -5091,7 +5102,7 @@ ul.tabs-primary li {
 #block-menu-block-1 {
   clear: both;
   background: #053854;
-  background: url('../img/generated/ffffffe5-8.png?1415482007');
+  background: url('../img/generated/ffffffe5-8.png?1415491273');
   background: rgba(255, 255, 255, 0.9);
   -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 6px;
   -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 6px;
@@ -5191,7 +5202,7 @@ ul.tabs-primary li {
               background-color: transparent; }
     #block-menu-block-1 .expanded .menu {
       display: block;
-      background: url('../img/generated/ffffffe5-8.png?1415482007');
+      background: url('../img/generated/ffffffe5-8.png?1415491273');
       background: rgba(255, 255, 255, 0.9);
       -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 6px;
       -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 6px;
