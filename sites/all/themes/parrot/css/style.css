@@ -4589,7 +4589,9 @@ div.panels-ipe-control input:hover {
   margin: 0; }
 
 #footer-wrapper {
-  background-color: #f5f5f5; }
+  background-color: #f5f5f5;
+  padding: 20px 0;
+  border-top: #d1d1d1; }
 
 /* Node edit tabs
    ========================================================================== */

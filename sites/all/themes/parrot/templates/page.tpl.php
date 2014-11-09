@@ -24,7 +24,7 @@
 
 <?php if($site_name OR $site_slogan OR $logo OR $page['header'] ): ?>
   <div id="header-wrapper" class="fullwidth">
-    <div class="container">
+    <div class="container-header">
       <header role="banner" class="row">
         <div class="siteinfo">
           <?php if ($logo): ?>
@@ -60,7 +60,7 @@
         </a>
 
       </header>
-    </div><!--/.container-->
+    </div><!--/.container-header-->
   </div><!--/#header-wrapper-->
 <?php endif; ?>
 
