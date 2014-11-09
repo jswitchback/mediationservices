@@ -18,7 +18,8 @@
         border: 1px solid #f9f9f9;
         border-radius: 50%;
         display: block;
-        padding: 88px 15px;
+        @include box-sizing(content-box);
+        padding: 42px 15px;
         color: #d1d1d1;
         width: 85%;
         margin: 0 auto;
@@ -61,12 +62,12 @@
       }
     }
     &:hover {
-    .field-name-field-actual-stat {
-      .no-touch & {
-        @include opaque;
-        @include transform(scale(1));
+      .field-name-field-actual-stat {
+        .no-touch & {
+          @include opaque;
+          @include transform(scale(1));
+        }
       }
-    }
     }
   }
 }
