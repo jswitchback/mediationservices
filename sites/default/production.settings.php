@@ -215,7 +215,7 @@ $databases = array (
   array (
     'default' => 
     array (
-      'database' => 'mediationservices_production',
+      'database' => 'mediationservices_prod',
       'username' => 'root',
       'password' => 'root',
       'host' => 'localhost',
@@ -565,3 +565,12 @@ $conf['404_fast_html'] = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
  * Remove the leading hash signs to disable.
  */
 # $conf['allow_authorize_operations'] = FALSE;
+$conf['omit_vary_cookie'] = TRUE;
+$conf['preprocess_css'] = 1;
+$conf['preprocess_js'] = 1;
+$conf['block_cache'] = 1;
+$conf['cache'] = 1;
+$conf['cache_lifetime'] = 0;
+$conf['page_cache_maximum_age'] = 21600;
+$conf['page_cache_maximum_age_browser'] = 0;
+$conf['page_cache_invoke_hooks'] = FALSE;
