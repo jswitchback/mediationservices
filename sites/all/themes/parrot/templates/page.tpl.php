@@ -75,7 +75,7 @@
   </div><!--/#highlighted-wrapper-->
 <?php endif; ?>
 
-<div id="content-wrapper" class="fullwidth">
+<div id="content-wrapper" class="fullwidth content-wrapper">
   <div class="container-content">
     <div class="page row">
 

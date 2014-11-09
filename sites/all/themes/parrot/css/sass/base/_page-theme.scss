@@ -251,7 +251,7 @@ $wide: 1024px;
     }
   }
 
-  .even .rsABlock {
+  .odd .rsABlock {
     @include breakpoint($computer){
       right: 48px;
       left: auto;
