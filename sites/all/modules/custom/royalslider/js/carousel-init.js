@@ -9,8 +9,7 @@ $(window).load(function() {
 
   $('.rs-slideshow .field-items').royalSlider({
     autoScaleSlider: true,
-    //autoHeight: true,
-    autoScaleSliderHeight: 420,
+    autoScaleSliderHeight: 336,
     // arrowsNavAutoHide: false,
     arrowsNav: false,
     autoHeight: true,
