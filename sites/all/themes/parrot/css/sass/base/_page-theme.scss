@@ -134,6 +134,7 @@ $wide: 1024px;
     font-weight: inherit;
     max-width: 95%;
     @include input;
+    margin: 0 5px 5px 0;
   }
 }
 
@@ -168,9 +169,18 @@ $wide: 1024px;
 .js .mfp-hide {
   display: none;
 }
- 
-/* Homepage slideshow */
 
+.mfp-content {
+  .title {
+    margin-top: 0;
+  }
+}
+ 
+/* Homepage */
+
+.front .mfp-wrap {
+  max-width: 420px;
+}
 
 #panels-ipe-display-panelizer-node-13-default {
   .container {
