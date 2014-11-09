@@ -17,7 +17,7 @@ $(window).load(function() {
     autoPlay: {
       enabled: true,
       pauseOnHover: true,
-      delay: 5000
+      delay: 6000
     },
     sliderDrag: false,
     transitionType: 'fade',

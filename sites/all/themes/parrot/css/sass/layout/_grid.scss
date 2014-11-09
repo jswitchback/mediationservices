@@ -113,7 +113,11 @@ $wide: 1024px;
   // }
 } //.container
 
-
+.not-front .container-content {
+  @include container(960px);
+  padding-left: $horiz-gutter/2;
+  padding-right: $horiz-gutter/2;
+}
 
 // Panels Layouts
 .parrot-panels{

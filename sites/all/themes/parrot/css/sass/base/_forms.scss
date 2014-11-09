@@ -86,6 +86,17 @@ input[type="button"] {
   @include button;
 }
 
+
+.not-front .content-wrapper {
+    button,
+  a.button,
+  input[type="reset"],
+  input[type="submit"],
+  input[type="button"] 
+    @include buttonBackground(#fffff, #d1d1d1, $textColor: #fff, $textShadow: none);
+  }
+}
+
 a.button {
   // IE7
   *padding-bottom: 3px;

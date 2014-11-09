@@ -63,6 +63,35 @@ ul.tabs-primary {
   }
 }
 
+.not-front .content-wrapper {
+  ul.tabs-primary {
+    li {
+      &.is-active {
+        a {
+          background-color: $tab-color;
+          color: $textColor;
+          border: 1px solid #d1d1d1;
+        }
+      }
+      a {
+        background-color: $tab-color;
+        border: 1px solid $tab-color;
+        color: #ffffff;
+        &:hover {
+          background-color: darken($tab-color, 15%);
+          border: 1px solid darken($tab-color, 10%);
+        }
+        &.active {
+          background-color: #d1d1d1;
+          color: $textColor;
+          &:hover {
+          }
+        }
+      }  
+    }
+  }
+}
+
 
 
 /* Main Menu

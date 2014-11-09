@@ -44,14 +44,13 @@ $wide: 1024px;
 
 #header-wrapper {
 	border-bottom: 1px solid #ffffff;
-	@include box-shadow(0 2px 2px #d1d1d1);
+  @include box-shadow(0 2px 2px rgba(0,0,0,.5));
 	background-color: $ui-grey-light;
 	> .container {
     padding-top: 16px;
     padding-bottom: 14px;
 	}
   .front & {
-    margin-bottom: 0;
     position: relative;
     z-index: 20;
   }
@@ -63,26 +62,41 @@ $wide: 1024px;
   }
 }
 
-
 .content-wrapper {
   padding-top: $horiz-gutter * 2;
   padding-bottom: $vert-gutter * 2;
 
   .front & {
+    padding-top: 0;
+  }
+
+  .not-front & {
+  background-color: $ui-blue-teal;
+  color: white;
+  h1, h2, h3, h4, h5, h6 {
+    color: white;
+  }
     a {
       color: white;
-      text-decoration: none;
+      text-decoration: underline;
     }
     a:hover {
       color: white;
       text-decoration: underline;
     }
-
     a:active {
       color: white;
       text-decoration: underline;
     }
   }
+  form small, form .description {
+    color: white;
+  }
+
+  ul {
+    padding: 0 0 0 40px;
+  }
+
 }
 
 

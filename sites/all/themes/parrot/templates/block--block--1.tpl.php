@@ -15,7 +15,7 @@ if ($classes) {
 <div <?php print $id_block . $classes .  $attributes; ?>>
   <?php print $mothership_poorthemers_helper;  ?>
  	<div class="intro-wrapper">
-		<p class="intro newsletter-intro">Found out more about us through our newsletter.</p>
+		<p class="intro newsletter-intro">Find out more about us through our newsletter.</p>
 		<a class="btn btn-primary mfp-inline-init" href="#newsletter-modal">Sign up!</a>
 	</div>
 
