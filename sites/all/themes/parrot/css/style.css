@@ -4463,7 +4463,7 @@ div.panels-ipe-control input:hover {
       margin-top: 24px; }
 
 .logo {
-  max-width: 255px; }
+  max-width: 280px; }
 
 .siteinfo {
   float: left; }
@@ -4482,13 +4482,20 @@ div.panels-ipe-control input:hover {
     padding-top: 20px;
     padding-bottom: 20px; }
   .front #header-wrapper {
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    position: relative;
+    z-index: 20; }
 
 .field-collection-container {
   border-bottom: 0; }
 
 .field-collection-view {
   border-bottom: 0; }
+
+#footer-wrapper {
+  background-color: #f5f5f5;
+  padding: 20px 0;
+  border-top: #d1d1d1; }
 
 /* Homepage slideshow */
 #panels-ipe-display-panelizer-node-13-default .container {
@@ -4603,10 +4610,8 @@ div.panels-ipe-control input:hover {
   padding: 0;
   margin: 0; }
 
-#footer-wrapper {
-  background-color: #f5f5f5;
-  padding: 20px 0;
-  border-top: #d1d1d1; }
+.front #two-brick-top-wrapper {
+  background: url(../images/ovals.png) #00844f; }
 
 /* Node edit tabs
    ========================================================================== */
