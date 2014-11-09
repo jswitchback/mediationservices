@@ -4579,7 +4579,7 @@ div.panels-ipe-control input:hover {
   border-bottom: 0; }
 
 #footer-wrapper {
-  background: url(../img/ovals.png) #f5f5f5;
+  background: url(../img/ovals.png) #07383f;
   padding: 20px 0;
   margin-top: 40px;
   border-top: 5px solid #f5f5f5; }
@@ -4738,111 +4738,113 @@ div.panels-ipe-control input:hover {
   top: 36px;
   right: 36px; }
 
-.field-name-field-banner-collection .rsBullet {
-  width: 10px;
-  height: 10px;
-  padding: 6px 5px 6px 4px; }
-.field-name-field-banner-collection .rsMinW .rsBullet span {
-  display: block;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: #CCC;
-  background: rgba(255, 255, 255, 0.5);
-  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.1); }
-.field-name-field-banner-collection .rsABlock {
-  position: absolute;
-  z-index: 15;
-  top: auto;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  padding: 36px;
-  background-color: #fff;
-  background: url(../img/ovals.png) rgba(255, 255, 255, 0.9);
-  background: url('../img/generated/ffffffe5-8.png?1415491273');
-  background: rgba(255, 255, 255, 0.9);
-  -webkit-border-radius: 36px;
-  -moz-border-radius: 36px;
-  border-radius: 36px;
-  color: #595959; }
+.field-name-field-banner-collection {
+  position: relative; }
+  .field-name-field-banner-collection .rsBullet {
+    width: 10px;
+    height: 10px;
+    padding: 6px 5px 6px 4px; }
+  .field-name-field-banner-collection .rsMinW .rsBullet span {
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #CCC;
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.1); }
+  .field-name-field-banner-collection .rsABlock {
+    position: absolute;
+    z-index: 15;
+    top: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 36px;
+    background-color: #fff;
+    background: url(../img/ovals.png) rgba(255, 255, 255, 0.9);
+    background: url('../img/generated/ffffffe5-8.png?1415482007');
+    background: rgba(255, 255, 255, 0.9);
+    -webkit-border-radius: 36px;
+    -moz-border-radius: 36px;
+    border-radius: 36px;
+    color: #595959; }
+    @media (min-width: 60em) {
+      .field-name-field-banner-collection .rsABlock {
+        width: 420px;
+        left: 48px;
+        right: auto;
+        bottom: 36px;
+        top: auto; } }
   @media (min-width: 60em) {
-    .field-name-field-banner-collection .rsABlock {
-      width: 420px;
-      left: 48px;
-      right: auto;
-      bottom: 36px;
-      top: auto; } }
-@media (min-width: 60em) {
-  .field-name-field-banner-collection .even .rsABlock {
-    right: 48px;
-    left: auto; } }
-.field-name-field-banner-collection .field-name-field-banner-text {
-  font-family: "merriweatherlight", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: normal;
-  line-height: 1;
-  font-size: 24px;
-  line-height: 40px;
-  margin-bottom: 20px; }
-.field-name-field-banner-collection .field-name-field-banner-link a {
-  -webkit-appearance: none;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  border-radius: 2px;
-  -webkit-background-clip: padding-box;
-  -moz-background-clip: padding-box;
-  background-clip: padding-box;
-  background-color: #053854;
-  border: 1px solid;
-  border-color: #021824 #04283c #04283c;
-  cursor: pointer;
-  color: #fff;
-  display: -moz-inline-box;
-  display: inline-block;
-  *display: inline;
-  *zoom: 1;
-  font-size: 13px;
-  outline: 0;
-  overflow: visible;
-  margin: 0;
-  padding: 4px 16px;
-  margin: 5px 10px 5px 0;
-  text-shadow: #021824 0 1px 0;
-  text-decoration: none;
-  vertical-align: top;
-  width: auto;
-  *padding-top: 2px;
-  *padding-bottom: 0;
-  margin: 0; }
-  .field-name-field-banner-collection .field-name-field-banner-link a:hover {
-    background-color: #01080c;
-    text-decoration: none; }
-  .field-name-field-banner-collection .field-name-field-banner-link a:active {
-    background-color: #01080c;
-    -webkit-box-shadow: inset rgba(0, 0, 0, 0.25) 0 1px 2px 0;
-    -moz-box-shadow: inset rgba(0, 0, 0, 0.25) 0 1px 2px 0;
-    box-shadow: inset rgba(0, 0, 0, 0.25) 0 1px 2px 0;
-    border-color: black black; }
-  .field-name-field-banner-collection .field-name-field-banner-link a::-moz-focus-inner {
-    border: 0;
-    padding: 0; }
-.field-name-field-banner-collection .field-collection-container .field-items .field-item {
-  margin-bottom: 10px; }
-.field-name-field-banner-collection .field-collection-container ul.action-links-field-collection-add {
-  float: none;
-  padding: 0;
-  margin: 0;
-  top: 60px;
-  right: 128px; }
-  .field-name-field-banner-collection .field-collection-container ul.action-links-field-collection-add ul {
+    .field-name-field-banner-collection .even .rsABlock {
+      right: 48px;
+      left: auto; } }
+  .field-name-field-banner-collection .field-name-field-banner-text {
+    font-family: "merriweatherlight", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    line-height: 1;
+    font-size: 24px;
+    line-height: 40px;
+    margin-bottom: 20px; }
+  .field-name-field-banner-collection .field-name-field-banner-link a {
+    -webkit-appearance: none;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding-box;
+    background-clip: padding-box;
+    background-color: #053854;
+    border: 1px solid;
+    border-color: #021824 #04283c #04283c;
+    cursor: pointer;
+    color: #fff;
+    display: -moz-inline-box;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    font-size: 13px;
+    outline: 0;
+    overflow: visible;
     margin: 0;
-    padding: 0; }
-    .field-name-field-banner-collection .field-collection-container ul.action-links-field-collection-add ul li {
-      list-style-type: none;
-      list-style-image: none; }
-.field-name-field-banner-collection .field-collection-view {
-  padding: 0;
-  margin: 0; }
+    padding: 4px 16px;
+    margin: 5px 10px 5px 0;
+    text-shadow: #021824 0 1px 0;
+    text-decoration: none;
+    vertical-align: top;
+    width: auto;
+    *padding-top: 2px;
+    *padding-bottom: 0;
+    margin: 0; }
+    .field-name-field-banner-collection .field-name-field-banner-link a:hover {
+      background-color: #01080c;
+      text-decoration: none; }
+    .field-name-field-banner-collection .field-name-field-banner-link a:active {
+      background-color: #01080c;
+      -webkit-box-shadow: inset rgba(0, 0, 0, 0.25) 0 1px 2px 0;
+      -moz-box-shadow: inset rgba(0, 0, 0, 0.25) 0 1px 2px 0;
+      box-shadow: inset rgba(0, 0, 0, 0.25) 0 1px 2px 0;
+      border-color: black black; }
+    .field-name-field-banner-collection .field-name-field-banner-link a::-moz-focus-inner {
+      border: 0;
+      padding: 0; }
+  .field-name-field-banner-collection .field-collection-container .field-items .field-item {
+    margin-bottom: 10px; }
+  .field-name-field-banner-collection .field-collection-container ul.action-links-field-collection-add {
+    float: none;
+    padding: 0;
+    margin: 0;
+    top: 60px;
+    right: 128px; }
+    .field-name-field-banner-collection .field-collection-container ul.action-links-field-collection-add ul {
+      margin: 0;
+      padding: 0; }
+      .field-name-field-banner-collection .field-collection-container ul.action-links-field-collection-add ul li {
+        list-style-type: none;
+        list-style-image: none; }
+  .field-name-field-banner-collection .field-collection-view {
+    padding: 0;
+    margin: 0; }
 
 .front #two-brick-top-wrapper {
   background: url(../img/ovals.png) #007873; }
@@ -5073,7 +5075,7 @@ ul.tabs-primary li {
 #block-menu-block-1 {
   clear: both;
   background: #053854;
-  background: url('../img/generated/ffffffe5-8.png?1415491273');
+  background: url('../img/generated/ffffffe5-8.png?1415482007');
   background: rgba(255, 255, 255, 0.9);
   -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 6px;
   -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 6px;
@@ -5173,7 +5175,7 @@ ul.tabs-primary li {
               background-color: transparent; }
     #block-menu-block-1 .expanded .menu {
       display: block;
-      background: url('../img/generated/ffffffe5-8.png?1415491273');
+      background: url('../img/generated/ffffffe5-8.png?1415482007');
       background: rgba(255, 255, 255, 0.9);
       -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 6px;
       -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 6px;

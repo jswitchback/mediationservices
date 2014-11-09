@@ -12,7 +12,7 @@ if ($classes) {
 <?php if( theme_get_setting('mothership_poorthemers_helper') ){ ?>
 <!-- block -->
 <?php } ?>
-<div <?php print $id_block . $classes .  $attributes . $role; ?>>
+<div <?php print $id_block . $classes .  $attributes; ?>>
   <?php print $mothership_poorthemers_helper;  ?>
  	<div class="intro-wrapper">
 		<p class="intro newsletter-intro">Found out more about us through our newsletter.</p>

@@ -74,7 +74,7 @@ $wide: 1024px;
 }
 
 #footer-wrapper {
-  background: url(../img/ovals.png) $ui-grey-light;
+  background: url(../img/ovals.png) $ui-gey-light;
   padding: $vert-gutter 0;
   margin-top: $vert-gutter * 2;
   border-top: 5px solid $ui-grey-light;
@@ -211,6 +211,7 @@ $wide: 1024px;
 
 
 .field-name-field-banner-collection {
+  position: relative;
 
   .rsBullet {
     width: 10px;
@@ -295,6 +296,6 @@ $wide: 1024px;
 
 .front {
   #two-brick-top-wrapper {
-    background: url(../img/ovals.png) $ui-teal;
+    background: url(../img/ovals.png) $ui-blue-teal;
   }
 }
