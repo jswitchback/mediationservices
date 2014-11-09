@@ -88,12 +88,12 @@ input[type="button"] {
 
 
 .not-front .content-wrapper {
-    button,
+  button,
   a.button,
   input[type="reset"],
   input[type="submit"],
-  input[type="button"] 
-    @include buttonBackground(#fffff, #d1d1d1, $textColor: #fff, $textShadow: none);
+  input[type="button"] {
+    // @include buttonBackground(#fffff, #d1d1d1, $textColor: #fff, $textShadow: none);
   }
 }
 

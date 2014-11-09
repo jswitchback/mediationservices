@@ -77,15 +77,33 @@
 .field-name-field-hover-items {
   .field-items .field-item{
     width:230px;
-
+    .field-name-field-hover-text {
+      display:none;
+    }
     a {
       text-decoration: none;
     }
     .field-name-field-hover-title {
       font-size:2em;
+      text-decoration: none;
+
+    }
+    &:hover{
+      .field-name-field-hover-text {
+
+        display:block;
+        text-decoration: none;
+        color: #767676;
+        background-color: #f1f1f1;
+        border: 1px solid #f9f9f9;
+        border-radius: 10px;
+        padding:10px;
+      }
+      .field-name-field-hover-title {
+        display:none;
+        //color: #ccc;
+      }
     }
   }
-  .field-name-field-hover-text {
-    display:none;
-  }
+
 }
