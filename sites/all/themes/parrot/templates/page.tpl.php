@@ -76,7 +76,7 @@
 <?php endif; ?>
 
 <div id="content-wrapper" class="fullwidth">
-  <div class="container">
+  <div class="container-content">
     <div class="page row">
 
       <div role="main" id="main-content">
@@ -117,7 +117,7 @@
       <?php endif; ?>
 
     </div><!--/page-->
-  </div><!--/.container-->
+  </div><!--/.container-content-->
 </div><!--/#content-wrapper-->
 
 <?php if ($page['footer']): ?>
