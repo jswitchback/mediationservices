@@ -119,6 +119,10 @@ $nav-color: $linkColor;
           visibility: visible;
         }
       }
+      &.last .menu {
+        left: auto;
+        right: 0;
+      }
     }
   }
 }
