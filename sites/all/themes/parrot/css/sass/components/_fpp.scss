@@ -1,4 +1,5 @@
-.field-name-field-stats {
+.field-name-field-stats,
+.field-name-field-hover-items {
   .field-items{
     clear:both;
     text-align: center;
@@ -11,7 +12,8 @@
         text-align:center;
         margin-bottom: $vert-gutter / 2;
       }
-      .field-name-field-actual-stat {
+      .field-name-field-actual-stat,
+      .field-name-field-hover-title {
         font-family: $webfontLight;
         font-size:6em;
         background-color: #f1f1f1;
@@ -72,3 +74,14 @@
   }
 }
 
+.field-name-field-hover-items {
+  .field-items .field-item{
+    width:230px;
+    .field-name-field-hover-title {
+      font-size:2em;
+    }
+  }
+  .field-name-field-hover-text {
+    display:none;
+  }
+}
