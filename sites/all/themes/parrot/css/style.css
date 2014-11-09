@@ -4428,6 +4428,25 @@ div.panels-ipe-control input:hover {
 .ui-widget.ui-widget-content.media-wrapper {
   z-index: 10000; }
 
+.field-name-field-stats label {
+  display: none; }
+.field-name-field-stats .field-items {
+  clear: both; }
+  .field-name-field-stats .field-items .field-item {
+    float: left;
+    width: 25%; }
+    .field-name-field-stats .field-items .field-item .field-name-field-stat-title {
+      text-align: center; }
+    .field-name-field-stats .field-items .field-item .field-name-field-actual-stat {
+      font-family: "merriweatherlight", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 6em;
+      background-color: #f9f9f9;
+      border: 1px solid #c1c1c1;
+      border-radius: 50%;
+      display: block;
+      padding: 88px 15px;
+      color: #d1d1d1; }
+
 .logo {
   max-width: 255px; }
 
@@ -4481,7 +4500,7 @@ div.panels-ipe-control input:hover {
   bottom: 0;
   padding: 36px;
   background-color: #fff;
-  background: url('../img/generated/fffffff2-8.png?1415491801');
+  background: url('../img/generated/fffffff2-8.png?1415497360');
   background: rgba(255, 255, 255, 0.95);
   color: #595959; }
   @media (min-width: 60em) {

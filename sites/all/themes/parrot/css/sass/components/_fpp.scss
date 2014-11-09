@@ -1,0 +1,27 @@
+.field-name-field-stats {
+  label{
+    display: none;
+  }
+  .field-items{
+    clear:both;
+    .field-item{
+      float:left;
+      width: 25%;
+      .field-name-field-stat-title {
+        text-align:center;
+      }
+      .field-name-field-actual-stat {
+        font-family: $webfontLight;
+        font-size:6em;
+        background-color: #f9f9f9;
+        border: 1px solid #c1c1c1;
+        border-radius: 50%;
+        display: block;
+        padding: 88px 15px;
+        color: #d1d1d1;
+      }
+    }
+  }
+
+
+}
