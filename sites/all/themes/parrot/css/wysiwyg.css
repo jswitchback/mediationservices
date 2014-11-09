@@ -1387,3 +1387,6 @@ iframe.media-youtube-player {
 
 .contextual-links-region:hover a.contextual-links-trigger {
   display: block; }
+
+#admin-menu {
+  box-shadow: 0 -10px 20px 2px #fff; }
