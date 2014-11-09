@@ -6,7 +6,7 @@
 <?php
 if ($classes) {
   $classes = ' class="'. $classes . ' "';
-}
+} 
 ?>
 
 <?php if( theme_get_setting('mothership_poorthemers_helper') ){ ?>
