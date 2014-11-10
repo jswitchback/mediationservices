@@ -87,9 +87,17 @@
 // Body text.
 // -------------------------
 
+body {
+  font-family: $baseFontFamily;
+  font-size: $baseFontSize;
+  line-height: $baseLineHeight;
+  color: $textColor; 
+}
+
 p {
   margin: 0 0 $baseLineHeight / 2;
 }
+
 .lead {
   margin-bottom: $baseLineHeight;
   font-size: $baseFontSize * 1.5;

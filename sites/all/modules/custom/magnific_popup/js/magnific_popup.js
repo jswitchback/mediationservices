@@ -7,7 +7,18 @@
     removalDelay: 160,
     preloader: false,
     fixedContentPos: 'auto',
-    closeBtnInside: false
+    closeBtnInside: false,
+    callbacks: {
+      // Add custom class from target element data-modal-class attribute
+      beforeOpen: function() {
+          var $targetEl = $(this.st.el),
+              newClass = $targetEl.data("modal-class");
+
+              if (newClass) {
+                this.st.mainClass = this.st.mainClass + ' ' + newClass;
+              }
+      }
+    }
   };
   Drupal.settings.magnific_popup.common_options_iframe = {
     type: 'iframe',

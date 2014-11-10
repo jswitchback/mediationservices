@@ -2093,10 +2093,6 @@ table {
 
 body {
   margin: 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  line-height: 1.4;
-  color: #595959;
   background: #fff; }
   body.admin-menu {
     margin-top: 32px !important; }
@@ -2201,6 +2197,12 @@ Block clearfix - yup its a recap of the clearfix trick, no reason to do class="c
   src: url("../fonts/merriweather-heavyitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/merriweather-heavyitalic-webfont.woff2") format("woff2"), url("../fonts/merriweather-heavyitalic-webfont.woff") format("woff"), url("../fonts/merriweather-heavyitalic-webfont.ttf") format("truetype"), url("../fonts/merriweather-heavyitalic-webfont.svg#../fonts/merriweatherheavy_italic") format("svg");
   font-weight: normal;
   font-style: normal; }
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #595959; }
+
 p {
   margin: 0 0 0.7; }
 
@@ -4771,10 +4773,10 @@ div.panels-ipe-control input:hover {
 .mfp-content .title {
   margin-top: 0; }
 
-/* Homepage */
-.front .mfp-wrap {
+.mfp-newsletter .mfp-content {
   max-width: 420px; }
 
+/* Homepage */
 #panels-ipe-display-panelizer-node-13-default .container {
   padding: 0; }
 
