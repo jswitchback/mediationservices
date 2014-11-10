@@ -9,10 +9,10 @@
     fixedContentPos: 'auto',
     closeBtnInside: false,
     callbacks: {
-      // Add custom class from target element data-modal-class attribute
+      // Add custom class from target element data-modal-class attribute <a href="#some-inline-div" class="mfp-inline-init" mdata-modal-class="login">Login</a>
       beforeOpen: function() {
-          var $targetEl = $(this.st.el),
-              newClass = $targetEl.data("modal-class");
+          var $triggerEl = $(this.st.el),
+              newClass = $triggerEl.data("modal-class");
 
               if (newClass) {
                 this.st.mainClass = this.st.mainClass + ' ' + newClass;
