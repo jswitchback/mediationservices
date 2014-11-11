@@ -156,7 +156,7 @@ $nav-color: $linkColor;
         position: absolute;
         left: 0;
         z-index: 50;
-        top: 22px;
+        top: 29px;
       }
       &:hover {
         > .menu {
@@ -348,16 +348,16 @@ $nav-color: $linkColor;
           }
         }
       }
-      &.expanded {
-  			list-style-image: none;
-				list-style-type: none;
-        ul {
-          margin: 0 16px;
-          a {
-            @include rem('font-size', 12px);
-          }
-        }
-  		}
+    }
+  }
+  .expanded { // expanded li ... dropdown in desktop
+    list-style-image: none;
+    list-style-type: none;
+    ul {
+      margin: 0 16px;
+      a {
+        @include rem('font-size', 12px);
+      }
     }
   }
 }
@@ -413,6 +413,7 @@ $nav-color: $linkColor;
 
     .expanded {
       .menu {
+        margin: 0;
         display: block;
         @include rgba-background(rgba(255,255,255, .9));
         @include box-shadow(rgba(0, 0, 0, 0.2) 0 1px 6px);
@@ -424,9 +425,11 @@ $nav-color: $linkColor;
           width: 220px;
           margin-left: 0;
           a {
+            padding: 8px 12px;
             &:hover, &:active {
             	border-bottom: none;
               background-color: $linkColor;
+              color: #ffffff;
             }
 						&.active,
 						&.active-trail {
