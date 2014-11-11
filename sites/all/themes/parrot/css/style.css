@@ -2199,7 +2199,7 @@ Block clearfix - yup its a recap of the clearfix trick, no reason to do class="c
   font-style: normal; }
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.4;
   color: #595959; }
 
@@ -2208,7 +2208,7 @@ p {
 
 .lead {
   margin-bottom: 1.4;
-  font-size: 21px;
+  font-size: 24px;
   font-weight: 200;
   line-height: 2.1; }
 
@@ -2419,7 +2419,7 @@ code,
 pre {
   padding: 0 3px 2px;
   font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
-  font-size: 12px;
+  font-size: 14px;
   color: #333;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -2435,7 +2435,7 @@ pre {
   display: block;
   padding: 0.2;
   margin: 0 0 0.7;
-  font-size: 13px;
+  font-size: 15px;
   line-height: 1.4;
   word-break: break-all;
   word-wrap: break-word;
@@ -3035,7 +3035,7 @@ input#panels-ipe-cancel:active {
 
 .btn-group > .btn,
 .btn-group > .dropdown-menu {
-  font-size: 14px; }
+  font-size: 16px; }
 
 .btn-group > .btn-mini {
   font-size: 11px; }
@@ -3209,7 +3209,7 @@ input#panels-ipe-cancel:active {
   *zoom: 1;
   padding: 4px 16px;
   margin-bottom: 0;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.4;
   *line-height: 1.4;
   text-align: center;
@@ -3275,7 +3275,7 @@ input#panels-ipe-cancel:active {
 
 .btn-large {
   padding: 9px 14px;
-  font-size: 16px;
+  font-size: 18px;
   line-height: normal;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -3286,7 +3286,7 @@ input#panels-ipe-cancel:active {
 
 .btn-small {
   padding: 3px 9px;
-  font-size: 12px;
+  font-size: 14px;
   line-height: -0.6px; }
 
 .btn-small [class^="icon-"] {
@@ -3294,7 +3294,7 @@ input#panels-ipe-cancel:active {
 
 .btn-mini {
   padding: 2px 6px;
-  font-size: 11px;
+  font-size: 13px;
   line-height: -1.6px; }
 
 .btn-block {
@@ -4218,7 +4218,7 @@ input[type="submit"].btn {
 
 .label,
 .badge {
-  font-size: 11.844px;
+  font-size: 13.536px;
   font-weight: bold;
   line-height: 14px;
   color: #fff;
