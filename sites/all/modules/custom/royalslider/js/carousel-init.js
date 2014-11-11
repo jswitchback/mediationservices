@@ -9,11 +9,11 @@ $(window).load(function() {
 
   $('.rs-slideshow .field-items').royalSlider({
     autoScaleSlider: true,
+    autoHeight: true,
     autoScaleSliderHeight: 336,
     // arrowsNavAutoHide: false,
     arrowsNav: false,
-    autoHeight: true,
-    numImagesToPreload: 2,
+    numImagesToPreload: 1,
     autoPlay: {
       enabled: true,
       pauseOnHover: true,

@@ -5,6 +5,15 @@ $rgbapng_px_size: 8;
 @import "variables";
 
 
+
+ul.menu li {
+  margin: 0;
+}
+
+li.expanded {
+  padding: 0;
+}
+
 /* Node edit tabs
    ========================================================================== */
 
@@ -63,25 +72,32 @@ ul.tabs-primary {
   }
 }
 
-.not-front .content-wrapper {
-  ul.tabs-primary {
+$tab-color-light: #ffffff;
+
+.page-dark .content-wrapper {
+  ul.tabs.primary {
+    padding-left: 0;
     li {
       &.is-active {
         a {
-          background-color: $tab-color;
+          text-decoration: none;
+          background-color: $tab-color-light;
           color: $textColor;
           border: 1px solid #d1d1d1;
         }
       }
       a {
-        background-color: $tab-color;
-        border: 1px solid $tab-color;
-        color: #ffffff;
+        background-color: $tab-color-light;
+        border: 1px solid $tab-color-light;
+        color: $textColor;
+        text-decoration: none;
         &:hover {
-          background-color: darken($tab-color, 15%);
-          border: 1px solid darken($tab-color, 10%);
+          text-decoration: none;
+          background-color: darken($tab-color-light, 15%);
+          border: 1px solid darken($tab-color-light, 10%);
         }
         &.active {
+          text-decoration: none;
           background-color: #d1d1d1;
           color: $textColor;
           &:hover {
@@ -116,7 +132,6 @@ $nav-color: $linkColor;
 } 
 
 .show-nav #block-menu-block-1 {
-  @include opaque;
   visibility: visible;
   -webkit-animation-name: fadeInDown;
   animation-name: fadeInDown;
@@ -295,44 +310,55 @@ $nav-color: $linkColor;
   @include box-shadow(rgba(0, 0, 0, 0.2) 0 1px 6px);
   position: absolute;
   right: 0;
-  top: 90px;
+  top: 60px;
   z-index: 50;
   width: 260px;
-  margin-top: 32px;
-  margin-bottom: $vert-gutter/2;
+  margin: 0;
+
   .menu {
-  	ul  {
-	    li {
-	      float: none;
-	      text-align: left;
-	      margin-bottom: 0;
-	      a {
-	        display: block;
-	        padding: $vert-gutter/2 $horiz-gutter/2;
-	        font-weight: bold;
-	        text-transform: uppercase;
-	        @include rem('font-size', 13px);
-	        @include theme-link($inactive-color: $textColor, $active-color: #fff, $hover-decoration: none);
-	        @include transition-property(color, background-color); 
-	        @include transition-duration(.15s);
-	        @include transition-timing-function(ease-in);
-	        &:hover, &:active {
-	          background-color: $linkColor;
-	        }
-	        &.active,
-	        &.acitve-trail {
-	          color: $nav-color;
-	          &:hover, &:active {
-	            background-color: transparent;
-	          }
-	        }	      
-	      &.expanded {
-	  			list-style-image: none;
-					list-style-type: none;
-	  		}
-	      }
-	    }
-	  }
+    margin: 0;
+    li {
+      float: none;
+      text-align: left;
+      margin-bottom: 0;
+      a {
+        color: $textColor;
+        background: none;
+        font-weight: bold;
+        padding: 4px 0;
+        text-transform: uppercase;
+        @include rem('font-size', 13px);
+        display: block;
+        padding: $vert-gutter/2 $horiz-gutter/2;
+        font-weight: bold;
+        text-transform: uppercase;
+        @include rem('font-size', 13px);
+        @include theme-link($inactive-color: $textColor, $active-color: #fff, $hover-decoration: none);
+        @include transition-property(color, background-color); 
+        @include transition-duration(.15s);
+        @include transition-timing-function(ease-in);
+        &:hover, &:active {
+          background-color: $linkColor;
+        }
+        &.active,
+        &.acitve-trail {
+          color: $nav-color;
+          &:hover, &:active {
+            background-color: transparent;
+          }
+        }
+      }
+      &.expanded {
+  			list-style-image: none;
+				list-style-type: none;
+        ul {
+          margin: 0 16px;
+          a {
+            @include rem('font-size', 12px);
+          }
+        }
+  		}
+    }
   }
 }
 
@@ -349,7 +375,6 @@ $nav-color: $linkColor;
     position: static;
     width: auto;
     @include box-shadow(none);
-
     .menu { /* Menu block links */
       margin: 0;
       padding: 0;
@@ -360,12 +385,9 @@ $nav-color: $linkColor;
         list-style-image: none;
         border-bottom: none;
         a {
-          color: $textColor;
        	  background: none;
        	  font-weight: bold;
 					padding: 4px 0;
-       	  text-transform: uppercase;
-          @include rem('font-size', 13px);
           &:hover {
             background: none;
             color: $nav-color;

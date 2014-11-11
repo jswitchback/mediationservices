@@ -22,7 +22,7 @@
         display: block;
         @include box-sizing(content-box);
         padding: 42px 15px;
-        color: #d1d1d1;
+        color: lighten($textColor, 20%);
         width: 85%;
         margin: 0 auto;
         .no-touch & {

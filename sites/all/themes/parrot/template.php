@@ -5,7 +5,12 @@
 
 
 function parrot_preprocess_html(&$vars) {
-  //  kpr($vars['content']);
+  // kpr($vars);
+  if (!$vars['is_front']) {
+    // Add a class to tie css changes to text, button and link colors 
+    $vars['classes_array'][] = 'page-dark';
+  }
+
 }
 
 function parrot_preprocess_page(&$vars,$hook) {

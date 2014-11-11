@@ -30,7 +30,10 @@ $wide: 1024px;
 }
 
 .logo {
-	max-width: 280px;
+	width: 180px;
+  @include breakpoint($tablet){
+    width: 280px;
+  }
 }
 
 
@@ -52,7 +55,7 @@ $wide: 1024px;
 	}
   .front & {
     position: relative;
-    z-index: 20;
+    z-index: 50;
   }
 }
 
@@ -70,12 +73,12 @@ $wide: 1024px;
     padding-top: 0;
   }
 
-  .not-front & {
-  background-color: $ui-blue-teal;
-  color: white;
-  h1, h2, h3, h4, h5, h6 {
+  .page-dark & {
+    background-color: $ui-blue-teal;
     color: white;
-  }
+    h1, h2, h3, h4, h5, h6 {
+      color: white;
+    }
     a {
       color: white;
       text-decoration: underline;
@@ -89,6 +92,7 @@ $wide: 1024px;
       text-decoration: underline;
     }
   }
+
   form small, 
   form .description {
     color: white;
@@ -107,6 +111,10 @@ $wide: 1024px;
 
 .field-collection-view {
   border-bottom: 0;
+}
+
+.field-collection-container .field-items .field-item {
+  margin-bottom: $vert-gutter * 2;
 }
 
 #footer-wrapper {
@@ -185,6 +193,8 @@ $wide: 1024px;
     font-size: 24px;
     margin: 0 auto; 
     max-width: 480px;
+    padding-left: $horiz-gutter;
+    page-right: $horiz-gutter;
     &::first-letter {
       font-size: 40px;
     }
@@ -250,6 +260,15 @@ $wide: 1024px;
 .field-name-field-banner-collection {
   position: relative;
 
+  .field-collection-container {
+    border-bottom: 1px solid #D3D7D9;
+    margin-bottom: 0;
+  }
+
+  .field-collection-view .entity-field-collection-item {
+    float: none;
+  }
+
   .rsBullet {
     width: 10px;
     height: 10px;
@@ -261,25 +280,33 @@ $wide: 1024px;
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background: #CCC;
+    background: #ccc;
     background: rgba(255,255,255,0.5);
     box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.1);
   }
 
   .rsABlock {
-    position: absolute;
+    position: static;
     z-index: 15;
     top: auto;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    left: auto;
+    right: auto;
+    bottom: auto;
     padding: 36px;
     background-color: #fff;
     background: url(../img/ovals.png) rgba(255,255,255,.9);
     @include rgba-background(rgba(255,255,255, .9));
-    @include border-radius(36px);
     color: $textColor;
+    @include breakpoint($tablet){
+      position: absolute;
+      z-index: 15;
+      top: auto;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
     @include breakpoint($computer){
+      @include border-radius(36px);
       width: 420px;
       left: 48px;
       right: auto;
@@ -287,6 +314,7 @@ $wide: 1024px;
       top: auto;
     }
   }
+
 
   .odd .rsABlock {
     @include breakpoint($computer){
