@@ -75,6 +75,8 @@
 }
 
 .field-name-field-hover-items {
+  margin-top: 25px;
+
   .field-items .field-item{
     width:230px;
     .field-name-field-hover-text {
@@ -86,18 +88,20 @@
     .field-name-field-hover-title {
       font-size:2em;
       text-decoration: none;
-
+      width: 100%;
+      background-color: #ffffff;
     }
     &:hover{
       .field-name-field-hover-text {
 
-        display:block;
+        display: block;
         text-decoration: none;
         color: #767676;
-        background-color: #f1f1f1;
-        border: 1px solid #f9f9f9;
+        background-color: #ffffff;
         border-radius: 10px;
-        padding:10px;
+        padding: 40px 10px;
+        min-height: 200px;
+
       }
       .field-name-field-hover-title {
         display:none;
@@ -106,4 +110,15 @@
     }
   }
 
+}
+.front #two-brick-top-wrapper {
+  &.fullwidth{
+    margin-bottom: 0;
+  }
+}
+.front #two-brick-middle-top-wrapper {
+  background: rgb(238, 238, 238);
+  .field-collection-container{
+    margin-bottom: 0;
+  }
 }
