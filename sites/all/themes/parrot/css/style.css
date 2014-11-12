@@ -4830,7 +4830,7 @@ div.panels-ipe-control input:hover {
     padding: 36px;
     background-color: #fff;
     background: url(../img/ovals.png) rgba(255, 255, 255, 0.9);
-    background: url('../img/generated/ffffffe5-8.png?1415482007');
+    background: url('../img/generated/ffffffe5-8.png?1415491273');
     background: rgba(255, 255, 255, 0.9);
     color: #595959; }
     @media (min-width: 47.5em) {
@@ -4924,6 +4924,8 @@ div.panels-ipe-control input:hover {
 
 .front #two-brick-top-wrapper {
   background: url(../img/ovals.png) #07383f; }
+.front .rs-slideshow .field-collection-container {
+  margin-bottom: 0; }
 
 ul.menu li {
   margin: 0; }
@@ -5176,7 +5178,7 @@ ul.tabs-primary li {
 #block-menu-block-1 {
   clear: both;
   background: #053854;
-  background: url('../img/generated/ffffffe5-8.png?1415482007');
+  background: url('../img/generated/ffffffe5-8.png?1415491273');
   background: rgba(255, 255, 255, 0.9);
   -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 6px;
   -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 6px;
@@ -5286,7 +5288,7 @@ ul.tabs-primary li {
     #block-menu-block-1 .expanded .menu {
       margin: 0;
       display: block;
-      background: url('../img/generated/ffffffe5-8.png?1415482007');
+      background: url('../img/generated/ffffffe5-8.png?1415491273');
       background: rgba(255, 255, 255, 0.9);
       -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 6px;
       -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 6px;
