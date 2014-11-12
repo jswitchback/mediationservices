@@ -323,7 +323,7 @@ $wide: 1024px;
       width: 420px;
       left: 48px;
       right: auto;
-      bottom: 36px;
+      bottom: 50px;
       top: auto;
     }
   }
@@ -374,6 +374,34 @@ $wide: 1024px;
 
 .front {
   #two-brick-top-wrapper {
-    background: url(../img/ovals.png) $ui-blue-teal;
+    background: $ui-blue-teal;
   }
+  .rs-slideshow{
+    position: relative;
+    max-height: 403px;
+    overflow: hidden;
+    .rsSlide{
+      &:before, &:after{
+        width: 200px;
+        content: "";
+        position: absolute;
+        height: 403px;
+        display: block;
+        z-index: 14;
+        //background-image: linear-gradient(to right, #07383f 0%, rgba(0, 0, 0, 0) 100%);
+        @include gradient-horizontal($startColor: #07383f, $endColor: transparent);
+      }
+      &:after{
+        //background-image: linear-gradient(to left, #07383f 0%, rgba(0, 0, 0, 0) 100%);
+        @include gradient-horizontal($startColor: transparent, $endColor: #07383f);
+        background-color: transparent;
+        right:0;
+        top:0;
+      }
+    }
+    .field-collection-container {
+      margin-bottom: 0;
+    }
+  }
+
 }
