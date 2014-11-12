@@ -328,19 +328,15 @@ address {
   line-height: $baseLineHeight;
 }
 
-.wys-section-title {
-
-}
-
-.wys-sub-title {
-
-}
-
-.wys-block-text {
-
-}
+/* Wysiwyg custom ckeditor styles */
+.wys-section-title {}
+.wys-sub-title {}
+.wys-block-text {}
+.wys-list-title {}
 
 
-.wys-list-title {
-
+.wys-small-title,
+.wys-medium-title,
+.wys-large-title {
+  font-family: $sansFontFamily;
 }

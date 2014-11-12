@@ -106,6 +106,23 @@ $wide: 1024px;
 }
 
 
+#footer-wrapper {
+  background: url(../img/ovals.png) $ui-grey-light;
+  padding: $vert-gutter*2 0 $vert-gutter*2 0;
+  border-top: 5px solid $ui-grey-light;
+  @include pie-clearfix;
+  margin-left: -$horiz-gutter/2;
+  margin-right: -$horiz-gutter/2;
+  .block {
+    margin-bottom: $vert-gutter * 2;
+  }
+  .title {
+    @include h4;
+    line-height: 1.4;
+    margin-top: 0;
+  }
+}
+
 .field-collection-container {
   border-bottom: 0;
 }
@@ -116,12 +133,6 @@ $wide: 1024px;
 
 .field-collection-container .field-items .field-item {
   margin-bottom: $vert-gutter * 2;
-}
-
-#footer-wrapper {
-  background: url(../img/ovals.png) $ui-grey-light;
-  padding: $vert-gutter 0;
-  border-top: 5px solid $ui-grey-light;
 }
 
 /* Newsletter signup block */
@@ -204,6 +215,7 @@ $wide: 1024px;
 
 .intro {
   font-size: 16px;
+  margin-top: 0;
 }
 
 .mfp-close:hover {

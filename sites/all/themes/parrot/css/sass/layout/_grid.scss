@@ -87,7 +87,10 @@ $breakpoint-default-media: all;
 $breakpoint-default-pair: width;
 
 $narrow: 480px;
+$tablet-small: 600px;
+$tablet-max: 759px;
 $tablet: 760px;
+$computer-max: 959px;
 $computer: 960px;
 $wide: 1024px;
 
@@ -1365,5 +1368,252 @@ $wide: 1024px;
 }
 
 
+/* Footer block layout. Classes come from block preprocess in template.php */
 
-// Default grid blocks here following the "Mobile First" strategy.
+.max-two,
+.max-three,
+.max-four,
+.max-six {
+  padding-left: $horiz-gutter/2;
+  padding-right: $horiz-gutter/2;
+}
+
+/* 2 COLUMN LAYOUT (Generally min-width: 600px to 759px)
+   ========================================================================== */
+
+@include breakpoint($tablet-small){
+
+  .max-two {
+    float: left;
+  }
+
+  .max-two:nth-child(2n+1) {
+    width: 50%;
+    margin-left: 0%;
+    margin-right: -50%;
+    clear: left;
+  }
+
+  .max-two:nth-child(2n+2) {
+    width: 50%;
+    margin-left: 50%;
+    margin-right: -100%;
+  }
+
+}
+
+@include breakpoint($tablet-small) {
+  .max-three,
+  .max-four,
+  .max-six {
+    float: left;
+  }
+}
+
+@include breakpoint((min-width $tablet-small) (max-width $tablet-max)) {
+
+  .max-three:nth-child(3n+1), 
+  .max-five:nth-child(3n+1) {
+    width: 50%;
+    margin-left: 0%;
+    margin-right: -50%;
+    clear: left;
+  }
+
+  .max-three:nth-child(3n+2), 
+  .max-five:nth-child(3n+2) {
+    width: 50%;
+    margin-left: 50%;
+    margin-right: -100%;
+  }
+
+  .max-three:nth-child(3n+3), 
+  .max-five:nth-child(3n+3) {
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+    clear: both;
+  }
+
+  .max-four:nth-child(2n+1) {
+    width: 50%;
+    margin-left: 0%;
+    margin-right: -50%;
+    clear: left;
+  }
+
+  .max-four:nth-child(2n+2) {
+    width: 50%;
+    margin-left: 50%;
+    margin-right: -100%;
+  }
+
+
+  .max-six:nth-child(2n+1) {
+    width: 50%;
+    margin-left: 0%;
+    margin-right: -50%;
+    clear: left;
+  }
+
+  .max-six:nth-child(2n+2) {
+    width: 50%;
+    margin-left: 50%;
+    margin-right: -100%;
+  }
+
+}
+
+/* 3 COLUMN LAYOUT (Generally min-width: 760px)
+   ========================================================================== */
+
+@include breakpoint($tablet){
+
+  .max-three:nth-child(3n+1), .max-six:nth-child(3n+1) {
+    width: 33.33333%;
+    margin-left: 0%;
+    margin-right: -33.33333%;
+    clear: left;
+  }
+
+  .max-three:nth-child(3n+2), .max-six:nth-child(3n+2) {
+    width: 33.33333%;
+    margin-left: 33.33333%;
+    margin-right: -66.66667%;
+  }
+
+  .max-three:nth-child(3n+3), .max-six:nth-child(3n+3) {
+    width: 33.33333%;
+    margin-left: 66.66667%;
+    margin-right: -100%;
+  }
+}
+
+@include breakpoint((min-width $tablet) (max-width $computer-max)){
+
+  .max-four:nth-child(4n+1) {
+    width: 33.33333%;
+    margin-left: 0%;
+    margin-right: -33.33333%;
+    clear: left;
+  }
+
+  .max-four:nth-child(4n+2) {
+    width: 33.33333%;
+    margin-left: 33.33333%;
+    margin-right: -66.66667%;
+  }
+
+  .max-four:nth-child(4n+3) {
+    width: 33.33333%;
+    margin-left: 66.66667%;
+    margin-right: -100%;
+    clear: none;
+  }
+
+  .max-four:nth-child(4n+4) {
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+    clear: both;
+  }
+
+  .max-five:nth-child(5n+1) {
+    width: 33.33333%;
+    margin-left: 0%;
+    margin-right: -33.33333%;
+    clear: left;
+  }
+
+  .max-five:nth-child(5n+2) {
+    width: 33.33333%;
+    margin-left: 33.33333%;
+    margin-right: -66.66667%;
+  }
+
+  .max-five:nth-child(5n+3) {
+    width: 33.33333%;
+    margin-left: 66.66667%;
+    margin-right: -100%;
+  }
+
+  .max-five:nth-child(5n+4) {
+    width: 50%;
+    margin-left: 0%;
+    margin-right: -50%;
+    clear: left;
+  }
+
+  .max-five:nth-child(5n+5) {
+    width: 50%;
+    margin-left: 50%;
+    margin-right: -100%;
+  }
+
+  .max-five {
+    float: left;
+  }
+}
+
+/* 4 COLUMN LAYOUT (Generally min-width: 960px)
+   ========================================================================== */
+
+@include breakpoint($computer){
+
+  .max-four:nth-child(4n+1) {
+    width: 25%;
+    margin-left: 0%;
+    margin-right: -25%;
+    clear: left;
+  }
+
+  .max-four:nth-child(4n+2) {
+    width: 25%;
+    margin-left: 25%;
+    margin-right: -50%;
+  }
+
+  .max-four:nth-child(4n+3) {
+    width: 25%;
+    margin-left: 50%;
+    margin-right: -75%;
+  }
+
+  .max-four:nth-child(4n+4) {
+    width: 25%;
+    margin-left: 75%;
+    margin-right: -100%;
+  }
+
+  .max-five:nth-child(5n+1) {
+    width: 25%;
+    margin-left: 0%;
+    margin-right: -25%;
+    clear: left;
+  }
+
+  .max-five:nth-child(5n+2) {
+    width: 25%;
+    margin-left: 25%;
+    margin-right: -50%;
+  }
+
+  .max-five:nth-child(5n+3) {
+    width: 25%;
+    margin-left: 50%;
+    margin-right: -75%;
+  }
+
+  .max-five:nth-child(5n+4) {
+    width: 25%;
+    margin-left: 75%;
+    margin-right: -100%;
+  }
+
+  .max-five:nth-child(5n+5) {
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+    clear: left;
+  }
+}

@@ -102,31 +102,34 @@ if(typeof(CKEDITOR) !== 'undefined') {
                     {
                             'class' : 'wys-title wys-list-title'
                     }
-            }
+            },
 
-            /*
-            // Examples:
             {
-                    name : 'Image on Left',
-                    element : 'img',
+                    name : 'Title large',
+                    element : 'h2',
                     attributes :
                     {
-                            'style' : 'padding: 5px; margin-right: 5px',
-                            'border' : '2',
-                            'align' : 'left'
+                            'class' : 'wys-title wys-large-title'
                     }
             },
 
             {
-                    name : 'Image on Right',
-                    element : 'img',
+                    name : 'Title medium',
+                    element : 'h3',
                     attributes :
                     {
-                            'style' : 'padding: 5px; margin-left: 5px',
-                            'border' : '2',
-                            'align' : 'right'
+                            'class' : 'wys-title wys-medium-title'
+                    }
+            },
+
+            {
+                    name : 'Title small',
+                    element : 'h4',
+                    attributes :
+                    {
+                            'class' : 'wys-title wys-small-title'
                     }
             }
-            */
+
     ]);
 }

@@ -335,6 +335,12 @@ address {
   font-style: normal;
   line-height: 1.4; }
 
+/* Wysiwyg custom ckeditor styles */
+.wys-small-title,
+.wys-medium-title,
+.wys-large-title {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
 .input_tiny {
   width: 50px; }
 

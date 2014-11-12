@@ -1,9 +1,3 @@
-<?php
-//kpr(get_defined_vars());
-//kpr($theme_hook_suggestions);
-//template naming
-//page--[CONTENT TYPE].tpl.php
-?>
 <?php if( theme_get_setting('mothership_poorthemers_helper') ){ ?>
 <!--page.tpl.php-->
 <?php } ?>
@@ -64,13 +58,11 @@
   </div><!--/#header-wrapper-->
 <?php endif; ?>
 
-<?php if($page['highlighted'] OR $messages ): ?>
+<?php if($page['highlighted']): ?>
   <div id="highlighted-wrapper" class="fullwidth">
     <div class="container">
       <?php print render($page['highlighted']); ?>
-      <div class="drupal-messages">
-        <?php print $messages; ?>
-      </div>
+
     </div><!--/.container-->
   </div><!--/#highlighted-wrapper-->
 <?php endif; ?>
@@ -78,6 +70,12 @@
 <div id="content-wrapper" class="fullwidth content-wrapper">
   <div class="container-content">
     <div class="page row">
+
+      <?php if($page['highlighted'] OR $messages ): ?>
+      <div class="drupal-messages">
+        <?php print $messages; ?>
+      </div>
+      <?php endif; ?>
 
       <div role="main" id="main-content">
 

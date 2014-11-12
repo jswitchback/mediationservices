@@ -2091,6 +2091,198 @@ table {
   .float-right.post-75 {
     margin-right: 75.63025%; } }
 
+/* Footer block layout. Classes come from block preprocess in template.php */
+.max-two,
+.max-three,
+.max-four,
+.max-six {
+  padding-left: 10px;
+  padding-right: 10px; }
+
+/* 2 COLUMN LAYOUT (Generally min-width: 600px to 759px)
+   ========================================================================== */
+@media (min-width: 37.5em) {
+  .max-two {
+    float: left; }
+
+  .max-two:nth-child(2n+1) {
+    width: 50%;
+    margin-left: 0%;
+    margin-right: -50%;
+    clear: left; }
+
+  .max-two:nth-child(2n+2) {
+    width: 50%;
+    margin-left: 50%;
+    margin-right: -100%; } }
+@media (min-width: 37.5em) {
+  .max-three,
+  .max-four,
+  .max-six {
+    float: left; } }
+@media (min-width: 37.5em) and (max-width: 47.4375em) {
+  .max-three:nth-child(3n+1),
+  .max-five:nth-child(3n+1) {
+    width: 50%;
+    margin-left: 0%;
+    margin-right: -50%;
+    clear: left; }
+
+  .max-three:nth-child(3n+2),
+  .max-five:nth-child(3n+2) {
+    width: 50%;
+    margin-left: 50%;
+    margin-right: -100%; }
+
+  .max-three:nth-child(3n+3),
+  .max-five:nth-child(3n+3) {
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+    clear: both; }
+
+  .max-four:nth-child(2n+1) {
+    width: 50%;
+    margin-left: 0%;
+    margin-right: -50%;
+    clear: left; }
+
+  .max-four:nth-child(2n+2) {
+    width: 50%;
+    margin-left: 50%;
+    margin-right: -100%; }
+
+  .max-six:nth-child(2n+1) {
+    width: 50%;
+    margin-left: 0%;
+    margin-right: -50%;
+    clear: left; }
+
+  .max-six:nth-child(2n+2) {
+    width: 50%;
+    margin-left: 50%;
+    margin-right: -100%; } }
+/* 3 COLUMN LAYOUT (Generally min-width: 760px)
+   ========================================================================== */
+@media (min-width: 47.5em) {
+  .max-three:nth-child(3n+1), .max-six:nth-child(3n+1) {
+    width: 33.33333%;
+    margin-left: 0%;
+    margin-right: -33.33333%;
+    clear: left; }
+
+  .max-three:nth-child(3n+2), .max-six:nth-child(3n+2) {
+    width: 33.33333%;
+    margin-left: 33.33333%;
+    margin-right: -66.66667%; }
+
+  .max-three:nth-child(3n+3), .max-six:nth-child(3n+3) {
+    width: 33.33333%;
+    margin-left: 66.66667%;
+    margin-right: -100%; } }
+@media (min-width: 47.5em) and (max-width: 59.9375em) {
+  .max-four:nth-child(4n+1) {
+    width: 33.33333%;
+    margin-left: 0%;
+    margin-right: -33.33333%;
+    clear: left; }
+
+  .max-four:nth-child(4n+2) {
+    width: 33.33333%;
+    margin-left: 33.33333%;
+    margin-right: -66.66667%; }
+
+  .max-four:nth-child(4n+3) {
+    width: 33.33333%;
+    margin-left: 66.66667%;
+    margin-right: -100%;
+    clear: none; }
+
+  .max-four:nth-child(4n+4) {
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+    clear: both; }
+
+  .max-five:nth-child(5n+1) {
+    width: 33.33333%;
+    margin-left: 0%;
+    margin-right: -33.33333%;
+    clear: left; }
+
+  .max-five:nth-child(5n+2) {
+    width: 33.33333%;
+    margin-left: 33.33333%;
+    margin-right: -66.66667%; }
+
+  .max-five:nth-child(5n+3) {
+    width: 33.33333%;
+    margin-left: 66.66667%;
+    margin-right: -100%; }
+
+  .max-five:nth-child(5n+4) {
+    width: 50%;
+    margin-left: 0%;
+    margin-right: -50%;
+    clear: left; }
+
+  .max-five:nth-child(5n+5) {
+    width: 50%;
+    margin-left: 50%;
+    margin-right: -100%; }
+
+  .max-five {
+    float: left; } }
+/* 4 COLUMN LAYOUT (Generally min-width: 960px)
+   ========================================================================== */
+@media (min-width: 60em) {
+  .max-four:nth-child(4n+1) {
+    width: 25%;
+    margin-left: 0%;
+    margin-right: -25%;
+    clear: left; }
+
+  .max-four:nth-child(4n+2) {
+    width: 25%;
+    margin-left: 25%;
+    margin-right: -50%; }
+
+  .max-four:nth-child(4n+3) {
+    width: 25%;
+    margin-left: 50%;
+    margin-right: -75%; }
+
+  .max-four:nth-child(4n+4) {
+    width: 25%;
+    margin-left: 75%;
+    margin-right: -100%; }
+
+  .max-five:nth-child(5n+1) {
+    width: 25%;
+    margin-left: 0%;
+    margin-right: -25%;
+    clear: left; }
+
+  .max-five:nth-child(5n+2) {
+    width: 25%;
+    margin-left: 25%;
+    margin-right: -50%; }
+
+  .max-five:nth-child(5n+3) {
+    width: 25%;
+    margin-left: 50%;
+    margin-right: -75%; }
+
+  .max-five:nth-child(5n+4) {
+    width: 25%;
+    margin-left: 75%;
+    margin-right: -100%; }
+
+  .max-five:nth-child(5n+5) {
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+    clear: left; } }
 body {
   margin: 0;
   background: #fff; }
@@ -2103,6 +2295,9 @@ body {
 .cke_panel_container body {
   background: #fff;
   margin: 0px; }
+
+.drupal-messages {
+  margin: 24px 0; }
 
 a {
   color: #053854;
@@ -2414,6 +2609,12 @@ address {
   margin-bottom: 1.4;
   font-style: normal;
   line-height: 1.4; }
+
+/* Wysiwyg custom ckeditor styles */
+.wys-small-title,
+.wys-medium-title,
+.wys-large-title {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 code,
 pre {
@@ -4631,6 +4832,28 @@ div.panels-ipe-control input:hover {
   .content-wrapper ul {
     padding: 0 0 0 40px; }
 
+#footer-wrapper {
+  background: url(../img/ovals.png) #f5f5f5;
+  padding: 40px 0 40px 0;
+  border-top: 5px solid #f5f5f5;
+  *zoom: 1;
+  margin-left: -10px;
+  margin-right: -10px; }
+  #footer-wrapper:after {
+    content: "";
+    display: table;
+    clear: both; }
+  #footer-wrapper .block {
+    margin-bottom: 40px; }
+  #footer-wrapper .title {
+    font-family: "merriweatherlight", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    line-height: 1;
+    font-size: 18px;
+    line-height: 20px;
+    line-height: 1.4;
+    margin-top: 0; }
+
 .field-collection-container {
   border-bottom: 0; }
 
@@ -4639,11 +4862,6 @@ div.panels-ipe-control input:hover {
 
 .field-collection-container .field-items .field-item {
   margin-bottom: 40px; }
-
-#footer-wrapper {
-  background: url(../img/ovals.png) #f5f5f5;
-  padding: 20px 0;
-  border-top: 5px solid #f5f5f5; }
 
 /* Newsletter signup block */
 #block-block-1 .fsBody,
@@ -4767,7 +4985,8 @@ div.panels-ipe-control input:hover {
       font-size: 40px; }
 
 .intro {
-  font-size: 16px; }
+  font-size: 16px;
+  margin-top: 0; }
 
 .mfp-close:hover {
   background-color: white;
@@ -5244,7 +5463,7 @@ ul.tabs-primary li {
 @media (min-width: 47.5em) {
   #block-menu-block-1 {
     /* Main Menu dropdown styling */
-    margin-top: 20px;
+    margin-top: 28px;
     margin-bottom: 0;
     clear: both;
     background: none;

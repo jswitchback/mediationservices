@@ -54,26 +54,15 @@ function parrot_preprocess_block(&$vars, $hook) {
   // kpr($vars);
 
   //lets look for unique block in a region $region-$blockcreator-$delta
-   $block =
-   $vars['elements']['#block']->region .'-'.
-   $vars['elements']['#block']->module .'-'.
-   $vars['elements']['#block']->delta;
+  //  $block =
+  //  $vars['elements']['#block']->region .'-'.
+  //  $vars['elements']['#block']->module .'-'.
+  //  $vars['elements']['#block']->delta;
 
-  // print $block .' ';
-   switch ($block) {
-     case 'sidebar-system-navigation':
-       $vars['classes_array'][] = '';
-       break;
-    default:
-
-    break;
-
-   }
-
-  // switch ($vars['block_html_id']) {
-  //     // Newsletter block
-  //    case 'block-block-1':
-  //      $vars['theme_hook_suggestions'][] = 'block__newsletter';
+  // // print $block .' ';
+  //  switch ($block) {
+  //    case 'sidebar-system-navigation':
+  //      $vars['classes_array'][] = '';
   //      break;
   //   default:
 
@@ -92,6 +81,49 @@ function parrot_preprocess_block(&$vars, $hook) {
     default:
 
       break;
+  }
+
+  // add grid class dependant upon number of blocks in a region
+  if ($vars['block']->region == 'footer') {
+      // Get the count of blocks
+      $allBlocks = block_list($vars['block']->region);
+      $count = count($allBlocks);
+      
+      // take the count and convert the number to a word.
+      switch ($count) {
+        case 0:
+          $count = 'empty';
+          break;
+          
+        case 1:
+          $count = 'one';
+          break;
+          
+        case 2:
+          $count = 'two';
+          break;
+
+        case 3:
+          $count = 'three';
+          break;
+          
+        case 4:
+          $count = 'four';
+          break;
+          
+        case 5:
+          $count = 'five';
+          break;
+          
+        case 6:
+          $count = 'six';
+          break;
+
+        default:
+          $count = 'default';
+      }
+      // add class to style responsive layout
+      $vars['classes_array'][] = 'max-'. $count;
   }
 
 }

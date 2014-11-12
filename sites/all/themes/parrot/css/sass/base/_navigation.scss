@@ -368,7 +368,7 @@ $nav-color: $linkColor;
 
 @include breakpoint($tablet) {
   #block-menu-block-1 { /* Main Menu dropdown styling */
-    margin-top: $vert-gutter;
+    margin-top: 28px;
     margin-bottom: 0;
     clear: both;
     background: none;
