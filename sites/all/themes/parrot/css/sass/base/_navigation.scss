@@ -223,22 +223,17 @@ $nav-color: $linkColor;
 
 /* Theme */
 
-
 .nav-button {
   display: block;
   width: 36px;
   height: 32px;
-  margin-top: 12px;
+  padding: 7px 5px;
+  margin-top: 0;
   cursor: pointer;
-}
-
-.nav-button {
   background-color: transparent;
   color: $nav-color;
-  display: block;
   font-size: 1.5em;
   font-weight: bold;
-  padding: 7px 5px;
   @include border-radius(2px);
   line-height: 18px;
   margin-bottom: 0;
@@ -309,7 +304,7 @@ $nav-color: $linkColor;
   @include rgba-background(rgba(255,255,255, .9));
   @include box-shadow(rgba(0, 0, 0, 0.2) 0 1px 6px);
   position: absolute;
-  right: 0;
+  right: 18px;
   top: 60px;
   z-index: 50;
   width: 260px;
@@ -368,7 +363,7 @@ $nav-color: $linkColor;
 
 @include breakpoint($tablet) {
   #block-menu-block-1 { /* Main Menu dropdown styling */
-    margin-top: 28px;
+    margin-top: 10px;
     margin-bottom: 0;
     clear: both;
     background: none;
@@ -392,7 +387,7 @@ $nav-color: $linkColor;
             background: none;
             color: $nav-color;
             text-decoration: none;
-            border-bottom: 4px solid $nav-color;
+            // border-bottom: 4px solid $nav-color;
           }
           &:active {
             @include box-shadow(none);
@@ -401,12 +396,42 @@ $nav-color: $linkColor;
           }
           &.active,
           &.active-trail {
-          	border-bottom: 4px solid $nav-color;
+          	// border-bottom: 4px solid $nav-color;
             color: $nav-color;
             &:hover, &:active {
               background-color: transparent;
             }
           }
+        }
+      }
+      li.active {
+        a {
+          position: relative;
+          &:before {
+            content: "";
+            position: absolute;
+            width: 42px;
+            height: 10px;
+            background-color: #d1d1d1;
+            left: 50%;
+            margin-left: -21px;
+            top: 22px;
+            border-radius: 50%;
+            display: block;
+          }
+          &:after {
+            content: "";
+            position: absolute;
+            z-index: 1;
+            width: 42px;
+            height: 6px;
+            background-color: #f5f5f5;
+            left: 50%;
+            margin-left: -21px;
+            top: 21px;
+            display: block;
+          }
+
         }
       }
     }
@@ -426,6 +451,9 @@ $nav-color: $linkColor;
           margin-left: 0;
           a {
             padding: 8px 12px;
+            &:before, &:after {
+              content: none;
+            }
             &:hover, &:active {
             	border-bottom: none;
               background-color: $linkColor;
@@ -433,7 +461,7 @@ $nav-color: $linkColor;
             }
 						&.active,
 						&.active-trail {
-							border-bottom: 4px solid $nav-color;
+							// border-bottom: 4px solid $nav-color;
 						}
           }
         }

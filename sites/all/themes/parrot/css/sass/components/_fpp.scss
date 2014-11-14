@@ -1,5 +1,9 @@
-.field-name-field-stats,
-.field-name-field-hover-items {
+
+
+/* Stats field */
+
+
+.field-name-field-stats {
   .field-items{
     clear:both;
     text-align: center;
@@ -10,10 +14,9 @@
       .field-name-field-stat-title {
         @include h3();
         text-align:center;
-        margin-bottom: $vert-gutter / 2;
+        margin-bottom: $vert-gutter/2;
       }
-      .field-name-field-actual-stat,
-      .field-name-field-hover-title {
+      .field-name-field-actual-stat {
         font-family: $webfontLight;
         font-size:6em;
         background-color: #f1f1f1;
@@ -74,43 +77,82 @@
   }
 }
 
+
+/* Demographic field (school, business, community ...) */
+
+
 .field-name-field-hover-items {
-  margin-top: 25px;
 
-  .field-items .field-item{
-    width:230px;
-    .field-name-field-hover-text {
-      display:none;
+  .field-items{
+    clear:both;
+    text-align: center;
+    margin-top: 25px;
+    .field-item {
+      width:230px;
+      min-height: 104px;
+      display: inline-block;
+      vertical-align: top;
     }
-    a {
-      text-decoration: none;
-    }
-    .field-name-field-hover-title {
-      font-size:2em;
-      text-decoration: none;
-      width: 100%;
-      background-color: #ffffff;
-    }
-    &:hover{
+    .field-collection-view {
+      position: relative;
+
       .field-name-field-hover-text {
-
-        display: block;
-        text-decoration: none;
-        color: #767676;
-        background-color: #ffffff;
-        border-radius: 10px;
-        padding: 40px 10px;
-        min-height: 200px;
-
+        margin-top: $vert-gutter;
+        @include transition(all .5s cubic-bezier(0.59, 1.45, 0.69, 0.98));
+        .no-touch & {
+          @include transparent;
+          margin-top: 28px;
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
       }
       .field-name-field-hover-title {
-        display:none;
-        //color: #ccc;
+        font-size: 24px;
+        text-decoration: none;
+        width: 100%;
+        font-family: $webfontLight;
+        background-color: #07383f;
+        border: 1px solid darken(#07383f, 10%);
+        border-radius: 50%;
+        display: block;
+        @include box-sizing(content-box);
+        padding: 42px 15px;
+        color: #ffffff;
+        width: 85%;
+        margin: 0 auto;
+        @include box-shadow(0 0 24px #ffffff);
+        @include transition(all .5s cubic-bezier(0.59, 1.45, 0.69, 0.98));
+        .no-touch & {
+          position: absolute;
+          top: 0;
+          left: 0;     
+        }
+      }
+      a {
+        text-decoration: none;
       }
     }
   }
 
+  .no-touch & .field-collection-view  {
+    &:hover {
+      .field-name-field-hover-text {
+        @include opaque;
+        text-decoration: none;
+        color: #767676;
+      }
+      .field-name-field-hover-title {
+         @include transparent;
+      }
+    }
+  }
 }
+
+
+/* Misc */
+
+
 .front #two-brick-top-wrapper {
   &.fullwidth{
     margin-bottom: 0;

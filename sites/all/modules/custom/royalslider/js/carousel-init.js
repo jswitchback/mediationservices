@@ -28,9 +28,9 @@ $(window).load(function() {
     block: {
       // animated blocks options go here
       fadeEffect: true,
-      moveEffect: 'bottom',
-      moveOffset: 40,
-      speed: 400
+      moveEffect: 'none', // bottom, top etc..
+      // moveOffset: 40,
+      speed: 1500
     }
   });
 

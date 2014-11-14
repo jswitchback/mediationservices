@@ -40,7 +40,7 @@
             </hgroup>
           <?php endif; ?>
         </div>
-        <div id="header-phone">(616) 399-1600</div>
+
         <?php if ($page['header']): ?>
           <div class="header-region">
             <?php print render($page['header']); ?>

@@ -136,9 +136,10 @@ function mothership_preprocess(&$vars, $hook) {
     //We dont wanna add modules just to put in a goddamn js file so were adding em here instead
 
     //--- modernizr love CDN style for the lazy ones
-    if (theme_get_setting('mothership_modernizr')) {
-      drupal_add_js('http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.0.6/modernizr.min.js', 'external');
-    }
+    // Added by Modernizr module
+    // if (theme_get_setting('mothership_modernizr')) {
+    //   drupal_add_js('http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.0.6/modernizr.min.js', 'external');
+    // }
 
     //---- selectivizr
     $vars['selectivizr'] = '';
@@ -245,7 +246,6 @@ function mothership_preprocess(&$vars, $hook) {
       if($headers['status'] == '404 Not Found'){
         $vars['theme_hook_suggestions'][] = 'page__404';
       }
-
     }
 
     //remove the "theres no content default yadi yadi" from the frontpage

@@ -29,6 +29,15 @@ $wide: 1024px;
 
 }
 
+#page {
+  height: 100%; // Sticky footer
+}
+
+#content-wrapper {
+  min-height: 100%;
+}
+
+
 .logo {
 	width: 180px;
   @include breakpoint($tablet){
@@ -36,13 +45,23 @@ $wide: 1024px;
   }
 }
 
-
 .siteinfo {
 	float: left;
 }
 
+#header-phone {
+  float: right;
+  clear: right;
+  font-size: 14px;
+  font-style: italic;
+  margin-right: 8px;
+  line-height: 1;
+}
+
+
 .header-region {
 	float: right;
+  clear: right;
 }
 
 #header-wrapper {
@@ -282,13 +301,40 @@ $wide: 1024px;
     float: none;
   }
 
-  .rsBullet {
-    width: 10px;
-    height: 10px;
-    padding: 6px 5px 6px 4px;
+  .field-name-field-banner-image {
+    &:before, &:after{
+      width: 200px;
+      content: "";
+      position: absolute;
+      height: 403px;
+      display: block;
+      z-index: 14;
+      //background-image: linear-gradient(to right, #07383f 0%, rgba(0, 0, 0, 0) 100%);
+      @include gradient-horizontal($startColor: #07383f, $endColor: transparent);
+    }
+    &:after{
+      //background-image: linear-gradient(to left, #07383f 0%, rgba(0, 0, 0, 0) 100%);
+      @include gradient-horizontal($startColor: transparent, $endColor: #07383f);
+      background-color: transparent;
+      right:0;
+      top:0;
+    }
+    img {
+      display: block;
+    }
   }
 
-  .rsMinW .rsBullet span {
+  .rsBullet {
+    padding-top: 0;
+    line-height: 24px;
+    right: 40px;
+    width: 10px;
+    height: 10px;
+    margin-right: 7px;
+    padding: 0;
+  }
+
+  .rsBullet span {
     display: block;
     width: 10px;
     height: 10px;
@@ -306,9 +352,9 @@ $wide: 1024px;
     right: auto;
     bottom: auto;
     padding: 36px;
-    background-color: #fff;
-    background: url(../img/ovals.png) rgba(255,255,255,.9);
-    @include rgba-background(rgba(255,255,255, .9));
+    border-radius: 6px;
+    @include single-text-shadow(#ffffff, 0, 0, 1px);
+    @include background-image(linear-gradient(to right, rgba(255,255,255,.9) 80%, transparent));
     color: $textColor;
     @include breakpoint($tablet){
       position: absolute;
@@ -319,31 +365,34 @@ $wide: 1024px;
       bottom: 0;
     }
     @include breakpoint($computer){
-      @include border-radius(36px);
       width: 420px;
       left: 48px;
       right: auto;
-      bottom: 50px;
+      bottom: 80px;
       top: auto;
     }
   }
 
 
   .odd .rsABlock {
+    @include background-image(linear-gradient(to left, rgba(255,255,255,.9) 80%, transparent));
     @include breakpoint($computer){
       right: 48px;
       left: auto;
+      padding: 36px 18px 36px 72px;
+
     }
   }
 
   .field-name-field-banner-text {
-    @include h3;
-    margin-bottom: $vert-gutter;
+    @include h4;
+    line-height: 27px;
+    margin-bottom: 0;
   }
 
   .field-name-field-banner-link a {
     @include button;
-    margin: 0;
+    margin: $vert-gutter 0 0 0;
   }
 
   .field-collection-container .field-items .field-item {
@@ -376,29 +425,12 @@ $wide: 1024px;
   #two-brick-top-wrapper {
     background: $ui-blue-teal;
   }
+
   .rs-slideshow{
     position: relative;
     max-height: 403px;
     overflow: hidden;
-    .rsSlide{
-      &:before, &:after{
-        width: 200px;
-        content: "";
-        position: absolute;
-        height: 403px;
-        display: block;
-        z-index: 14;
-        //background-image: linear-gradient(to right, #07383f 0%, rgba(0, 0, 0, 0) 100%);
-        @include gradient-horizontal($startColor: #07383f, $endColor: transparent);
-      }
-      &:after{
-        //background-image: linear-gradient(to left, #07383f 0%, rgba(0, 0, 0, 0) 100%);
-        @include gradient-horizontal($startColor: transparent, $endColor: #07383f);
-        background-color: transparent;
-        right:0;
-        top:0;
-      }
-    }
+
     .field-collection-container {
       margin-bottom: 0;
     }
