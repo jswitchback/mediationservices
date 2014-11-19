@@ -31,10 +31,10 @@ function _mediation_blocks_footer_logos_block() {
   $output = '';
   // $output .= '<p class="address">' . t('1111 Leffingwell Ave SE') . '<br>' . t('Grand Rapids, MI 49341') . '<br>' . t('616.459.7101') . '</p>';
   $output .= '<ul class="footer-logos">';
-  $output .= '<li class="footer-logo logo-first">' . l(t('CRPD'), 'http://courts.mi.gov/administration/scao/officesprograms/odr/pages/community-dispute-resolution-program.aspx', array()) . '</li>';
-  $output .= '<li class="footer-logo logo-second">' . l(t('United Way'), 'http://www.unitedway.org', array()) . '</li>';
-  $output .= '<li class="footer-logo logo-third">' . l(t('Lakeshore Nonprofit Alliance'), 'http://lakeshorenonprofits.org', array()) . '</li>';
-  $output .= '<li class="footer-logo logo-fourth">' . l(t('Michigan West Coast Chamber of Commerce'), 'www.westcoastchamber.org', array()) . '</li>';
+  $output .= '<li class="footer-logo logo-first">' . l(t('CRPD'), 'http://courts.mi.gov/administration/scao/officesprograms/odr/pages/community-dispute-resolution-program.aspx', array('attributes' => array('target'=>'_blank'))) . '</li>';
+  $output .= '<li class="footer-logo logo-second">' . l(t('Lakeshore Nonprofit Alliance'), 'http://lakeshorenonprofits.org', array('attributes' => array('target'=>'_blank'))) . '</li>';
+  $output .= '<li class="footer-logo logo-third">' . l(t('United Way'), 'http://www.unitedway.org', array('attributes' => array('target'=>'_blank'))) . '</li>';
+  $output .= '<li class="footer-logo logo-fourth">' . l(t('Michigan West Coast Chamber of Commerce'), 'http://www.westcoastchamber.org', array('attributes' => array('target'=>'_blank'))) . '</li>';
 
   $output .= '</ul>';
   

@@ -4941,26 +4941,26 @@ div.panels-ipe-control input:hover {
     background-repeat: no-repeat;
     background-image: url(../img/footer-logos.jpg);
     background-size: 284px 530px; }
-.block-mediation-blocks-footer-logos .logo-first a {
+.block-mediation-blocks-footer-logos .logo-third a {
   height: 140px;
   background-position: left top; }
-.block-mediation-blocks-footer-logos .logo-first:hover a {
+.block-mediation-blocks-footer-logos .logo-third:hover a {
   background-position: left -265px; }
-.block-mediation-blocks-footer-logos .logo-second a {
+.block-mediation-blocks-footer-logos .logo-fourth a {
   height: 140px;
   background-position: right top; }
-.block-mediation-blocks-footer-logos .logo-second:hover a {
+.block-mediation-blocks-footer-logos .logo-fourth:hover a {
   background-position: right -265px; }
-.block-mediation-blocks-footer-logos .logo-third a {
+.block-mediation-blocks-footer-logos .logo-first a {
   height: 125px;
   background-position: left -140px; }
-.block-mediation-blocks-footer-logos .logo-third:hover a {
+.block-mediation-blocks-footer-logos .logo-first:hover a {
   background-position: left bottom; }
-.block-mediation-blocks-footer-logos .logo-fourth a {
+.block-mediation-blocks-footer-logos .logo-second a {
   margin-top: 40px;
   height: 40px;
   background-position: right -225px; }
-.block-mediation-blocks-footer-logos .logo-fourth:hover a {
+.block-mediation-blocks-footer-logos .logo-second:hover a {
   background-position: right bottom; }
 
 .field-collection-container {
