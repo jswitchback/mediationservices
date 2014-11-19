@@ -142,6 +142,69 @@ $wide: 1024px;
   }
 }
 
+.block-mediation-blocks-footer-logos {
+  .footer-logos {
+    @include no-bullets;
+    margin: 0;
+    padding-left: 0;
+  }
+  .footer-logo {
+    display: inline-block;
+    vertical-align: top;
+    padding-right: 10px;
+    margin-bottom: 10px;
+    a {
+      display: block;
+      width: 140px;
+      @include hide-text;
+      -moz-box-shadow:    0 1px 1px rgba(255,255,255,1), 0 2px 2px rgba(0,0,0,.2);
+      -webkit-box-shadow: 0 1px 1px rgba(255,255,255,1), 0 2px 2px rgba(0,0,0,.2);
+      box-shadow:         0 1px 1px rgba(255,255,255,1), 0 2px 2px rgba(0,0,0,.2);
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-image: url(../img/footer-logos.jpg);
+      background-size: 284px 530px;
+    }
+  }
+  .logo-first {
+    a {
+      height: 140px;
+      background-position: left top;
+    }
+    &:hover a {
+      background-position: left -265px;
+    }
+  }
+  .logo-second {
+    a {
+      height: 140px;
+      background-position: right top;
+    }
+    &:hover a {
+      background-position: right -265px;
+    }
+  }
+  .logo-third {
+    a {
+      height: 125px;
+      background-position: left -140px;
+    }
+    &:hover a {
+      background-position: left bottom;
+    }
+  }
+  .logo-fourth {
+    a {
+      margin-top: 40px;
+      height: 40px;
+      background-position: right -225px;
+    }
+    &:hover a {
+      background-position: right bottom;
+    }
+  }
+}
+
 .field-collection-container {
   border-bottom: 0;
 }
@@ -220,7 +283,7 @@ $wide: 1024px;
 .node-13 {
   margin-bottom: $vert-gutter * 2;
  .views-field-body {
-    font-family: $webfontBoldItalic;
+    font-family: $webfontLightItalic;
     font-size: 24px;
     margin: 0 auto; 
     max-width: 480px;

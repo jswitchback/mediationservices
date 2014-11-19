@@ -4913,6 +4913,56 @@ div.panels-ipe-control input:hover {
     line-height: 1.4;
     margin-top: 0; }
 
+.block-mediation-blocks-footer-logos .footer-logos {
+  list-style: none;
+  margin: 0;
+  padding-left: 0; }
+  .block-mediation-blocks-footer-logos .footer-logos li {
+    list-style-image: none;
+    list-style-type: none;
+    margin-left: 0; }
+.block-mediation-blocks-footer-logos .footer-logo {
+  display: inline-block;
+  vertical-align: top;
+  padding-right: 10px;
+  margin-bottom: 10px; }
+  .block-mediation-blocks-footer-logos .footer-logo a {
+    display: block;
+    width: 140px;
+    font: 0/0 a;
+    color: transparent;
+    text-shadow: none;
+    background-color: transparent;
+    border: 0;
+    -moz-box-shadow: 0 1px 1px white, 0 2px 2px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 1px 1px white, 0 2px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 1px white, 0 2px 2px rgba(0, 0, 0, 0.2);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url(../img/footer-logos.jpg);
+    background-size: 284px 530px; }
+.block-mediation-blocks-footer-logos .logo-first a {
+  height: 140px;
+  background-position: left top; }
+.block-mediation-blocks-footer-logos .logo-first:hover a {
+  background-position: left -265px; }
+.block-mediation-blocks-footer-logos .logo-second a {
+  height: 140px;
+  background-position: right top; }
+.block-mediation-blocks-footer-logos .logo-second:hover a {
+  background-position: right -265px; }
+.block-mediation-blocks-footer-logos .logo-third a {
+  height: 125px;
+  background-position: left -140px; }
+.block-mediation-blocks-footer-logos .logo-third:hover a {
+  background-position: left bottom; }
+.block-mediation-blocks-footer-logos .logo-fourth a {
+  margin-top: 40px;
+  height: 40px;
+  background-position: right -225px; }
+.block-mediation-blocks-footer-logos .logo-fourth:hover a {
+  background-position: right bottom; }
+
 .field-collection-container {
   border-bottom: 0; }
 
@@ -5034,7 +5084,7 @@ div.panels-ipe-control input:hover {
 .node-13 {
   margin-bottom: 40px; }
   .node-13 .views-field-body {
-    font-family: "merriweatherheavy_italic", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "merriweatherlight_italic", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 24px;
     margin: 0 auto;
     max-width: 480px;
