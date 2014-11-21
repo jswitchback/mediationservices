@@ -7,7 +7,7 @@
 function parrot_preprocess_html(&$vars) {
   // kpr($vars);
   if (!$vars['is_front']) {
-    // Add a class to tie css changes to text, button and link colors 
+    // Add a class to wrangle css changes to text, button and link colors on a green background
     $vars['classes_array'][] = 'page-dark';
   }
 
@@ -70,18 +70,18 @@ function parrot_preprocess_block(&$vars, $hook) {
 
   //  }
 
-  switch ($vars['elements']['#block']->region) {
-    case 'header':
-      $vars['classes_array'][] = '';
-      break;
-    case 'sidebar':
-      $vars['classes_array'][] = '';
-      $vars['classes_array'][] = '';
-      break;
-    default:
+  // switch ($vars['elements']['#block']->region) {
+  //   case 'header':
+  //     $vars['classes_array'][] = '';
+  //     break;
+  //   case 'sidebar':
+  //     $vars['classes_array'][] = '';
+  //     $vars['classes_array'][] = '';
+  //     break;
+  //   default:
 
-      break;
-  }
+  //     break;
+  // }
 
   // add grid class dependant upon number of blocks in a region
   if ($vars['block']->region == 'footer') {

@@ -10,7 +10,7 @@
     .field-item{
       display: inline-block;
       vertical-align: top;
-      width: 315px;
+      max-width: 315px;
       .field-name-field-stat-title {
         @include h3();
         text-align:center;
@@ -19,17 +19,20 @@
       .field-name-field-actual-stat {
         font-family: $webfontLight;
         font-size:6em;
-        background-color: #f1f1f1;
-        border: 1px solid #f9f9f9;
+        background-color: #07383f;
+        border: 1px solid darken(#07383f, 10%);
+        color: #ffffff;
+        // background-color: #f1f1f1;
+        // border: 1px solid #f9f9f9;
+        // color: lighten($textColor, 20%);
         border-radius: 50%;
         display: block;
         @include box-sizing(content-box);
         padding: 42px 15px;
-        color: lighten($textColor, 20%);
         width: 85%;
         margin: 0 auto;
         .no-touch & {
-          @include opacity(.5);
+          @include opacity(.95);
           @include transform(scale(.9));
           @include transition-property(color, transform);
           @include transition-duration(.15s);
@@ -45,6 +48,7 @@
       .field-name-field-stat-desctiption{
         font-size: 16px;
         margin-top: $vert-gutter;
+        text-align: left;
       }
     }
   }

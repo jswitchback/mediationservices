@@ -4655,7 +4655,7 @@ div.panels-ipe-control input:hover {
   .field-name-field-stats .field-items .field-item {
     display: inline-block;
     vertical-align: top;
-    width: 315px; }
+    max-width: 315px; }
     .field-name-field-stats .field-items .field-item .field-name-field-stat-title {
       font-family: "merriweatherlight", "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-weight: normal;
@@ -4667,20 +4667,20 @@ div.panels-ipe-control input:hover {
     .field-name-field-stats .field-items .field-item .field-name-field-actual-stat {
       font-family: "merriweatherlight", "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-size: 6em;
-      background-color: #f1f1f1;
-      border: 1px solid #f9f9f9;
+      background-color: #07383f;
+      border: 1px solid #020f11;
+      color: #ffffff;
       border-radius: 50%;
       display: block;
       -webkit-box-sizing: content-box;
       -moz-box-sizing: content-box;
       box-sizing: content-box;
       padding: 42px 15px;
-      color: #8c8c8c;
       width: 85%;
       margin: 0 auto; }
       .no-touch .field-name-field-stats .field-items .field-item .field-name-field-actual-stat {
-        opacity: 0.5;
-        filter: alpha(opacity=50);
+        opacity: 0.95;
+        filter: alpha(opacity=95);
         -moz-transform: scale(0.9);
         -ms-transform: scale(0.9);
         -webkit-transform: scale(0.9);
@@ -4710,7 +4710,8 @@ div.panels-ipe-control input:hover {
           transform: scale(1); }
     .field-name-field-stats .field-items .field-item .field-name-field-stat-desctiption {
       font-size: 16px;
-      margin-top: 24px; }
+      margin-top: 24px;
+      text-align: left; }
 
 .no-touch .field-name-field-stats .field-item .field-name-field-actual-stat {
   opacity: 0.5;
@@ -5081,17 +5082,21 @@ div.panels-ipe-control input:hover {
   .no-boxshadow .front #two-brick-bottom-wrapper {
     border-top: 1px solid grey; }
 
-.node-13 {
+.front {
   margin-bottom: 40px; }
-  .node-13 .views-field-body {
+  .front .views-field-body {
     font-family: "merriweatherlight_italic", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 24px;
     margin: 0 auto;
     max-width: 480px;
     padding-left: 20px;
-    page-right: 20px; }
-    .node-13 .views-field-body::first-letter {
+    page-right: 20px;
+    text-align: center; }
+    .front .views-field-body::first-letter {
       font-size: 40px; }
+    .front .views-field-body .field-content {
+      display: inline-block;
+      text-align: left; }
 
 .intro {
   font-size: 16px;
@@ -5189,14 +5194,9 @@ div.panels-ipe-control input:hover {
     right: auto;
     bottom: auto;
     padding: 36px;
-    border-radius: 6px;
     text-shadow: 0 0 1px #ffffff;
-    background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjAuNSIgeDI9IjEuMCIgeTI9IjAuNSI+PHN0b3Agb2Zmc2V0PSI4MCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMC45Ii8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuMCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
-    background-size: 100%;
-    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(80%, rgba(255, 255, 255, 0.9)), color-stop(100%, rgba(0, 0, 0, 0)));
-    background-image: -moz-linear-gradient(left, rgba(255, 255, 255, 0.9) 80%, rgba(0, 0, 0, 0));
-    background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.9) 80%, rgba(0, 0, 0, 0));
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 80%, rgba(0, 0, 0, 0));
+    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.9);
     color: #595959; }
     @media (min-width: 47.5em) {
       .field-name-field-banner-collection .rsABlock {
@@ -5212,19 +5212,27 @@ div.panels-ipe-control input:hover {
         left: 48px;
         right: auto;
         bottom: 80px;
-        top: auto; } }
-  .field-name-field-banner-collection .odd .rsABlock {
-    background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjEuMCIgeTE9IjAuNSIgeDI9IjAuMCIgeTI9IjAuNSI+PHN0b3Agb2Zmc2V0PSI4MCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMC45Ii8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuMCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
-    background-size: 100%;
-    background-image: -webkit-gradient(linear, 100% 50%, 0% 50%, color-stop(80%, rgba(255, 255, 255, 0.9)), color-stop(100%, rgba(0, 0, 0, 0)));
-    background-image: -moz-linear-gradient(right, rgba(255, 255, 255, 0.9) 80%, rgba(0, 0, 0, 0));
-    background-image: -webkit-linear-gradient(right, rgba(255, 255, 255, 0.9) 80%, rgba(0, 0, 0, 0));
-    background-image: linear-gradient(to left, rgba(255, 255, 255, 0.9) 80%, rgba(0, 0, 0, 0)); }
-    @media (min-width: 60em) {
-      .field-name-field-banner-collection .odd .rsABlock {
-        right: 48px;
-        left: auto;
-        padding: 36px 18px 36px 72px; } }
+        top: auto;
+        border-radius: 6px;
+        background-color: transparent;
+        background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjAuNSIgeDI9IjEuMCIgeTI9IjAuNSI+PHN0b3Agb2Zmc2V0PSI4MCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMC45Ii8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuMCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+        background-size: 100%;
+        background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(80%, rgba(255, 255, 255, 0.9)), color-stop(100%, rgba(0, 0, 0, 0)));
+        background-image: -moz-linear-gradient(left, rgba(255, 255, 255, 0.9) 80%, rgba(0, 0, 0, 0));
+        background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.9) 80%, rgba(0, 0, 0, 0));
+        background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 80%, rgba(0, 0, 0, 0)); } }
+  @media (min-width: 60em) {
+    .field-name-field-banner-collection .odd .rsABlock {
+      background-color: transparent;
+      background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjEuMCIgeTE9IjAuNSIgeDI9IjAuMCIgeTI9IjAuNSI+PHN0b3Agb2Zmc2V0PSI4MCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMC45Ii8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuMCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+      background-size: 100%;
+      background-image: -webkit-gradient(linear, 100% 50%, 0% 50%, color-stop(80%, rgba(255, 255, 255, 0.9)), color-stop(100%, rgba(0, 0, 0, 0)));
+      background-image: -moz-linear-gradient(right, rgba(255, 255, 255, 0.9) 80%, rgba(0, 0, 0, 0));
+      background-image: -webkit-linear-gradient(right, rgba(255, 255, 255, 0.9) 80%, rgba(0, 0, 0, 0));
+      background-image: linear-gradient(to left, rgba(255, 255, 255, 0.9) 80%, rgba(0, 0, 0, 0));
+      right: 48px;
+      left: auto;
+      padding: 36px 18px 36px 72px; } }
   .field-name-field-banner-collection .field-name-field-banner-text {
     font-family: "merriweatherlight", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: normal;
