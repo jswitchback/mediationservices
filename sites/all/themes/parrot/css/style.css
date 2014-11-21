@@ -4892,20 +4892,20 @@ div.panels-ipe-control input:hover {
   .content-wrapper ul {
     padding: 0 0 0 40px; }
 
-#footer-wrapper {
+.footer-wrapper {
   background: url(../img/ovals.png) #f5f5f5;
   padding: 40px 0 40px 0;
   border-top: 5px solid #f5f5f5;
   *zoom: 1;
   margin-left: -10px;
   margin-right: -10px; }
-  #footer-wrapper:after {
+  .footer-wrapper:after {
     content: "";
     display: table;
     clear: both; }
-  #footer-wrapper .block {
+  .footer-wrapper .block {
     margin-bottom: 40px; }
-  #footer-wrapper .title {
+  .footer-wrapper .title {
     font-family: "merriweatherlight", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: normal;
     line-height: 1;
@@ -4914,55 +4914,89 @@ div.panels-ipe-control input:hover {
     line-height: 1.4;
     margin-top: 0; }
 
-.block-mediation-blocks-footer-logos .footer-logos {
-  list-style: none;
-  margin: 0;
-  padding-left: 0; }
-  .block-mediation-blocks-footer-logos .footer-logos li {
-    list-style-image: none;
-    list-style-type: none;
-    margin-left: 0; }
-.block-mediation-blocks-footer-logos .footer-logo {
-  display: inline-block;
-  vertical-align: top;
-  padding-right: 10px;
-  margin-bottom: 10px; }
-  .block-mediation-blocks-footer-logos .footer-logo a {
-    display: block;
-    width: 140px;
-    font: 0/0 a;
-    color: transparent;
-    text-shadow: none;
-    background-color: transparent;
-    border: 0;
-    -moz-box-shadow: 0 1px 1px white, 0 2px 2px rgba(0, 0, 0, 0.2);
-    -webkit-box-shadow: 0 1px 1px white, 0 2px 2px rgba(0, 0, 0, 0.2);
-    box-shadow: 0 1px 1px white, 0 2px 2px rgba(0, 0, 0, 0.2);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-image: url(../img/footer-logos.jpg);
-    background-size: 284px 530px; }
-.block-mediation-blocks-footer-logos .logo-third a {
-  height: 140px;
-  background-position: left top; }
-.block-mediation-blocks-footer-logos .logo-third:hover a {
-  background-position: left -265px; }
-.block-mediation-blocks-footer-logos .logo-fourth a {
-  height: 140px;
-  background-position: right top; }
-.block-mediation-blocks-footer-logos .logo-fourth:hover a {
-  background-position: right -265px; }
-.block-mediation-blocks-footer-logos .logo-first a {
-  height: 125px;
-  background-position: left -140px; }
-.block-mediation-blocks-footer-logos .logo-first:hover a {
-  background-position: left bottom; }
-.block-mediation-blocks-footer-logos .logo-second a {
+@media (min-width: 37.5em) {
+  .region-footer .block {
+    margin-bottom: 0; } }
+
+.region-footer-bottom .row {
+  padding: 0 10px; }
+
+@media (min-width: 37.5em) {
+  .block-menu-menu-footer-menu .menu {
+    margin-bottom: 0; } }
+.block-menu-menu-footer-menu .menu li {
+  margin-bottom: 6px; }
+  .block-menu-menu-footer-menu .menu li a :after {
+    content: '\2192';
+    display: inline-block;
+    margin-left: 6px; }
+    .block-menu-menu-footer-menu .menu li a :after:hover {
+      text-decoration: none; }
+
+.block-mediation-blocks-footer-logos {
   margin-top: 40px;
-  height: 40px;
-  background-position: right -225px; }
-.block-mediation-blocks-footer-logos .logo-second:hover a {
-  background-position: right bottom; }
+  padding-top: 40px;
+  border-top: 1px solid #d5d5d5;
+  -webkit-box-shadow: 0 -1px 0px 0 #fff;
+  -moz-box-shadow: 0 -1px 0px 0 #fff;
+  box-shadow: 0 -1px 0px 0 #fff; }
+  .block-mediation-blocks-footer-logos.block {
+    margin-bottom: 0; }
+  .block-mediation-blocks-footer-logos .footer-logos {
+    list-style: none;
+    margin: 0;
+    padding-left: 0; }
+    .block-mediation-blocks-footer-logos .footer-logos li {
+      list-style-image: none;
+      list-style-type: none;
+      margin-left: 0; }
+  .block-mediation-blocks-footer-logos .footer-logo {
+    display: inline-block;
+    vertical-align: top;
+    padding-right: 10px;
+    margin-bottom: 10px; }
+    .block-mediation-blocks-footer-logos .footer-logo a {
+      display: block;
+      width: 140px;
+      font: 0/0 a;
+      color: transparent;
+      text-shadow: none;
+      background-color: transparent;
+      border: 0;
+      -moz-box-shadow: 0 1px 1px white, 0 2px 2px rgba(0, 0, 0, 0.2);
+      -webkit-box-shadow: 0 1px 1px white, 0 2px 2px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 1px 1px white, 0 2px 2px rgba(0, 0, 0, 0.2);
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-image: url(../img/footer-logos.jpg);
+      background-size: 284px 530px; }
+    @media (min-width: 47.5em) {
+      .block-mediation-blocks-footer-logos .footer-logo {
+        width: 25%; }
+        .block-mediation-blocks-footer-logos .footer-logo a {
+          margin-left: auto;
+          margin-right: auto; } }
+  .block-mediation-blocks-footer-logos .logo-third a {
+    height: 140px;
+    background-position: left top; }
+  .block-mediation-blocks-footer-logos .logo-third:hover a, .touch .block-mediation-blocks-footer-logos .logo-third a {
+    background-position: left -265px; }
+  .block-mediation-blocks-footer-logos .logo-fourth a {
+    height: 140px;
+    background-position: right top; }
+  .block-mediation-blocks-footer-logos .logo-fourth:hover a, .touch .block-mediation-blocks-footer-logos .logo-fourth a {
+    background-position: right -265px; }
+  .block-mediation-blocks-footer-logos .logo-first a {
+    height: 125px;
+    background-position: left -140px; }
+  .block-mediation-blocks-footer-logos .logo-first:hover a, .touch .block-mediation-blocks-footer-logos .logo-first a {
+    background-position: left bottom; }
+  .block-mediation-blocks-footer-logos .logo-second a {
+    margin-top: 40px;
+    height: 40px;
+    background-position: right -225px; }
+  .block-mediation-blocks-footer-logos .logo-second:hover a, .touch .block-mediation-blocks-footer-logos .logo-second a {
+    background-position: right bottom; }
 
 .field-collection-container {
   border-bottom: 0; }
@@ -5092,11 +5126,11 @@ div.panels-ipe-control input:hover {
     padding-left: 20px;
     page-right: 20px;
     text-align: center; }
-    .front .views-field-body::first-letter {
-      font-size: 40px; }
     .front .views-field-body .field-content {
       display: inline-block;
       text-align: left; }
+      .front .views-field-body .field-content::first-letter {
+        font-size: 40px; }
 
 .intro {
   font-size: 16px;
@@ -5185,6 +5219,8 @@ div.panels-ipe-control input:hover {
     border-radius: 50%;
     background: #ccc;
     background: rgba(255, 255, 255, 0.5);
+    -webkit-box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.1);
     box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.1); }
   .field-name-field-banner-collection .rsABlock {
     position: static;

@@ -123,12 +123,10 @@
 </div><!--/#content-wrapper-->
 
 <?php if ($page['footer']): ?>
-  <div id="footer-wrapper" class="fullwidth">
-    <div class="container">
-      <footer role="contentinfo" class="row">
-        <?php print render($page['footer']); ?>
-      </footer>
-    </div><!--/.container-->
-  </div><!--/#footer-wrapper-->
+  <footer id="footer-wrapper" class="footer-wrapper fullwidth">
+    <?php print render($page['footer_top']); ?>
+    <?php print render($page['footer']); ?>
+    <?php print render($page['footer_bottom']); ?>
+  </footer><!--/#footer-wrapper-->
 <?php endif; ?>
 </div>

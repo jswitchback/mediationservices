@@ -28,7 +28,9 @@ regions[content_post] = Content Post
 ;-- Core Regions
 regions[user_bar] = User Bar
 regions[header] = Header
+regions[footer_top] = Footer top
 regions[footer] = Footer
+regions[footer_bottom] = Footer bottom
 regions[sidebar_first] = Sidebar First
 regions[sidebar_second] = Sidebar Second
 regions[help] = Help

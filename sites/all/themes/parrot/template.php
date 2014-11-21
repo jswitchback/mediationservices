@@ -45,13 +45,7 @@ function parrot_preprocess_page(&$vars,$hook) {
   }
 }
 
-function parrot_preprocess_region(&$vars,$hook) {
-  //  kpr($vars['content']);
-}
-
 function parrot_preprocess_block(&$vars, $hook) {
-  //  kpr($vars['content']);
-  // kpr($vars);
 
   //lets look for unique block in a region $region-$blockcreator-$delta
   //  $block =
@@ -126,6 +120,19 @@ function parrot_preprocess_block(&$vars, $hook) {
       $vars['classes_array'][] = 'max-'. $count;
   }
 
+}
+
+/**
+ * Implements template_preprocess_region().
+ */
+function parrot_preprocess_region(&$vars) {
+  $region = $vars['region'];
+  $footer_regions = array('footer','footer_top', 'footer_bottom');
+
+  if (in_array($region, $footer_regions)) {
+    $vars['classes_array'][] = 'container';
+    $vars['theme_hook_suggestions'][] = 'region__footer';
+  }
 }
 
 function parrot_preprocess_node(&$vars,$hook) {
