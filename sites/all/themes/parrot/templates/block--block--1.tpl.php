@@ -13,9 +13,13 @@ if ($classes) {
 <!-- block -->
 <?php } ?>
 <div <?php print $id_block . $classes .  $attributes; ?>>
+
+	<?php print render($title_prefix); ?>
   <?php if ($block->subject): ?>
     <h2<?php print $title_attributes; ?>><?php print $block->subject ?></h2>
   <?php endif;?>
+ 	<?php print render($title_suffix); ?>
+
   <?php print $mothership_poorthemers_helper;  ?>
 	<div class="intro-wrapper">
 		<p class="intro newsletter-intro">Find out more about us through our newsletter.</p>
@@ -24,11 +28,7 @@ if ($classes) {
 
 	<div id="newsletter-modal" class="mfp-hide">
 
-	  <?php print render($title_prefix); ?>
-	  <?php if ($block->subject): ?>
-	    <h2 class="modal-title">Newsletter Signup</h2>
-	  <?php endif;?>
-	  <?php print render($title_suffix); ?>
+	  <h2 class="modal-title">Newsletter Signup</h2>
 
 	  <?php if (!theme_get_setting('mothership_classes_block_contentdiv') AND $block->module == "block"): ?>
 	  <div <?php print $content_attributes; ?>>
